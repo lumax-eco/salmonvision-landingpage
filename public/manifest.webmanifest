@@ -20,33 +20,33 @@
   
   "icons": [
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_48x48_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_38c362ab2d8037c1.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_72x72_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_6b2b8a6544a92569.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_96x96_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_3b769a7de8c96006.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_144x144_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_978563bc3589ea0e.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_192x192_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_35a7795623e5609c.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_512x512_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_ad3d629c18d6939b.png",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -1,0 +1,165 @@
+{{ define "title" }}{{ .Site.Title }} - {{ .Site.Params.description | default "AI-Powered Salmon Monitoring" }}{{ end }}
+
+{{ define "main" }}
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Video Background -->
+        <video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+            <source src="/images/hero-banner.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>{{ .Params.hero.title | default "Empowering Salmon Conservation Through AI" }}</h1>
+                <p class="subtitle">{{ .Params.hero.subtitle | default "Revolutionary computer vision technology enabling precise, automated salmon monitoring across watersheds. From underwater cameras to aerial drones, we're transforming how communities protect wild salmon populations." }}</p>
+                <div class="hero-cta">
+                    <a href="{{ .Site.Params.app_url | default "https://app.salmonvision.org" }}" class="btn-primary">{{ .Params.hero.primary_button | default "Launch Application" }}</a>
+                    <a href="#technology" class="btn-secondary">{{ .Params.hero.secondary_button | default "Learn More" }}</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="stat-grid">
+                        {{ range .Params.hero.stats }}
+                        <div class="stat-item">
+                            <span class="stat-number">{{ .number }}</span>
+                            <span class="stat-label">{{ .label }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>{{ .Params.features.title | default "Comprehensive Monitoring Solutions" }}</h2>
+            <p>{{ .Params.features.subtitle | default "Our integrated platform combines multiple data sources and cutting-edge AI to provide unparalleled insights into salmon populations and migration patterns." }}</p>
+        </div>
+        <div class="features-grid">
+            {{ range .Params.features.items }}
+            <div class="feature-card">
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="tech-container">
+            <div class="tech-content">
+                <h2>{{ .Params.technology.title | default "Advanced Technology Stack" }}</h2>
+                <p class="tech-description">{{ .Params.technology.description | default "SalmonVision represents a collaborative effort between leading research institutions and Indigenous communities to develop state-of-the-art computer vision tools specifically designed for the unique challenges of salmon monitoring in remote watersheds." }}</p>
+                <div class="tech-metrics">
+                    {{ range .Params.technology.metrics }}
+                    <div class="metric">
+                        <div class="metric-value">{{ .value }}</div>
+                        <div class="metric-label">{{ .label }}</div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="tech-visual">
+                <ul class="tech-list">
+                    {{ range .Params.technology.features }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="works-container">
+            <div class="section-header">
+                <h2>{{ .Params.how_it_works.title | default "How SalmonVision Works" }}</h2>
+                <p>{{ .Params.how_it_works.subtitle | default "From data collection in remote watersheds to actionable insights for fisheries management, our end-to-end workflow makes salmon monitoring accessible and efficient." }}</p>
+            </div>
+            <div class="steps-grid">
+                {{ range .Params.how_it_works.steps }}
+                <div class="step">
+                    <div class="step-number">{{ .number }}</div>
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="impact-content">
+            <h2>{{ .Params.impact.title | default "Transforming Salmon Conservation" }}</h2>
+            <p class="impact-subtitle">{{ .Params.impact.subtitle | default "Working with First Nations and resource management agencies across the Pacific Rim, SalmonVision is empowering communities with timely, reliable data for sustainable salmon stewardship." }}</p>
+            <div class="impact-grid">
+                {{ range .Params.impact.stats }}
+                <div class="impact-item">
+                    <span class="impact-number">{{ .number }}</span>
+                    <p class="impact-text">{{ .text }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="tech-container">
+            <div class="about-image">
+                {{ if .Params.about.image }}
+                <img src="{{ .Params.about.image }}" alt="{{ .Params.about.image_alt | default "SalmonVision Team" }}">
+                {{ end }}
+            </div>
+            <div class="tech-content">
+                <h2>{{ .Params.about.title | default "About SalmonVision" }}</h2>
+                {{ range .Params.about.paragraphs }}
+                <p>{{ . | safeHTML }}</p>
+                {{ end }}
+                {{ if .Params.about.cta_link }}
+                <div class="tech-cta">
+                    <a href="{{ .Params.about.cta_link }}" class="btn-primary">{{ .Params.about.cta_text | default "Meet Our Team" }}</a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <div class="partners-content">
+            <h2>{{ .Params.partners.title | default "Our Collaborative Network" }}</h2>
+            <p style="max-width: 800px; margin: 0 auto 3rem; color: var(--ocean-mid); font-size: 1.1rem;">{{ .Params.partners.subtitle | default "SalmonVision is built through partnerships with Indigenous Nations, research institutions, conservation organizations, and fisheries agencies across the Pacific Northwest." }}</p>
+            <div class="partner-carousel">
+                <div class="partner-track">
+                    {{ $partners := .Params.partners.logos }}
+                    <!-- First set of partners -->
+                    {{ range $partners }}
+                    <div class="partner-item"><img src="{{ .image }}" alt="{{ .name }}"></div>
+                    {{ end }}
+                    <!-- Duplicated set for seamless loop -->
+                    {{ range $partners }}
+                    <div class="partner-item"><img src="{{ .image }}" alt="{{ .name }}"></div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>{{ .Params.cta.title | default "Ready to Transform Your Monitoring?" }}</h2>
+            <p>{{ .Params.cta.subtitle | default "Join communities across the Pacific Northwest in leveraging AI for salmon conservation. Access our computer vision tools and start analyzing your data today." }}</p>
+            <div class="cta-buttons">
+                <a href="{{ .Site.Params.app_url | default "https://app.salmonvision.org" }}" class="btn-secondary">{{ .Params.cta.primary_button | default "Launch Application" }}</a>
+                <a href="mailto:{{ .Site.Params.contact_email | default "contact@salmonvision.org" }}" class="btn-secondary">{{ .Params.cta.secondary_button | default "Contact Us" }}</a>
+            </div>
+        </div>
+    </section>
+{{ end }}
