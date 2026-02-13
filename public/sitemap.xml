@@ -64,6 +64,8 @@
   </url><url>
     <loc>//localhost:1313/authors/john-doe/</loc>
   </url><url>
+    <loc>//localhost:1313/partners/</loc>
+  </url><url>
     <loc>//localhost:1313/pages/</loc>
   </url><url>
     <loc>//localhost:1313/privacy-policy/</loc>

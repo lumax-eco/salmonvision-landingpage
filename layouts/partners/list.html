@@ -1,0 +1,161 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  <section class="hero-small">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1>{{ .Params.hero.title | default "Our Partners" }}</h1>
+        <p class="subtitle">{{ .Params.hero.subtitle | default "Building together for salmon conservation" }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Categories -->
+  {{ $index := 0 }}
+  {{ range .Params.partner_categories }}
+  <section class="partners-section section-sm {{ if (mod $index 2) | eq 1 }}bg-light{{ end }}">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>{{ .category }}</h2>
+        <p>{{ .description }}</p>
+      </div>
+      
+      <div class="partners-grid">
+        {{ range .partners }}
+        <div class="partner-card">
+          {{ if .image }}
+          <div class="partner-logo">
+            <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+          </div>
+          {{ else }}
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">{{ substr .name 0 1 }}</span>
+          </div>
+          {{ end }}
+          <div class="partner-info">
+            <h3 class="partner-name">{{ .name }}</h3>
+            <p class="partner-description">{{ .description }}</p>
+            {{ if .website }}
+            <a href="{{ .website }}" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ $index = add $index 1 }}
+  {{ end }}
+
+  <!-- Partnership CTA -->
+  {{ with .Params.partnership_cta }}
+  <section class="partnership-cta-section section-sm">
+    <div class="container">
+      <div class="partnership-cta-box">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-center text-lg-start">
+            <h2 class="h3 mb-3">{{ .title }}</h2>
+            <p class="mb-4 mb-lg-0">{{ .description }}</p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <a href="{{ .button_link }}" class="btn btn-primary btn-lg">{{ .button_text }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Impact Statement -->
+  <section class="section-sm bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="impact-statement">
+            <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor" opacity="0.2"/>
+              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor" opacity="0.2"/>
+            </svg>
+            <blockquote>
+              <p>"Partnership is foundational in our approach to developing and applying computer-vision solutions for salmon monitoring and stewardship. First Nations across the North and Central Coast of BC have contributed data and time to the development and training of computer-vision models, and are leaders on the ground in applying these tools for stewardship of wild salmon within their territories."</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partner Section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Why Partner With Us?</h2>
+        <p>SalmonVision partnerships are built on mutual respect, shared goals, and collaborative innovation.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="h5">Co-Development</h3>
+            <p class="text-muted">Work directly with our team to develop solutions tailored to your needs.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="h5">Real Impact</h3>
+            <p class="text-muted">Deploy proven AI tools that make a measurable difference for salmon conservation.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="h5">Open Science</h3>
+            <p class="text-muted">Access open-source models and data to advance your research and conservation goals.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="h5">Community Support</h3>
+            <p class="text-muted">Join a network of partners committed to protecting wild salmon populations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
