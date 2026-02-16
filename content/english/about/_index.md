@@ -4,7 +4,68 @@ meta_title: "About"
 description: "About Salmon Vision"
 draft: false
 
-# Testimonials
+# Hero Section
+hero:
+  title: "About SalmonVision"
+  subtitle: "Harnessing the power of AI for salmon conservation and empowering communities with real-time insights into salmon populations"
+
+# Team Section
+team:
+  title: "Meet Our Team"
+  description: "The dedicated people behind SalmonVision, working to revolutionize salmon monitoring and conservation"
+  members:
+    - name: "Dr. Sarah Thompson"
+      role: "Chief Scientist & Co-Founder"
+      bio: "Leading our research efforts in computer vision and machine learning for salmon conservation. With over 15 years of experience in marine biology and AI, Sarah bridges the gap between technology and ecological stewardship."
+      image: "/images/avatar.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://linkedin.com"
+        - name: "github"
+          icon: "fa-brands fa-github"
+          link: "https://github.com"
+    
+    - name: "David Chen"
+      role: "Lead AI Engineer"
+      bio: "Developing and optimizing our cutting-edge computer vision models for real-time salmon detection and counting. David's expertise in deep learning and remote sensing has been instrumental in achieving our industry-leading accuracy rates."
+      image: "/images/avatar.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://linkedin.com"
+        - name: "github"
+          icon: "fa-brands fa-github"
+          link: "https://github.com"
+    
+    - name: "Emily Rivers"
+      role: "Community Partnerships Director"
+      bio: "Building relationships with First Nations communities, resource managers, and conservation organizations. Emily ensures that SalmonVision serves the needs of those on the front lines of salmon conservation."
+      image: "/images/avatar.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://linkedin.com"
+        - name: "twitter"
+          icon: "fa-brands fa-twitter"
+          link: "https://twitter.com"
+    
+    - name: "Marcus Blackwood"
+      role: "Senior Platform Engineer"
+      bio: "Architecting and maintaining the SalmonVision platform infrastructure. Marcus ensures our systems are reliable, scalable, and accessible to users in even the most remote locations."
+      image: "/images/avatar.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://linkedin.com"
+        - name: "github"
+          icon: "fa-brands fa-github"
+          link: "https://github.com"
+
+# Partners Title
+partners_title: "Our Funders"
+
+# Partners/Funders
 partners:
   - name: "BC Salmon Restoration and Innovation Fund"
     image: "/images/partners/bc-salmon-restoration-and-innovation-fund.png"
