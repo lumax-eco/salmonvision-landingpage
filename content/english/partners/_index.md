@@ -7,12 +7,12 @@ draft: false
 # Hero content
 hero:
   title: "Building Together for Salmon"
-  subtitle: "Partnership is foundational to our approach. We work alongside First Nations, research institutions, government agencies, and conservation organizations to co-develop AI solutions that serve communities and protect wild salmon."
+  subtitle: "Partnership is foundational to our approach. We work alongside Indigenous Nations, research institutions, government agencies, and conservation organizations to co-develop AI solutions that serve communities and protect wild salmon."
 
-# Partner categories
+# Partner categories - lets make sure this list matches the partners I listed on the other page. 
 partner_categories:
   - category: "Indigenous Partners"
-    description: "First Nations across the North and Central Coast of BC are leaders in developing and applying computer-vision tools for salmon stewardship within their territories."
+    description: "Indigenous Nations across the Northeast Pacific are leaders in developing and applying computer-vision tools for salmon stewardship within their territories."
     partners:
       - name: "Heiltsuk Integrated Resource Management Department"
         image: "/images/partners/heiltsuk-nation.png"
@@ -111,7 +111,7 @@ partner_categories:
 # Call to action
 partnership_cta:
   title: "Interested in Partnering?"
-  description: "We're always looking for new collaborators who share our commitment to salmon conservation. Whether you're a First Nation, research institution, conservation organization, or fisheries agency, we'd love to explore how we can work together."
+  description: "We're always looking for new collaborators who share our commitment to salmon conservation. Whether you're an Indigenous Nation, research institution, conservation organization, or fisheries management agency, we'd love to explore how we can work together."
   button_text: "Get in Touch"
   button_link: "/contact/"
 ---
