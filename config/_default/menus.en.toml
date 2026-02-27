@@ -32,9 +32,14 @@ pageRef = "/partners"
 weight = 6
 
 [[main]]
+name = "User Guide"
+pageRef = "/user-guide"
+weight = 7
+
+[[main]]
 name = "Contact"
 pageRef = "/contact"
-weight = 7
+weight = 8
 
 # footer menu
 [[footer]]

@@ -98,7 +98,7 @@ about:
     - "Today, Salmon Vision analyzes thousands of hours of underwater footage, sonar data, and aerial surveys, helping partners make informed decisions about salmon management and restoration. We're proud to support <span class='highlight'>over 20 monitoring projects</span> and conservation initiatives across British Columbia and Alaska, with new partnerships emerging in Washington and Oregon for 2026."
     - "Our work is guided by principles of collaboration, accessibility, and respect for Indigenous and local knowledge. Salmon are foundational to our regions ecology and culture, and we believe that the best conservation outcomes happen when communities have access to the right tools and data at the right time."
   cta_text: "Meet Our Team"
-  cta_link: "#partners"
+  cta_link: "/about/"
 
 # Partners Section
 partners:

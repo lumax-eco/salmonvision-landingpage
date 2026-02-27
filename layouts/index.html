@@ -111,11 +111,6 @@
     <!-- About Us Section -->
     <section class="about-us" id="about">
         <div class="tech-container">
-            <div class="about-image">
-                {{ if .Params.about.image }}
-                <img src="{{ .Params.about.image }}" alt="{{ .Params.about.image_alt | default "SalmonVision Team" }}">
-                {{ end }}
-            </div>
             <div class="tech-content">
                 <h2>{{ .Params.about.title | default "About SalmonVision" }}</h2>
                 {{ range .Params.about.paragraphs }}

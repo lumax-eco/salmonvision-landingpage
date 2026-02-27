@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59223&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting - User Guide - SalmonVision</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:59223/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="#features">Features</a></li>
+            
+                <li><a href="#technology">Technology</a></li>
+            
+                <li><a href="#impact">Impact</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#technology">Technology</a></li>
+        
+            <li><a href="#impact">Impact</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
+</div>
+
+    
+    
+<section class="docs-section">
+  <div class="container">
+    <div class="docs-layout">
+      
+      <aside class="docs-sidebar" id="docsSidebar">
+        <div class="docs-sidebar-toggle" id="docsSidebarToggle">
+          <i class="fas fa-bars"></i> Navigation
+        </div>
+        <div class="docs-nav" id="docsNav">
+          
+          
+          
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Workflow Salmon Vision</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/workflow/" class="docs-nav-link">
+                    General workflow
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">User Guide</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/webapp/" class="docs-nav-link">
+                    Webapp
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/login/" class="docs-nav-link">
+                    Login
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/project-page/" class="docs-nav-link">
+                    Project page
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-tasks-panel/" class="docs-nav-link">
+                    Label tasks panel
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-review-interface/" class="docs-nav-link">
+                    Label review interface
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/example-annotation-session/" class="docs-nav-link">
+                    Example annotation session
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/review-session-outlined/" class="docs-nav-link docs-nav-sublink">
+                      Review session outlined
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-detection/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/no-detection/" class="docs-nav-link docs-nav-sublink">
+                      No detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/accurate-identification/" class="docs-nav-link docs-nav-sublink">
+                      Accurate identification
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-species-identification/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect species ID
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/extra-annotations/" class="docs-nav-link docs-nav-sublink">
+                      Extra annotations
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/video-of-review-session/" class="docs-nav-link docs-nav-sublink">
+                      Video of review session
+                    </a>
+                  </li>
+                  
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/results/" class="docs-nav-link">
+                    Results
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/sonar/" class="docs-nav-link">
+                    Sonar
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-review-mode/" class="docs-nav-link docs-nav-sublink">
+                      In review mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-annotation-mode/" class="docs-nav-link docs-nav-sublink">
+                      In annotation mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/size-estimation-and-length-bins/" class="docs-nav-link docs-nav-sublink">
+                      Size estimation &amp; length bins
+                    </a>
+                  </li>
+                  
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Field Setup</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/field-setup/" class="docs-nav-link">
+                    Field Setup RGB
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/batch-upload/" class="docs-nav-link">
+                    Batch Upload
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/remote-access/" class="docs-nav-link">
+                    Remote Access
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Support</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/faq/" class="docs-nav-link">
+                    FAQ
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/troubleshooting/" class="docs-nav-link active">
+                    Troubleshooting
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+          
+        </div>
+      </aside>
+
+      
+      <div class="docs-content">
+        
+        <div class="docs-breadcrumb">
+          <a href="/user-guide/">User Guide</a>
+          <span class="docs-breadcrumb-sep">/</span>
+          <span>Troubleshooting</span>
+        </div>
+
+        <div class="docs-content-inner">
+          <h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="data-is-saved-to-internal-disk">Data is Saved to Internal Disk</h2>
+<p>It is possible due to some error the external hard drive is dismounted and the data starts being written to the internal disk. This can be problematic as the folder is not changed — plugging back in the external disk can have it shadow over that internal folder.</p>
+<p><strong>Quick fix:</strong> Simply move or copy the files from that internal folder elsewhere before plugging in the hard drive. Then, after plugging in the hard drive, copy the files to it.</p>
+<p><strong>Alternative method (mount internal folder):</strong></p>
+<ol>
+<li>Plug in the external hard drive to the Jetson</li>
+<li>Open a terminal (<code>Ctrl+Alt+T</code>)</li>
+<li>Run the following commands one at a time:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir local_dir
+</span></span><span style="display:flex;"><span>sudo mount --bind /media/ local_dir/
+</span></span></code></pre></div><ol start="4">
+<li>Enter the user password (it is hidden for privacy)</li>
+<li>The local directory should now be mounted to <code>~/local_dir/hdd</code> where <code>/media/hdd</code> is where the external hard drive is mounted</li>
+<li>Open the directory application and find both <code>local_dir/hdd</code> and <code>/media/hdd</code></li>
+<li>If the directory application doesn&rsquo;t show properly, use the terminal:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo rsync -av ~/local_dir/hdd/ /media/hdd/
+</span></span></code></pre></div><blockquote>
+<p><strong>Important:</strong> The <code>/</code> at the end of each folder path is critical!</p></blockquote>
+<p>You can also use <code>ls</code> to list folder contents and compare:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls ~/local_dir/hdd
+</span></span><span style="display:flex;"><span>ls ~/local_dir/hdd/ORGID/sitename/motion_vids
+</span></span><span style="display:flex;"><span>ls /media/hdd
+</span></span><span style="display:flex;"><span>ls /media/hdd/ORGID/sitename/motion_vids
+</span></span></code></pre></div><h3 id="remount-not-working">Remount Not Working</h3>
+<p>At worst, you can move the data to a different internal folder before plugging in the hard drive, then copy it back:</p>
+<ol>
+<li>Unplug the hard drive if not already</li>
+<li>Open the folder application and navigate to <code>/media/hdd</code></li>
+<li>Open another folder application instance and navigate to where you want to move it (e.g. the home folder)</li>
+<li>Drag your ORGID folder to the home folder to move it</li>
+<li>Plug in the hard drive</li>
+<li>Drag the ORGID folder from the home folder to <code>/media/hdd</code> to copy them to the drive</li>
+</ol>
+<hr>
+<h2 id="hard-drive-disconnecting">Hard Drive Disconnecting</h2>
+<p>A known issue is that the hard drive could disconnect on its own on the newer Marlin Boxes from OceanAID.</p>
+<h3 id="solution-1-cable-troubleshooting">Solution 1: Cable Troubleshooting</h3>
+<ul>
+<li>Unplug the USB-C cable</li>
+<li>Flip the USB-C plug upside down and plug it back in (sometimes it works better in one orientation)</li>
+<li>Alternatively, use a different USB-C plug such as the waterproof screw-on cable that has less power draw
+<ul>
+<li>To check the speed, run: <code>lsusb -t</code> (look for &ldquo;Mass Storage&rdquo; or &ldquo;usb-storage&rdquo;)</li>
+</ul>
+</li>
+<li>Another option is to use the supplied <strong>USB-A cable</strong> instead, as that is usually limited to use less power</li>
+</ul>
+<h3 id="solution-2-updating-software">Solution 2: Updating Software</h3>
+<p>Update the Raspberry Pi as later updates could fix issues such as not supplying USB ports enough power. Please contact a device maintainer to try updating the Raspberry Pi.</p>
+<h3 id="solution-3-use-a-powered-usb-hub">Solution 3: Use a Powered USB Hub</h3>
+<p>If the microcontroller device is not able to supply enough power to the hard drive, use a separate powered USB Hub. This does mean another power port will be used.</p>
+<hr>
+<h2 id="camera-or-devices-do-not-connect">Camera or Devices Do Not Connect</h2>
+<ul>
+<li>Check the Starlink app to see if any of the devices are connected</li>
+<li>Look for the camera IP addresses</li>
+<li>If not shown, check the Starlink app for the subnet it is using:
+<ul>
+<li>The cameras are set as static IPs for the subnet <strong>192.168.1.1</strong></li>
+<li>The microcontroller devices may be set with DHCP (they let the router choose their IP), so the IP shouldn&rsquo;t matter for them. If they are set as static IPs (especially Raspberry Pis), they are likely using the 192.168.1.1 subnet as well</li>
+<li>Look for the format <code>xxx.xxx.xxx.xxx</code> in the Starlink app (likely under DHCP or IP addresses) and change it to <strong>192.168.1.1</strong> if it doesn&rsquo;t match</li>
+<li>If you recently changed the subnet, <strong>re-plug the ethernet cables</strong> to ensure the cameras and devices reconnect properly</li>
+</ul>
+</li>
+<li>A router could also work if it is properly set with the 192.168.1.1 subnet</li>
+</ul>
+<hr>
+<h2 id="jetson-nano-does-not-boot-up-reliably">Jetson Nano Does Not Boot Up Reliably</h2>
+<h3 id="sd-card-corruption">SD Card Corruption</h3>
+<ul>
+<li>Low capacity/quality SD cards can be more prone to corruption, which may ultimately render the Jetson unusable until a new SD card is installed</li>
+<li>Higher capacity/quality SD cards are more robust</li>
+<li>Forcibly shutting down the Jetson due to power outages can cause corruption as files may not have been properly written</li>
+</ul>
+<p><strong>Safe shutdown methods:</strong></p>
+<ul>
+<li>If you can connect an HDMI: shut it down manually through the UI</li>
+<li>If you can only SSH: run <code>sudo shutdown now</code> or <code>sudo reboot</code></li>
+</ul>
+<hr>
+<h2 id="devices-wrong-date-and-time">Devices Wrong Date and Time</h2>
+<p>Filenames for videos and logs use <strong>UTC+0</strong> timezone. Sometimes devices can have drifting date/time, especially at offline sites with no Internet or Starlink infrastructure.</p>
+<h3 id="method-1-using-the-gui-requires-rdp-or-monitor--keyboard">Method 1: Using the GUI (requires RDP or monitor + keyboard)</h3>
+<ol>
+<li>Press the Windows key</li>
+<li>Enter <strong>&ldquo;date&rdquo;</strong></li>
+<li>Click on <strong>Settings Date &amp; Time</strong></li>
+<li>Uncheck &ldquo;Automatically set date/time&rdquo;</li>
+<li>Change the date/time to the current date/time</li>
+<li>Recheck &ldquo;Automatically set date/time&rdquo;</li>
+</ol>
+<h3 id="method-2-using-ssh-no-external-monitor-required">Method 2: Using SSH (no external monitor required)</h3>
+<p>First, ensure your laptop has an SSH client:</p>
+<ol>
+<li>Press the Windows key → type <strong>&ldquo;cmd&rdquo;</strong> → open the command line</li>
+<li>Enter <code>ssh</code> — if it shows help info, SSH is installed</li>
+<li>If not, go to <strong>Settings → Optional features</strong> → search for <strong>&ldquo;OpenSSH client&rdquo;</strong> → enable it</li>
+</ol>
+<p>Connect to the device:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh username@192.168.1.5
+</span></span></code></pre></div><p>Default device IPs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Device</th>
+          <th>IP Address</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Raspi 0</td>
+          <td>192.168.1.5</td>
+      </tr>
+      <tr>
+          <td>Raspi 1</td>
+          <td>192.168.1.6</td>
+      </tr>
+      <tr>
+          <td>Jetson 0</td>
+          <td>192.168.1.40</td>
+      </tr>
+      <tr>
+          <td>Jetson 1</td>
+          <td>192.168.1.41</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>This may differ depending on the setup. Some hardware providers use 192.168.1.20. Connected IPs can also be seen in the Starlink app.</p></blockquote>
+<p>If you can connect to one of the devices, installing and running <code>nmap</code> can provide the IPs of the other devices (requires Internet):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install nmap
+</span></span><span style="display:flex;"><span>sudo nmap -sn 192.168.1.0/24
+</span></span></code></pre></div><p>Once connected, check and fix the date:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>date                                          <span style="color:#75715e"># Check current date</span>
+</span></span><span style="display:flex;"><span>sudo timedatectl set-ntp <span style="color:#ae81ff">0</span>                    <span style="color:#75715e"># Disable auto time sync</span>
+</span></span><span style="display:flex;"><span>sudo date -s <span style="color:#e6db74">&#39;2025-07-25 12:34:56&#39;</span>            <span style="color:#75715e"># Set correct date/time</span>
+</span></span></code></pre></div><p>The date/time format is <code>'YYYY-MM-DD HH:MM:SS'</code>.</p>
+<blockquote>
+<p>⚠️ <strong>Be very careful with <code>sudo</code></strong> as it&rsquo;s a superuser command, which could mess up the entire device if used incorrectly.</p></blockquote>
+
+        </div>
+
+        
+        <div class="docs-page-nav">
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/remote-access/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Remote Access</span>
+            </a>
+            
+          
+            
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('docsSidebarToggle');
+  const nav = document.getElementById('docsNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('docs-nav-open');
+      toggle.classList.toggle('active');
+    });
+  }
+});
+</script>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/docs">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+                <li><a href="/api">API Access</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+                <li><a href="/research">Research Papers</a></li>
+                <li><a href="/data">Training Data</a></li>
+                <li><a href="/models">Model Library</a></li>
+                <li><a href="/case-studies">Case Studies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+                <li><a href="/support">Support</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    
+    
+        <script src="/js/main.js"></script>
+    
+    
+    
+</body>
+</html>

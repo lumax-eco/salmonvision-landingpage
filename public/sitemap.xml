@@ -2,80 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:59806/</loc>
+    <loc>//localhost:59223/user-guide/introduction/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/workflow/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/webapp/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/login/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/project-page/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/label-tasks-panel/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/data-export/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/label-review-interface/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/example-annotation-session/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/review-session-outlined/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/incorrect-detection/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/no-detection/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/accurate-identification/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/incorrect-species-identification/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/extra-annotations/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/video-of-review-session/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/results/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/sonar/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/in-review-mode/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/in-annotation-mode/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/size-estimation-and-length-bins/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/faq/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/field-setup/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/batch-upload/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/remote-access/</loc>
+  </url><url>
+    <loc>//localhost:59223/user-guide/troubleshooting/</loc>
+  </url><url>
+    <loc>//localhost:59223/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/application/</loc>
+    <loc>//localhost:59223/categories/application/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/architecture/</loc>
+    <loc>//localhost:59223/categories/architecture/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/blog/</loc>
+    <loc>//localhost:59223/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/</loc>
+    <loc>//localhost:59223/categories/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/data/</loc>
+    <loc>//localhost:59223/categories/data/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/blog/post-1/</loc>
+    <loc>//localhost:59223/blog/post-1/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/blog/post-2/</loc>
+    <loc>//localhost:59223/blog/post-2/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/blog/post-3/</loc>
+    <loc>//localhost:59223/blog/post-3/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/blog/post-4/</loc>
+    <loc>//localhost:59223/blog/post-4/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/nextjs/</loc>
+    <loc>//localhost:59223/tags/nextjs/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/silicon/</loc>
+    <loc>//localhost:59223/tags/silicon/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/software/</loc>
+    <loc>//localhost:59223/categories/software/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/software/</loc>
+    <loc>//localhost:59223/tags/software/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/</loc>
+    <loc>//localhost:59223/tags/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/tailwind/</loc>
+    <loc>//localhost:59223/tags/tailwind/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/categories/technology/</loc>
+    <loc>//localhost:59223/categories/technology/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/tags/technology/</loc>
+    <loc>//localhost:59223/tags/technology/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:59806/authors/</loc>
+    <loc>//localhost:59223/authors/</loc>
   </url><url>
-    <loc>//localhost:59806/contact/</loc>
+    <loc>//localhost:59223/contact/</loc>
   </url><url>
-    <loc>//localhost:59806/elements/</loc>
+    <loc>//localhost:59223/elements/</loc>
   </url><url>
-    <loc>//localhost:59806/authors/john-doe/</loc>
+    <loc>//localhost:59223/authors/john-doe/</loc>
   </url><url>
-    <loc>//localhost:59806/partners/</loc>
+    <loc>//localhost:59223/partners/</loc>
   </url><url>
-    <loc>//localhost:59806/pages/</loc>
+    <loc>//localhost:59223/pages/</loc>
   </url><url>
-    <loc>//localhost:59806/privacy-policy/</loc>
+    <loc>//localhost:59223/privacy-policy/</loc>
   </url><url>
-    <loc>//localhost:59806/about/</loc>
+    <loc>//localhost:59223/about/</loc>
   </url><url>
-    <loc>//localhost:59806/authors/sam-wilson/</loc>
+    <loc>//localhost:59223/authors/sam-wilson/</loc>
   </url><url>
-    <loc>//localhost:59806/sections/</loc>
+    <loc>//localhost:59223/sections/</loc>
   </url><url>
-    <loc>//localhost:59806/authors/william-jacob/</loc>
+    <loc>//localhost:59223/authors/william-jacob/</loc>
   </url>
 </urlset>

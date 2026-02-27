@@ -17,7 +17,7 @@ team:
     - name: "Dr. William Atlas"
       role: "Chief Scientist & Co-Founder"
       bio: "Leading our research efforts in computer vision and machine learning for salmon conservation. With over 20 years of experience in salmon conservation and stock assessment, Will bridges the gap between technology and the realities of salmon conservation practitioners."
-      image: "/images/avatar.png"
+      image: "/images/will.jpg"
       social:
         - name: "linkedin"
           icon: "fa-brands fa-linkedin"
