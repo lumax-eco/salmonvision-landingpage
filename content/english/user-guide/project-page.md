@@ -11,7 +11,8 @@ weight: 5
 
 The landing page shows an overview of the different projects under your organization. Let's focus on the project titled **Copper weir 2025**.
 
-<!-- TODO: Add screenshot of project page -->
+![Project page](/images/user-guide/project_page.png)
+
 
 **1/2440** indicates that 1 out of the 2440 tasks (RGB videos in this case) have been reviewed.
 

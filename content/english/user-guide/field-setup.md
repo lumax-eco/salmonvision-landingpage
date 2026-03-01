@@ -62,7 +62,7 @@ Below is a list of hardware components that are used to set up an edge computing
 
 > New systems include a second Raspberry Pi — one for each camera to spread the load of motion detection per camera.
 
-<!-- TODO: Add system diagram -->
+![System setup diagram](/images/user-guide/image036.gif)
 
 ### Starlink Dish
 
@@ -114,13 +114,13 @@ This is the most ideal setup, but it likely won't be possible. Starlink will sti
 | East/West | 30m × 1.5 = **45m** |
 | South | 30m × 0.5 = **15m** |
 
-<!-- TODO: Add obstruction diagram -->
+![Starlink obstructions reference](/images/user-guide/image037.gif)
 
 ### Starlink Power Consumption
 
 Sleep mode uses **25–26 watts** which is slightly more than half as much power as an idling Starlink dish (~50 watts). The spikes describe points where the Starlink is out of sleep mode — likely it needs to warm up and search for satellites, but it will probably connect faster than starting up from shutdown.
 
-<!-- TODO: Add power consumption graph -->
+![Starlink power consumption](/images/user-guide/image038.gif)
 
 ---
 

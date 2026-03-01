@@ -19,7 +19,7 @@ The microcontroller devices may be set to use static IPs to facilitate communica
 4. Go to **IPv4** and check the **Automatic (DHCP)** box
 5. Restart the device
 
-<!-- TODO: Add screenshot of network settings -->
+![Network settings](/images/user-guide/image039.gif)
 
 ---
 
@@ -49,6 +49,6 @@ Some devices will be set up with Remote Desktop Protocol (RDP) software to allow
 9. Once connected you will arrive at the **xrdp login page** — enter the password (device default pass is `oceanaid`)
 10. It should take a few seconds and then you should arrive on the home page. You can click cancel, or reenter the password a couple times to authenticate access.
 
-<!-- TODO: Add screenshots of RDP configuration steps -->
+![RDP configuration](/images/user-guide/image040.gif)
 
 > **Always log out when you are done.**

@@ -148,19 +148,6 @@ partners:
     - name: "Whooshh Innovations"
       image: "https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First+Nations" 
       
-# Funders Section
-partners:
-  title: "Our Funders"
-  subtitle: "The work of the Salmon Vision team has been supported by grants from government and philanthropic funders in Canada and the United States."
-  logos:
-    - name: "BC Salmon Restoration Fund"
-      image: "https://via.placeholder.com/200x80/008c8d/FFFFFF?text=BC+Salmon+Fund"
-    - name: "National Fish and Wildlife Fund"
-      image: "https://via.placeholder.com/200x80/008c8d/FFFFFF?text=NFWF"
-    - name: "Royal Bank of Canada Tech for Nature Fund"
-      image: "https://via.placeholder.com/200x80/008c8d/FFFFFF?text=RBC"
-    - name: "MITACs"
-      image: "https://via.placeholder.com/200x80/008c8d/FFFFFF?text=MITACs"  
 
 # CTA Section
 cta:

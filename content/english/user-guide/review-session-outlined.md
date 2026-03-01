@@ -15,13 +15,13 @@ This is a step-by-step visual guide on how to conduct a review session.
 
 A unique login is required for each organization. When switching between organizations, you must log out prior to signing in with the unique login. Under email address, create a username (a real email is not required).
 
-<!-- TODO: Add screenshot of login page -->
+![Login page](/images/user-guide/image023.gif)
 
 ## Choose Project
 
 Select one of the available projects. In this case the **Koeye Jetson-1 2025** with 63,860 video clips.
 
-<!-- TODO: Add screenshot of project selection -->
+![Project selection](/images/user-guide/image024.gif)
 
 ## Review Panel
 
@@ -30,7 +30,7 @@ You will see the review panel which provides an overview of videos on the left w
 - You can show the annotations column by expanding the size of the panel
 - Filter videos using **annotations = 0**
 
-<!-- TODO: Add screenshot of review panel -->
+![Review panel](/images/user-guide/image025.gif)
 
 ## Video Workflow Review
 
@@ -42,4 +42,4 @@ Once starting the review process of a clip annotated by the AI algorithm, there 
 4. [Incorrect species identification](../incorrect-species-identification/)
 5. [Extra annotations](../extra-annotations/)
 
-<!-- TODO: Add figure of five common review scenarios -->
+![Five common review scenarios](/images/user-guide/image026.gif)

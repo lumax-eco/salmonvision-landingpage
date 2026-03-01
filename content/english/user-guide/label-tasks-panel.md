@@ -11,7 +11,7 @@ weight: 6
 
 Once entered in the project, the label tasks panel appears with four sections. When your project is first created, numerical fields such as species counts (e.g. sockeye, video duration, random number etc.) will be displayed as strings. By clicking on the column header the user can convert these to filterable numerical (num) values. Once a field has been changed to a numerical value it will remain numeric, so this is a one-time action required at the start of your project.
 
-<!-- TODO: Add screenshot of label tasks panel -->
+![Project page](/images/user-guide/label-task_panel.png)
 
 ## Section 1: User Selected Settings
 
@@ -19,7 +19,7 @@ Once entered in the project, the label tasks panel appears with four sections. W
 
 You can choose which columns to include in the panel. The default should be sufficient for most cases but many more options are available.
 
-<!-- TODO: Add screenshot of column selection -->
+![Project page](/images/user-guide/label-task_panel_column.png)
 
 Here the columns **ID**, **Completed**, **Annotated by**, etc. have been selected and are visible in the interface. These variables can be used to sort or make selections of the data using filters (see next section). Note that the columns showing the total recorded for the different classes continue further right past the Chinook.
 
@@ -32,7 +32,7 @@ Filters can be used to subset the data based on user-defined criteria. In the ex
 - Only videos with **Sockeye >= 1** are considered
 - The fourth filter shows what other filters are available
 
-<!-- TODO: Add screenshot of filters -->
+![Project page](/images/user-guide/label-task_panel_column.png)
 
 Filters can be very useful if one wants to target specific events, species or date ranges.
 

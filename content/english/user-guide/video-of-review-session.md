@@ -11,4 +11,4 @@ weight: 15
 
 The video below provides an overview of a typical reviewing session with common (and not so common) challenges.
 
-<!-- TODO: Embed SalmonVision_annotation_video2830594271.mp4 -->
+![Review session video](/images/user-guide/image031.gif)

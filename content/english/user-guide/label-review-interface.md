@@ -18,7 +18,7 @@ There are two ways to start the label review process:
 
 The label review interface has seven sections (when started through clicking an individual video). We will briefly discuss each and dive deeper into the reviewing process.
 
-<!-- TODO: Add screenshot of full review interface -->
+![Label review interface](/images/user-guide/image020.gif)
 
 | Panel | Name | Description |
 |-------|------|-------------|
@@ -45,7 +45,7 @@ When you have selected a specific detection (e.g. a fish) a set of **data subcla
 
 > If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.
 
-<!-- TODO: Add screenshot of class overview with subclasses -->
+![Class overview with subclasses](/images/user-guide/image021.gif)
 
 ---
 

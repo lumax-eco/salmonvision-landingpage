@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SalmonVision</title>
-    <link>//localhost:59223/categories/</link>
+    <link>//localhost:55304/categories/</link>
     <description>Recent content in Categories on SalmonVision</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:59223/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:55304/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Application</title>
-      <link>//localhost:59223/categories/application/</link>
+      <link>//localhost:55304/categories/application/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:59223/categories/application/</guid>
+      <guid>//localhost:55304/categories/application/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>//localhost:59223/categories/architecture/</link>
+      <link>//localhost:55304/categories/architecture/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:59223/categories/architecture/</guid>
+      <guid>//localhost:55304/categories/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Data</title>
-      <link>//localhost:59223/categories/data/</link>
+      <link>//localhost:55304/categories/data/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:59223/categories/data/</guid>
+      <guid>//localhost:55304/categories/data/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>//localhost:59223/categories/software/</link>
+      <link>//localhost:55304/categories/software/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:59223/categories/software/</guid>
+      <guid>//localhost:55304/categories/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>//localhost:59223/categories/technology/</link>
+      <link>//localhost:55304/categories/technology/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:59223/categories/technology/</guid>
+      <guid>//localhost:55304/categories/technology/</guid>
       <description></description>
     </item>
   </channel>

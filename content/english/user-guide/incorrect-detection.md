@@ -19,4 +19,4 @@ Any of the following are considered an incorrect detection:
 
 In this example, the bounding box disappears and reappears multiple times.
 
-<!-- TODO: Embed SV tracking vid.mp4 -->
+![Incorrect detection example](/images/user-guide/image027.gif)

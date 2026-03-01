@@ -15,4 +15,4 @@ At times multiple fish are detected when only one fish is present ("double annot
 
 The video below shows an instance of an extra annotation of the tail and how to rectify this error.
 
-<!-- TODO: Embed Extra Detection new.mp4 -->
+![Extra annotation example](/images/user-guide/image030.gif)

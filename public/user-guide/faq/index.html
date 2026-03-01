@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59223&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - User Guide - SalmonVision</title>
@@ -27,7 +27,7 @@
     
     
     
-        <link rel="icon" href="//localhost:59223/images/favicon_salmon.png">
+        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
     
     
     
@@ -352,7 +352,7 @@
 <li>It is good practice to avoid too much overlap between bounding boxes, however this is not completely avoidable. It is best to avoid including the eye and most of the head of a non-targeted fish in overlapping bounding boxes.</li>
 <li>If a fish passes out of sight and then reappears, utilize the <strong>toggle interpolation</strong> function to avoid inferring where the fish might be. When the fish reappears, simply click the frame in that fish&rsquo;s timeline where it reappears and use the <strong>toggle keypoint</strong> to add a new keypoint matching the frame and location where the fish reappears. Use the <strong>toggle interpolation</strong> button to ensure that the box persists beyond the frame where the keypoint was added, and advance the video moving the bounding box to track the reappeared fish.</li>
 </ul>
-<!-- TODO: Add figure showing avoiding overlapping bounding boxes -->
+<p><img src="/images/user-guide/image032.gif" alt="Avoiding overlapping bounding boxes"></p>
 <h2 id="what-do-i-do-if-i-cannot-identify-a-species-passing-through-the-video-box">What do I do if I cannot identify a species passing through the video box?</h2>
 <ul>
 <li>Refer to the SalmonVision Species Guide</li>
@@ -365,16 +365,16 @@
 <h2 id="what-do-i-do-if-the-video-freezesskips-forward-and-fish-are-now-present-or-absent">What do I do if the video freezes/skips forward and fish are now present or absent?</h2>
 <p><strong>When the first frame of a fish appears and it is past the midline:</strong></p>
 <p>If it is clear that the fish is moving in an upstream direction, draw an initial bounding box on the downstream side of the midline. In the second frame, you can accurately track the fish. This allows for an accurate count by accounting for the movement of the fish across the centerline.</p>
-<!-- TODO: Add figure of fish appearing over the midline -->
+<p><img src="/images/user-guide/image033.gif" alt="Fish appearing over the midline"></p>
 <p><strong>When the final frame of a fish occurs prior to crossing the midline:</strong></p>
 <p>If you have confidence the fish continues to move in an upstream direction, draw a very small bounding box on the upstream side of the midline. This will allow for a positive count.</p>
-<!-- TODO: Add figure of fish disappearing prior to crossing the midline -->
+<p><img src="/images/user-guide/image034.gif" alt="Fish disappearing prior to crossing the midline"></p>
 <blockquote>
 <p><strong>Note:</strong> Most cameras include a time (hour:minute:second) displayed on the video. Watching this while the video is clipping can help inform the duration of time that was skipped. This information might help you judge whether fish that are appearing and disappearing are the same or different individuals.</p></blockquote>
 <p>These issues of video skipping (clipping) have been addressed in the underlying issue in the motion detection algorithm. Updates to the motion detection script and lab testing has indicated that these issues have been resolved. Please notify the Salmon Vision team if you are experiencing clipping in videos during review.</p>
 <h2 id="why-is-my-screen-appearing-pixelated-and-is-not-revealing-the-entire-video">Why is my screen appearing pixelated and is not revealing the entire video?</h2>
 <p>This is likely due to an internet-related bandwidth issue. Try and connect to a different internet source if possible.</p>
-<!-- TODO: Add figure of pixelated screen -->
+<p><img src="/images/user-guide/image035.gif" alt="Pixelated screen due to low bandwidth"></p>
 <h2 id="why-am-i-receiving-a-runtime-error">Why am I receiving a &ldquo;Runtime Error&rdquo;?</h2>
 <p>When adjusting your filters, if you have selected <strong>&ldquo;Recorded at&rdquo;</strong> instead of <strong>&ldquo;Video recorded at (UTC, sortable)&rdquo;</strong> you will receive a runtime error, or an error message indicating that blank spaces are not acceptable within a data table in Label Studio.</p>
 

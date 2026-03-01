@@ -11,7 +11,7 @@ weight: 13
 
 The annotation tracked the fish accurately, however the species ID was incorrect. For example, a wrongly identified sockeye which is in fact a pink salmon.
 
-<!-- TODO: Add screenshot of wrongly identified fish -->
+![Wrongly identified fish](/images/user-guide/image029.gif)
 
 **Action:** This can be adjusted by:
 
