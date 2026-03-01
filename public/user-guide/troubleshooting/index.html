@@ -353,7 +353,7 @@
 <li>Open a terminal (<code>Ctrl+Alt+T</code>)</li>
 <li>Run the following commands one at a time:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir local_dir
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir local_dir
 </span></span><span style="display:flex;"><span>sudo mount --bind /media/ local_dir/
 </span></span></code></pre></div><ol start="4">
 <li>Enter the user password (it is hidden for privacy)</li>
@@ -361,11 +361,12 @@
 <li>Open the directory application and find both <code>local_dir/hdd</code> and <code>/media/hdd</code></li>
 <li>If the directory application doesn&rsquo;t show properly, use the terminal:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo rsync -av ~/local_dir/hdd/ /media/hdd/
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo rsync -av ~/local_dir/hdd/ /media/hdd/
 </span></span></code></pre></div><blockquote>
-<p><strong>Important:</strong> The <code>/</code> at the end of each folder path is critical!</p></blockquote>
+<p><strong>Important:</strong> The <code>/</code> at the end of each folder path is critical!</p>
+</blockquote>
 <p>You can also use <code>ls</code> to list folder contents and compare:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls ~/local_dir/hdd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls ~/local_dir/hdd
 </span></span><span style="display:flex;"><span>ls ~/local_dir/hdd/ORGID/sitename/motion_vids
 </span></span><span style="display:flex;"><span>ls /media/hdd
 </span></span><span style="display:flex;"><span>ls /media/hdd/ORGID/sitename/motion_vids
@@ -445,7 +446,7 @@
 <li>If not, go to <strong>Settings → Optional features</strong> → search for <strong>&ldquo;OpenSSH client&rdquo;</strong> → enable it</li>
 </ol>
 <p>Connect to the device:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh username@192.168.1.5
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh username@192.168.1.5
 </span></span></code></pre></div><p>Default device IPs:</p>
 <table>
   <thead>
@@ -474,17 +475,19 @@
   </tbody>
 </table>
 <blockquote>
-<p>This may differ depending on the setup. Some hardware providers use 192.168.1.20. Connected IPs can also be seen in the Starlink app.</p></blockquote>
+<p>This may differ depending on the setup. Some hardware providers use 192.168.1.20. Connected IPs can also be seen in the Starlink app.</p>
+</blockquote>
 <p>If you can connect to one of the devices, installing and running <code>nmap</code> can provide the IPs of the other devices (requires Internet):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install nmap
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install nmap
 </span></span><span style="display:flex;"><span>sudo nmap -sn 192.168.1.0/24
 </span></span></code></pre></div><p>Once connected, check and fix the date:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>date                                          <span style="color:#75715e"># Check current date</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>date                                          <span style="color:#75715e"># Check current date</span>
 </span></span><span style="display:flex;"><span>sudo timedatectl set-ntp <span style="color:#ae81ff">0</span>                    <span style="color:#75715e"># Disable auto time sync</span>
 </span></span><span style="display:flex;"><span>sudo date -s <span style="color:#e6db74">&#39;2025-07-25 12:34:56&#39;</span>            <span style="color:#75715e"># Set correct date/time</span>
 </span></span></code></pre></div><p>The date/time format is <code>'YYYY-MM-DD HH:MM:SS'</code>.</p>
 <blockquote>
-<p>⚠️ <strong>Be very careful with <code>sudo</code></strong> as it&rsquo;s a superuser command, which could mess up the entire device if used incorrectly.</p></blockquote>
+<p>⚠️ <strong>Be very careful with <code>sudo</code></strong> as it&rsquo;s a superuser command, which could mess up the entire device if used incorrectly.</p>
+</blockquote>
 
         </div>
 

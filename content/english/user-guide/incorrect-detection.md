@@ -19,4 +19,4 @@ Any of the following are considered an incorrect detection:
 
 In this example, the bounding box disappears and reappears multiple times.
 
-![Incorrect detection example](/images/user-guide/image027.gif)
+![Incorrect detection example](/images/user-guide/image063.jpg)

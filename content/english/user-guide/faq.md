@@ -20,7 +20,7 @@ When multiple fish are overlapping it is important to capture the visible part o
 - It is good practice to avoid too much overlap between bounding boxes, however this is not completely avoidable. It is best to avoid including the eye and most of the head of a non-targeted fish in overlapping bounding boxes.
 - If a fish passes out of sight and then reappears, utilize the **toggle interpolation** function to avoid inferring where the fish might be. When the fish reappears, simply click the frame in that fish's timeline where it reappears and use the **toggle keypoint** to add a new keypoint matching the frame and location where the fish reappears. Use the **toggle interpolation** button to ensure that the box persists beyond the frame where the keypoint was added, and advance the video moving the bounding box to track the reappeared fish.
 
-![Avoiding overlapping bounding boxes](/images/user-guide/image032.gif)
+![Avoiding overlapping bounding boxes](/images/user-guide/image067.jpg)
 
 ## What do I do if I cannot identify a species passing through the video box?
 
@@ -34,13 +34,13 @@ When multiple fish are overlapping it is important to capture the visible part o
 
 If it is clear that the fish is moving in an upstream direction, draw an initial bounding box on the downstream side of the midline. In the second frame, you can accurately track the fish. This allows for an accurate count by accounting for the movement of the fish across the centerline.
 
-![Fish appearing over the midline](/images/user-guide/image033.gif)
+![Fish appearing over the midline](/images/user-guide/image068.jpg)
 
 **When the final frame of a fish occurs prior to crossing the midline:**
 
 If you have confidence the fish continues to move in an upstream direction, draw a very small bounding box on the upstream side of the midline. This will allow for a positive count.
 
-![Fish disappearing prior to crossing the midline](/images/user-guide/image034.gif)
+![Fish disappearing prior to crossing the midline](/images/user-guide/image070.jpg)
 
 > **Note:** Most cameras include a time (hour:minute:second) displayed on the video. Watching this while the video is clipping can help inform the duration of time that was skipped. This information might help you judge whether fish that are appearing and disappearing are the same or different individuals.
 
@@ -50,7 +50,7 @@ These issues of video skipping (clipping) have been addressed in the underlying 
 
 This is likely due to an internet-related bandwidth issue. Try and connect to a different internet source if possible.
 
-![Pixelated screen due to low bandwidth](/images/user-guide/image035.gif)
+![Pixelated screen due to low bandwidth](/images/user-guide/image072.png)
 
 ## Why am I receiving a "Runtime Error"?
 

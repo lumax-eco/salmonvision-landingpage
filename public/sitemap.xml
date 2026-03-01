@@ -2,134 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:55304/user-guide/introduction/</loc>
+    <loc>//localhost:55004/user-guide/introduction/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/</loc>
+    <loc>//localhost:55004/user-guide/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/workflow/</loc>
+    <loc>//localhost:55004/user-guide/workflow/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/webapp/</loc>
+    <loc>//localhost:55004/user-guide/webapp/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/login/</loc>
+    <loc>//localhost:55004/user-guide/login/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/project-page/</loc>
+    <loc>//localhost:55004/user-guide/project-page/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/label-tasks-panel/</loc>
+    <loc>//localhost:55004/user-guide/label-tasks-panel/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/data-export/</loc>
+    <loc>//localhost:55004/user-guide/data-export/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/label-review-interface/</loc>
+    <loc>//localhost:55004/user-guide/label-review-interface/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/example-annotation-session/</loc>
+    <loc>//localhost:55004/user-guide/example-annotation-session/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/review-session-outlined/</loc>
+    <loc>//localhost:55004/user-guide/review-session-outlined/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/incorrect-detection/</loc>
+    <loc>//localhost:55004/user-guide/incorrect-detection/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/no-detection/</loc>
+    <loc>//localhost:55004/user-guide/no-detection/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/accurate-identification/</loc>
+    <loc>//localhost:55004/user-guide/accurate-identification/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/incorrect-species-identification/</loc>
+    <loc>//localhost:55004/user-guide/incorrect-species-identification/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/extra-annotations/</loc>
+    <loc>//localhost:55004/user-guide/extra-annotations/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/video-of-review-session/</loc>
+    <loc>//localhost:55004/user-guide/video-of-review-session/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/results/</loc>
+    <loc>//localhost:55004/user-guide/results/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/sonar/</loc>
+    <loc>//localhost:55004/user-guide/sonar/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/in-review-mode/</loc>
+    <loc>//localhost:55004/user-guide/in-review-mode/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/in-annotation-mode/</loc>
+    <loc>//localhost:55004/user-guide/in-annotation-mode/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/size-estimation-and-length-bins/</loc>
+    <loc>//localhost:55004/user-guide/size-estimation-and-length-bins/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/faq/</loc>
+    <loc>//localhost:55004/user-guide/faq/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/field-setup/</loc>
+    <loc>//localhost:55004/user-guide/field-setup/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/batch-upload/</loc>
+    <loc>//localhost:55004/user-guide/batch-upload/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/remote-access/</loc>
+    <loc>//localhost:55004/user-guide/remote-access/</loc>
   </url><url>
-    <loc>//localhost:55304/user-guide/troubleshooting/</loc>
+    <loc>//localhost:55004/user-guide/troubleshooting/</loc>
   </url><url>
-    <loc>//localhost:55304/</loc>
+    <loc>//localhost:55004/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/application/</loc>
+    <loc>//localhost:55004/categories/application/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/architecture/</loc>
+    <loc>//localhost:55004/categories/architecture/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/blog/</loc>
+    <loc>//localhost:55004/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/</loc>
+    <loc>//localhost:55004/categories/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/data/</loc>
+    <loc>//localhost:55004/categories/data/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/blog/post-1/</loc>
+    <loc>//localhost:55004/blog/post-1/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/blog/post-2/</loc>
+    <loc>//localhost:55004/blog/post-2/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/blog/post-3/</loc>
+    <loc>//localhost:55004/blog/post-3/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/blog/post-4/</loc>
+    <loc>//localhost:55004/blog/post-4/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/nextjs/</loc>
+    <loc>//localhost:55004/tags/nextjs/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/silicon/</loc>
+    <loc>//localhost:55004/tags/silicon/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/software/</loc>
+    <loc>//localhost:55004/categories/software/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/software/</loc>
+    <loc>//localhost:55004/tags/software/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/</loc>
+    <loc>//localhost:55004/tags/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/tailwind/</loc>
+    <loc>//localhost:55004/tags/tailwind/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/categories/technology/</loc>
+    <loc>//localhost:55004/categories/technology/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/tags/technology/</loc>
+    <loc>//localhost:55004/tags/technology/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:55304/authors/</loc>
+    <loc>//localhost:55004/authors/</loc>
   </url><url>
-    <loc>//localhost:55304/contact/</loc>
+    <loc>//localhost:55004/contact/</loc>
   </url><url>
-    <loc>//localhost:55304/elements/</loc>
+    <loc>//localhost:55004/elements/</loc>
   </url><url>
-    <loc>//localhost:55304/authors/john-doe/</loc>
+    <loc>//localhost:55004/authors/john-doe/</loc>
   </url><url>
-    <loc>//localhost:55304/partners/</loc>
+    <loc>//localhost:55004/partners/</loc>
   </url><url>
-    <loc>//localhost:55304/pages/</loc>
+    <loc>//localhost:55004/pages/</loc>
   </url><url>
-    <loc>//localhost:55304/privacy-policy/</loc>
+    <loc>//localhost:55004/privacy-policy/</loc>
   </url><url>
-    <loc>//localhost:55304/about/</loc>
+    <loc>//localhost:55004/about/</loc>
   </url><url>
-    <loc>//localhost:55304/authors/sam-wilson/</loc>
+    <loc>//localhost:55004/authors/sam-wilson/</loc>
   </url><url>
-    <loc>//localhost:55304/sections/</loc>
+    <loc>//localhost:55004/sections/</loc>
   </url><url>
-    <loc>//localhost:55304/authors/william-jacob/</loc>
+    <loc>//localhost:55004/authors/william-jacob/</loc>
   </url>
 </urlset>

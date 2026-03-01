@@ -4,7 +4,7 @@
   "lang": "en-us",
   "display": "fullscreen",
   "orientation" : "portrait",
-  "start_url": "//localhost:55304/?utm_source=web_app_manifest",
+  "start_url": "//localhost:55004/?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "#000",
 
@@ -20,33 +20,33 @@
   
   "icons": [
     {
-      "src": "/images/favicon_salmon_hu_38c362ab2d8037c1.png",
+      "src": "/images/favicon_salmon_hu_7081c9a341d3c6a1.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu_6b2b8a6544a92569.png",
+      "src": "/images/favicon_salmon_hu_7b6408a7e9d95d42.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu_3b769a7de8c96006.png",
+      "src": "/images/favicon_salmon_hu_657d6c26b9f04b4a.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu_978563bc3589ea0e.png",
+      "src": "/images/favicon_salmon_hu_daa3a3b3aec8ec4c.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu_35a7795623e5609c.png",
+      "src": "/images/favicon_salmon_hu_84720a27d22bf04c.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/favicon_salmon_hu_ad3d629c18d6939b.png",
+      "src": "/images/favicon_salmon_hu_12a9bded060a4c02.png",
       "sizes": "512x512",
       "type": "image/png"
     }

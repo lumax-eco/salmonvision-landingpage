@@ -15,4 +15,4 @@ The software uses **rclone** under the hood, which will check the cloud before u
 
 > If you plan to use the batch upload software, please contact the Salmon Vision team for support.
 
-![Batch upload interface](/images/user-guide/image041.gif)
+![Batch upload interface](/images/user-guide/image080.png)

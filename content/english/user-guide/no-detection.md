@@ -13,6 +13,5 @@ When one or multiple fish are not detected, or some labels did appear but they w
 
 **Action:** Delete labels if present and manually annotate.
 
-In this example, several fish passed through the box without being detected.
 
-![No detection example](/images/user-guide/image028.gif)
+

@@ -45,7 +45,7 @@ When you have selected a specific detection (e.g. a fish) a set of **data subcla
 
 > If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.
 
-![Class overview with subclasses](/images/user-guide/image021.gif)
+![Class overview with subclasses](/images/user-guide/image021.png)
 
 ---
 

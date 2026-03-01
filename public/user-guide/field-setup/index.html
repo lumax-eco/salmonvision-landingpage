@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55004&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Field Setup RGB - User Guide - SalmonVision</title>
@@ -27,7 +27,7 @@
     
     
     
-        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
+        <link rel="icon" href="//localhost:55004/images/favicon_salmon.png">
     
     
     
@@ -368,7 +368,8 @@
 
 >Veezoompro app</a> (Play Store / App Store)</li>
 </ul>
-<p>You may also want to bring a Windows laptop with Microsoft Edge (that can switch to Internet Explorer mode) to access the BARLUS camera settings on the browser.</p></blockquote>
+<p>You may also want to bring a Windows laptop with Microsoft Edge (that can switch to Internet Explorer mode) to access the BARLUS camera settings on the browser.</p>
+</blockquote>
 <h2 id="hardware-list">Hardware List</h2>
 <p>Below is a list of hardware components that are used to set up an edge computing system. We have partnered with OceanAID and Whooshh Innovations to build field-ready hardware systems. If you are interested in building your own, the components list is a useful resource.</p>
 <table>
@@ -453,7 +454,8 @@
   </tbody>
 </table>
 <blockquote>
-<p>We also recommend having spare SD cards or using a SSD rather than SD, since SD cards can degrade quickly during continuous field deployments, resulting in system slowdowns or complete failure.</p></blockquote>
+<p>We also recommend having spare SD cards or using a SSD rather than SD, since SD cards can degrade quickly during continuous field deployments, resulting in system slowdowns or complete failure.</p>
+</blockquote>
 <h3 id="components-requiring-external-power">Components Requiring External Power</h3>
 <ul>
 <li>Raspberry Pi</li>
@@ -484,8 +486,9 @@
 <hr>
 <h2 id="setup-for-a-salmonvision-system">Setup for a SalmonVision System</h2>
 <blockquote>
-<p>New systems include a second Raspberry Pi — one for each camera to spread the load of motion detection per camera.</p></blockquote>
-<p><img src="/images/user-guide/image036.gif" alt="System setup diagram"></p>
+<p>New systems include a second Raspberry Pi — one for each camera to spread the load of motion detection per camera.</p>
+</blockquote>
+<p><img src="/images/user-guide/image074.png" alt="System setup diagram"></p>
 <h3 id="starlink-dish">Starlink Dish</h3>
 <ol>
 <li>Download the Starlink app before arriving on site</li>
@@ -540,9 +543,11 @@
 <li>Once the devices are set up, turn off your phone&rsquo;s WiFi for a minute to allow the cameras and microcontrollers to get their static IPs before reconnecting</li>
 </ol>
 <blockquote>
-<p><strong>Important:</strong> When testing the software, please wait around 10–15 minutes before turning off the Raspberry Pi or unplugging the hard drive as it may need some time to write the motion detected clips to the disk — otherwise it may get corrupted.</p></blockquote>
+<p><strong>Important:</strong> When testing the software, please wait around 10–15 minutes before turning off the Raspberry Pi or unplugging the hard drive as it may need some time to write the motion detected clips to the disk — otherwise it may get corrupted.</p>
+</blockquote>
 <blockquote>
-<p>Logfiles are written to an internal folder in <code>/media/local_hdd</code>, but will be copied to the external hard drive every 2 hours.</p></blockquote>
+<p>Logfiles are written to an internal folder in <code>/media/local_hdd</code>, but will be copied to the external hard drive every 2 hours.</p>
+</blockquote>
 <hr>
 <h2 id="starlink-obstructions-reference">Starlink Obstructions Reference</h2>
 <p>This is the most ideal setup, but it likely won&rsquo;t be possible. Starlink will still work with some obstructions — outages will just become more frequent with more obstructions.</p>
@@ -568,10 +573,10 @@
       </tr>
   </tbody>
 </table>
-<p><img src="/images/user-guide/image037.gif" alt="Starlink obstructions reference"></p>
+<p><img src="/images/user-guide/image076.png" alt="Starlink obstructions reference"></p>
 <h3 id="starlink-power-consumption">Starlink Power Consumption</h3>
 <p>Sleep mode uses <strong>25–26 watts</strong> which is slightly more than half as much power as an idling Starlink dish (~50 watts). The spikes describe points where the Starlink is out of sleep mode — likely it needs to warm up and search for satellites, but it will probably connect faster than starting up from shutdown.</p>
-<p><img src="/images/user-guide/image038.gif" alt="Starlink power consumption"></p>
+<p><img src="/images/user-guide/image078.png" alt="Starlink power consumption"></p>
 <hr>
 <h2 id="barlus-camera-connection-with-windows-pc">BARLUS Camera Connection with Windows PC</h2>
 <ol>
@@ -628,7 +633,11 @@
 <li><strong>User:</strong> <code>admin</code></li>
 <li><strong>Pass:</strong> <code>admin1234567</code></li>
 </ul>
-<p>**Access through RTSP using VLC or a</p>
+<p><strong>Access through RTSP using VLC or any other video player:</strong></p>
+<ul>
+<li><code>rtsp://&lt;ip&gt;:554/av0_0</code></li>
+<li><code>rtsp://&lt;ip&gt;/0</code></li>
+</ul>
 
         </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55004&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Label Review Interface - User Guide - SalmonVision</title>
@@ -27,7 +27,7 @@
     
     
     
-        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
+        <link rel="icon" href="//localhost:55004/images/favicon_salmon.png">
     
     
     
@@ -409,8 +409,9 @@
 <li>Note whether the fish has visible <strong>net scarring</strong>, is <strong>diseased</strong> or visibly <strong>injured</strong> (e.g. an open wound)</li>
 </ul>
 <blockquote>
-<p>If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.</p></blockquote>
-<p><img src="/images/user-guide/image021.gif" alt="Class overview with subclasses"></p>
+<p>If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.</p>
+</blockquote>
+<p><img src="/images/user-guide/image021.png" alt="Class overview with subclasses"></p>
 <hr>
 <h2 id="panel-4--viewer">Panel 4 — Viewer</h2>
 <p>The Viewer panel is where you can view the video and the annotations. The counter in the left bottom (e.g. <strong>15 of 96</strong>) indicates which frame is selected out of the total number of frames. In the right bottom the play time (e.g. <strong>00:01:04</strong>) relative to the total length of the file (e.g. <strong>00:09:05</strong>) is depicted. The format is <code>mm:ss:dsds</code>.</p>
@@ -482,7 +483,8 @@
 <p>A <strong>keypoint</strong> in a video is an annotation of a specific object in a frame, represented by a <strong>diamond shape</strong> on the timeline panel. In the example above, frame 15 contains a keypoint of the Sockeye detection. A frame can have keypoints for different detections if they occur simultaneously.</p>
 <p>When a video has been prelabelled by a detection model, each frame of the detection sequence is also a keyframe. When manually labelling, the reviewer has to manually draw a box, or when interpolation is on, reposition and/or adjust box size.</p>
 <blockquote>
-<p><strong>Best practice:</strong> Have at least one keypoint every 10 frames for a stationary fish and, depending on the speed and change of direction of movement, every 1–5 frames for faster or more erratic movements.</p></blockquote>
+<p><strong>Best practice:</strong> Have at least one keypoint every 10 frames for a stationary fish and, depending on the speed and change of direction of movement, every 1–5 frames for faster or more erratic movements.</p>
+</blockquote>
 <hr>
 <h2 id="panel-5--timeline">Panel 5 — Timeline</h2>
 <p>The Timeline panel provides an overview of each detection (rows) and where in the sequence of the video (frame) it was detected. The detections are numbered chronologically and have the name and colour of the assigned class (see Panel 3).</p>
@@ -499,7 +501,8 @@
 <p>It is important to find the last frame in the sequence in which the individual is visible and <strong>switch off the interpolation</strong> (Toggle interpolation button). If the individual reappears, make a new keypoint and switch interpolation back on.</p>
 <p>The timeline panel also includes access to the <strong>settings</strong> in the left bottom and provides a <strong>Submit</strong> option (right bottom) which will save all the changes you have made.</p>
 <blockquote>
-<p><strong>Remember:</strong> You have to submit changes to save them.</p></blockquote>
+<p><strong>Remember:</strong> You have to submit changes to save them.</p>
+</blockquote>
 <h3 id="post-submission-verification">Post-Submission Verification</h3>
 <p>After having submitted the video, it is important to use the scroll bar on the bottom of Panel 1, and confirm that the correct value appears under the column(s). For example, if 3 sockeye swam through the box and the AI was accurate in detecting them, once submitted, scroll to the right and confirm that 3 sockeye appear under the column &ldquo;sockeye&rdquo;.</p>
 <hr>
@@ -516,7 +519,8 @@
 <p>The Annotations panel provides an overview of all of the detections made in the file in order of appearance (default is <strong>Manual</strong>). The sequence is the same as in the Timeline panel (Panel 5).</p>
 <p>The order can be changed by clicking <strong>Manually</strong> and selecting <strong>Group by Tool</strong> or <strong>Label</strong>. Note that bounding boxes drawn by the reviewer will appear at the bottom of the annotations panel, regardless of where they appear in the video.</p>
 <blockquote>
-<p><strong>Tip:</strong> When deleting multiple annotations, hold <strong>Ctrl</strong> and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.</p></blockquote>
+<p><strong>Tip:</strong> When deleting multiple annotations, hold <strong>Ctrl</strong> and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.</p>
+</blockquote>
 <p>To the right the user can sort <strong>By time</strong> (default) or <strong>Order by Score</strong> (if available). The eye symbol allows for switching to hide/make visible all the annotations — very useful if you want to focus on one annotation among many. The <strong>Relations</strong> tab can be ignored for now.</p>
 <hr>
 <h2 id="important-labeling-vs-reviewing">Important: Labeling vs. Reviewing</h2>
@@ -531,7 +535,8 @@
 <li>Delete erroneous extra bounding boxes or draw around fish which have been missed</li>
 </ol>
 <blockquote>
-<p>The difference between labelled and reviewed data is not clear-cut necessarily (i.e. AI-generated data in a reviewing session can be of &ldquo;labeled&rdquo; grade). It is important to remember that when starting a <strong>labeling</strong> session it is of utmost importance to be very precise.</p></blockquote>
+<p>The difference between labelled and reviewed data is not clear-cut necessarily (i.e. AI-generated data in a reviewing session can be of &ldquo;labeled&rdquo; grade). It is important to remember that when starting a <strong>labeling</strong> session it is of utmost importance to be very precise.</p>
+</blockquote>
 
         </div>
 

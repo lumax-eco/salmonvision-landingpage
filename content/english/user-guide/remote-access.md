@@ -19,7 +19,7 @@ The microcontroller devices may be set to use static IPs to facilitate communica
 4. Go to **IPv4** and check the **Automatic (DHCP)** box
 5. Restart the device
 
-![Network settings](/images/user-guide/image039.gif)
+![Network settings](/images/user-guide/image082.png)
 
 ---
 
@@ -41,14 +41,28 @@ Some devices will be set up with Remote Desktop Protocol (RDP) software to allow
 5. Click on **Remote Desktop Connection**
 6. Find the IP address or domain name:
    - **Option A:** Go to the [Tailscale console](https://login.tailscale.com/admin) and look at the name under "MACHINE" or the IP address under "ADDRESSES"
+   ![RDP configuration](/images/user-guide/image084.png)
+
    - **Option B:** Right-click the Tailscale icon in your taskbar (the icon with 3 dots in a T) → **Network devices** → Click on the device to automatically copy the IP to clipboard
+   ![RDP configuration](/images/user-guide/image086.png)
+
 7. Enter the IP address or domain name and the proper username:
    - If it's from OceanAID: `oceanaid`
    - Otherwise: `netlabmedia`
+   ![RDP configuration](/images/user-guide/image088.gif)
+
 8. Configure the display settings: reduce the screen size and the pixel depth so the GUI is not as laggy
+![RDP configuration](/images/user-guide/image089.gif)
+
 9. Once connected you will arrive at the **xrdp login page** — enter the password (device default pass is `oceanaid`)
+![RDP configuration](/images/user-guide/image090.gif)
+
 10. It should take a few seconds and then you should arrive on the home page. You can click cancel, or reenter the password a couple times to authenticate access.
 
-![RDP configuration](/images/user-guide/image040.gif)
+
+![RDP configuration](/images/user-guide/image091.gif)
+
+![RDP configuration](/images/user-guide/image092.gif)
+
 
 > **Always log out when you are done.**

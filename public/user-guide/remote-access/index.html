@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55004&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remote Access - User Guide - SalmonVision</title>
@@ -27,7 +27,7 @@
     
     
     
-        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
+        <link rel="icon" href="//localhost:55004/images/favicon_salmon.png">
     
     
     
@@ -353,7 +353,7 @@
 <li>Go to <strong>IPv4</strong> and check the <strong>Automatic (DHCP)</strong> box</li>
 <li>Restart the device</li>
 </ol>
-<p><img src="/images/user-guide/image039.gif" alt="Network settings"></p>
+<p><img src="/images/user-guide/image082.png" alt="Network settings"></p>
 <hr>
 <h2 id="remote-desktop-on-devices">Remote Desktop on Devices</h2>
 <p>Some devices will be set up with Remote Desktop Protocol (RDP) software to allow easy remote access to the device without using SSH.</p>
@@ -363,10 +363,12 @@
 <li>You must <strong>log out</strong> each time (don&rsquo;t just close the window). If you do not properly log out, when you try to log in next time it will just give a frozen screen as it thinks you are still logged in. If this happens you will need to SSH in and manually log out the user, or simply run <code>sudo reboot</code> to restart the system.</li>
 <li>Be careful to <strong>not power off</strong>. If the box is powered off, there is no way to power it back on without unplugging and re-plugging the power or tripping the power to the box (unless you have a smart power switch installed).</li>
 <li><strong>Only one user at a time.</strong></li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <h3 id="steps-to-connect-via-rdp">Steps to Connect via RDP</h3>
 <ol>
-<li>Install <a href="https://tailscale.com/"
+<li>
+<p>Install <a href="https://tailscale.com/"
 
 
 
@@ -375,14 +377,25 @@
  
 
 
->Tailscale</a> on your computer</li>
-<li>Ask for a Tailscale invite link to the device you want to access</li>
-<li>Click on the invite link and create an account</li>
-<li>Press the Windows key and type <strong>&ldquo;rdp&rdquo;</strong></li>
-<li>Click on <strong>Remote Desktop Connection</strong></li>
-<li>Find the IP address or domain name:
+>Tailscale</a> on your computer</p>
+</li>
+<li>
+<p>Ask for a Tailscale invite link to the device you want to access</p>
+</li>
+<li>
+<p>Click on the invite link and create an account</p>
+</li>
+<li>
+<p>Press the Windows key and type <strong>&ldquo;rdp&rdquo;</strong></p>
+</li>
+<li>
+<p>Click on <strong>Remote Desktop Connection</strong></p>
+</li>
+<li>
+<p>Find the IP address or domain name:</p>
 <ul>
-<li><strong>Option A:</strong> Go to the <a href="https://login.tailscale.com/admin"
+<li>
+<p><strong>Option A:</strong> Go to the <a href="https://login.tailscale.com/admin"
 
 
 
@@ -391,24 +404,40 @@
  
 
 
->Tailscale console</a> and look at the name under &ldquo;MACHINE&rdquo; or the IP address under &ldquo;ADDRESSES&rdquo;</li>
-<li><strong>Option B:</strong> Right-click the Tailscale icon in your taskbar (the icon with 3 dots in a T) → <strong>Network devices</strong> → Click on the device to automatically copy the IP to clipboard</li>
+>Tailscale console</a> and look at the name under &ldquo;MACHINE&rdquo; or the IP address under &ldquo;ADDRESSES&rdquo;
+<img src="/images/user-guide/image084.png" alt="RDP configuration"></p>
+</li>
+<li>
+<p><strong>Option B:</strong> Right-click the Tailscale icon in your taskbar (the icon with 3 dots in a T) → <strong>Network devices</strong> → Click on the device to automatically copy the IP to clipboard
+<img src="/images/user-guide/image086.png" alt="RDP configuration"></p>
+</li>
 </ul>
 </li>
-<li>Enter the IP address or domain name and the proper username:
+<li>
+<p>Enter the IP address or domain name and the proper username:</p>
 <ul>
 <li>If it&rsquo;s from OceanAID: <code>oceanaid</code></li>
-<li>Otherwise: <code>netlabmedia</code></li>
+<li>Otherwise: <code>netlabmedia</code>
+<img src="/images/user-guide/image088.gif" alt="RDP configuration"></li>
 </ul>
 </li>
-<li>Configure the display settings: reduce the screen size and the pixel depth so the GUI is not as laggy</li>
-<li>Once connected you will arrive at the <strong>xrdp login page</strong> — enter the password (device default pass is <code>oceanaid</code>)</li>
-<li>It should take a few seconds and then you should arrive on the home page. You can click cancel, or reenter the password a couple times to authenticate access.</li>
+<li>
+<p>Configure the display settings: reduce the screen size and the pixel depth so the GUI is not as laggy
+<img src="/images/user-guide/image089.gif" alt="RDP configuration"></p>
+</li>
+<li>
+<p>Once connected you will arrive at the <strong>xrdp login page</strong> — enter the password (device default pass is <code>oceanaid</code>)
+<img src="/images/user-guide/image090.gif" alt="RDP configuration"></p>
+</li>
+<li>
+<p>It should take a few seconds and then you should arrive on the home page. You can click cancel, or reenter the password a couple times to authenticate access.</p>
+</li>
 </ol>
-<p><img src="/images/user-guide/image040.gif" alt="RDP configuration"></p>
+<p><img src="/images/user-guide/image091.gif" alt="RDP configuration"></p>
+<p><img src="/images/user-guide/image092.gif" alt="RDP configuration"></p>
 <blockquote>
-<p><strong>Always log out when you are done.</strong>
-�</p></blockquote>
+<p><strong>Always log out when you are done.</strong></p>
+</blockquote>
 
         </div>
 
