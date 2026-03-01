@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54594&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Estimation &amp; Length Bins - User Guide - SalmonVision</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:54594/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
+</div>
+
+    
+    
+<section class="docs-section">
+  <div class="container">
+    <div class="docs-layout">
+      
+      <aside class="docs-sidebar" id="docsSidebar">
+        <div class="docs-sidebar-toggle" id="docsSidebarToggle">
+          <i class="fas fa-bars"></i> Navigation
+        </div>
+        <div class="docs-nav" id="docsNav">
+          
+          
+          
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Workflow Salmon Vision</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/workflow/" class="docs-nav-link">
+                    General workflow
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">User Guide</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/webapp/" class="docs-nav-link">
+                    Webapp
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/login/" class="docs-nav-link">
+                    Login
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/project-page/" class="docs-nav-link">
+                    Project page
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-tasks-panel/" class="docs-nav-link">
+                    Label tasks panel
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-review-interface/" class="docs-nav-link">
+                    Label review interface
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/example-annotation-session/" class="docs-nav-link">
+                    Example annotation session
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/review-session-outlined/" class="docs-nav-link docs-nav-sublink">
+                      Review session outlined
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-detection/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/no-detection/" class="docs-nav-link docs-nav-sublink">
+                      No detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/accurate-identification/" class="docs-nav-link docs-nav-sublink">
+                      Accurate identification
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-species-identification/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect species ID
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/extra-annotations/" class="docs-nav-link docs-nav-sublink">
+                      Extra annotations
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/video-of-review-session/" class="docs-nav-link docs-nav-sublink">
+                      Video of review session
+                    </a>
+                  </li>
+                  
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/results/" class="docs-nav-link">
+                    Results
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/sonar/" class="docs-nav-link">
+                    Sonar
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-review-mode/" class="docs-nav-link docs-nav-sublink">
+                      In review mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-annotation-mode/" class="docs-nav-link docs-nav-sublink">
+                      In annotation mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/size-estimation-and-length-bins/" class="docs-nav-link docs-nav-sublink active">
+                      Size estimation &amp; length bins
+                    </a>
+                  </li>
+                  
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Field Setup</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/field-setup/" class="docs-nav-link">
+                    Field Setup RGB
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/batch-upload/" class="docs-nav-link">
+                    Batch Upload
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/remote-access/" class="docs-nav-link">
+                    Remote Access
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Support</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/faq/" class="docs-nav-link">
+                    FAQ
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/troubleshooting/" class="docs-nav-link">
+                    Troubleshooting
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+          
+        </div>
+      </aside>
+
+      
+      <div class="docs-content">
+        
+        <div class="docs-breadcrumb">
+          <a href="/user-guide/">User Guide</a>
+          <span class="docs-breadcrumb-sep">/</span>
+          <span>Size Estimation &amp; Length Bins</span>
+        </div>
+
+        <div class="docs-content-inner">
+          <h1 id="size-estimation--length-bins">Size Estimation &amp; Length Bins</h1>
+<p>For projects using <strong>SoundMetrics ARIS</strong> sonar devices, fish sizes are automatically estimated using a pre-programmed length calibration equation that is built into the ARIS fish software.</p>
+<p>However, each project may be interested in unique length bins for reporting purposes, since different species have unique length distributions. Accordingly, length bins for sonar projects can be configured into the backend of the Salmon Vision web app prior to syncing your data from cloud storage.</p>
+<blockquote>
+<p>When setting up your sonar data review project, please contact the Salmon Vision team for support with configuring the length bins.</p>
+</blockquote>
+
+        </div>
+
+        
+        <div class="docs-page-nav">
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/in-annotation-mode/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">In Annotation Mode</span>
+            </a>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/faq/" class="docs-page-nav-next">
+              <span class="docs-page-nav-label">Next &rarr;</span>
+              <span class="docs-page-nav-title">FAQ</span>
+            </a>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('docsSidebarToggle');
+  const nav = document.getElementById('docsNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('docs-nav-open');
+      toggle.classList.toggle('active');
+    });
+  }
+});
+</script>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/user-guide">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    
+    
+        <script src="/js/main.js"></script>
+    
+    
+    
+</body>
+</html>

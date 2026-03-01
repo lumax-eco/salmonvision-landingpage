@@ -1,0 +1,99 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  <section class="hero-small">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1>{{ .Params.hero.title | default "About SalmonVision" }}</h1>
+        <p class="subtitle">{{ .Params.hero.subtitle | default "Harnessing the power of AI for salmon conservation and empowering communities with real-time insights" }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="about-main-content section-md">
+    <div class="container">
+      <div class="content-wrapper">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  {{ if .Params.team }}
+  <section class="team-section">
+    <div class="section-header text-center">
+      <h2>{{ .Params.team.title | default "Meet Our Team" }}</h2>
+      <p class="team-description">{{ .Params.team.description | default "The dedicated people behind SalmonVision" }}</p>
+    </div>
+    
+    <div class="team-alternating">
+      {{ $index := 0 }}
+      {{ range .Params.team.members }}
+      {{ $isEven := (mod $index 2) | eq 0 }}
+      
+      <div class="team-row {{ if $isEven }}team-row-blue{{ else }}team-row-salmon{{ end }}">
+        <div class="team-row-container">
+          {{ if $isEven }}
+          <!-- Blue row: Text left, Image right -->
+          <div class="team-text-block">
+            <h3>{{ .name }}</h3>
+            <p class="team-role">{{ .role }}</p>
+            <p class="team-bio">{{ .bio }}</p>
+            {{ if .social }}
+            <div class="team-social">
+              {{ range .social }}
+              <a href="{{ .link }}" target="_blank" rel="noopener" aria-label="{{ .name }}">
+                <i class="{{ .icon }}"></i>
+              </a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="team-image-block">
+            <div class="team-image-wrapper">
+              {{ if .image }}
+              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+              {{ else }}
+              <img src="/images/avatar.png" alt="{{ .name }}" loading="lazy">
+              {{ end }}
+            </div>
+          </div>
+          {{ else }}
+          <!-- Salmon row: Image left, Text right -->
+          <div class="team-image-block">
+            <div class="team-image-wrapper">
+              {{ if .image }}
+              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+              {{ else }}
+              <img src="/images/avatar.png" alt="{{ .name }}" loading="lazy">
+              {{ end }}
+            </div>
+          </div>
+          <div class="team-text-block">
+            <h3>{{ .name }}</h3>
+            <p class="team-role">{{ .role }}</p>
+            <p class="team-bio">{{ .bio }}</p>
+            {{ if .social }}
+            <div class="team-social">
+              {{ range .social }}
+              <a href="{{ .link }}" target="_blank" rel="noopener" aria-label="{{ .name }}">
+                <i class="{{ .icon }}"></i>
+              </a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      
+      {{ $index = add $index 1 }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+
+
+{{ end }}

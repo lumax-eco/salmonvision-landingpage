@@ -1,0 +1,96 @@
+{{ define "title" }}{{ .Title }} - User Guide - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<section class="docs-section">
+  <div class="container">
+    <div class="docs-layout">
+      <!-- Sidebar Navigation -->
+      <aside class="docs-sidebar" id="docsSidebar">
+        <div class="docs-sidebar-toggle" id="docsSidebarToggle">
+          <i class="fas fa-bars"></i> Navigation
+        </div>
+        <div class="docs-nav" id="docsNav">
+          {{ $section := .Parent }}
+          {{ $currentPage := . }}
+          {{ if $section.Params.sidebar }}
+            {{ range $section.Params.sidebar }}
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">{{ .title }}</h4>
+              <ul class="docs-nav-list">
+                {{ range .pages }}
+                  {{ $isActive := eq $currentPage.File.ContentBaseName .slug }}
+                <li>
+                  <a href="{{ $section.RelPermalink }}{{ .slug }}/" class="docs-nav-link{{ if $isActive }} active{{ end }}">
+                    {{ .label }}
+                  </a>
+                </li>
+                {{ if .subpages }}
+                  {{ range .subpages }}
+                    {{ $isSubActive := eq $currentPage.File.ContentBaseName .slug }}
+                  <li>
+                    <a href="{{ $section.RelPermalink }}{{ .slug }}/" class="docs-nav-link docs-nav-sublink{{ if $isSubActive }} active{{ end }}">
+                      {{ .label }}
+                    </a>
+                  </li>
+                  {{ end }}
+                {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="docs-content">
+        <!-- Breadcrumb -->
+        <div class="docs-breadcrumb">
+          <a href="{{ $section.RelPermalink }}">User Guide</a>
+          <span class="docs-breadcrumb-sep">/</span>
+          <span>{{ .Title }}</span>
+        </div>
+
+        <div class="docs-content-inner">
+          {{ .Content }}
+        </div>
+
+        <!-- Page Navigation -->
+        <div class="docs-page-nav">
+          {{ $pages := $section.Pages.ByWeight }}
+          {{ $currentWeight := .Weight }}
+          {{ range $pages }}
+            {{ if eq (add .Weight 1) $currentWeight }}
+            <a href="{{ .RelPermalink }}" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">{{ .Title }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+          {{ range $pages }}
+            {{ if eq (sub .Weight 1) $currentWeight }}
+            <a href="{{ .RelPermalink }}" class="docs-page-nav-next">
+              <span class="docs-page-nav-label">Next &rarr;</span>
+              <span class="docs-page-nav-title">{{ .Title }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('docsSidebarToggle');
+  const nav = document.getElementById('docsNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('docs-nav-open');
+      toggle.classList.toggle('active');
+    });
+  }
+});
+</script>
+{{ end }}

@@ -1,0 +1,38 @@
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            {{ if .Site.Params.logo }}
+                <img src="/{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="img-fluid" style="height: 60px;">
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
+        </div>
+        <ul class="nav-links">
+            {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+            <li><a href="{{ .Site.Params.app_url | default "https://app.salmonvision.org" }}" class="btn-primary">{{ .Site.Params.nav_button_text | default "Launch App" }}</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        <li><a href="{{ .Site.Params.app_url | default "https://app.salmonvision.org" }}" class="btn-primary" style="display: inline-block; text-align: center;">{{ .Site.Params.nav_button_text | default "Launch App" }}</a></li>
+    </ul>
+</div>

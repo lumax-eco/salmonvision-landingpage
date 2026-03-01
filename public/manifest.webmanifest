@@ -4,7 +4,7 @@
   "lang": "en-us",
   "display": "fullscreen",
   "orientation" : "portrait",
-  "start_url": "//localhost:1313/?utm_source=web_app_manifest",
+  "start_url": "//localhost:54594/?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "#000",
 
@@ -20,33 +20,33 @@
   
   "icons": [
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_48x48_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_7081c9a341d3c6a1.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_72x72_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_7b6408a7e9d95d42.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_96x96_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_657d6c26b9f04b4a.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_144x144_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_daa3a3b3aec8ec4c.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_192x192_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_84720a27d22bf04c.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_512x512_resize_lanczos_3.png",
+      "src": "/images/favicon_salmon_hu_12a9bded060a4c02.png",
       "sizes": "512x512",
       "type": "image/png"
     }

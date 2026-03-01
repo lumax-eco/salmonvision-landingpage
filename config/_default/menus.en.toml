@@ -6,18 +6,39 @@ name = "Home"
 pageRef = "/"
 weight = 1
 
+
 [[main]]
-name = "About"
+name = "About Us"
 pageRef = "/about"
 weight = 2
 
 [[main]]
+name = "Partners"
+pageRef = "/partners"
+weight = 3
+
+[[main]]
+name = "User Guide"
+pageRef = "/user-guide"
+weight = 4
+
+[[main]]
 name = "Contact"
 pageRef = "/contact"
-weight = 3
+weight = 5
 
 # footer menu
 [[footer]]
-name = "About"
+name = "About us"
 pageRef = "/about"
 weight = 1
+
+[[footer]]
+name = "Partners"
+pageRef = "/partners"
+weight = 2
+
+[[footer]]
+name = "Contact"
+pageRef = "/contact"
+weight = 3

@@ -1,779 +1,466 @@
-<!doctype html>
-<html
-  itemscope
-  class=""
-  lang="en-us"
-  itemtype="http://schema.org/WebPage">
-  <head>
-	<meta name="generator" content="Hugo 0.127.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    
-    <meta charset="utf-8" />
-
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, maximum-scale=5" />
-
-
-<meta name="theme-name" content="hugoplate" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="shortcut icon" href="/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_96x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_96x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_48x0_resize_lanczos_3.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_96x0_resize_lanczos_3.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_salmon_hu39b75d3670e4e5048d14e4f87a1b4259_42198_144x0_resize_lanczos_3.png">
-
-
-
-
-
-
-
-
-<link rel="manifest" href="/manifest.webmanifest" />
-<meta
-  name="msapplication-TileColor"
-  content="#ddd" />
-<meta
-  name="theme-color"
-  content="#ffffff" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <base href="//localhost:1313/" />
-
-
-
-
-
-
-
-
-<title>SalmonVision</title>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <meta
-    name="keywords"
-    content="Boilerplate, Hugo" />
-
-
-
-
-<meta
-  name="description"
-  content="Hugo &amp; Tailwindcss Starter" />
-
-
-
-  <meta name="author" content="zeon.studio" />
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54594&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalmonVision - AI-Powered Salmon Monitoring</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
     
     
-      
-    
-
-    
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     
-      
-      
-      
-        <meta property="og:image" content="//localhost:1313/images/og-image.png" />
-        <meta name="twitter:image" content="//localhost:1313/images/og-image.png" />
-        <meta
-          name="twitter:card"
-          content="summary_large_image" />
-      
-      
-      <meta property="og:image:width" content="900" />
-      <meta property="og:image:height" content="600" />
-    
-
-
-    
-    <meta
-      property="og:image:type"
-      content="image/.png" />
-  
-
-
-  
-
-
-
-
-
-<meta property="og:title" content="SalmonVision" />
-<meta property="og:description" content="Hugo &amp; Tailwindcss Starter" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="//localhost:1313/" />
-
-
-<meta name="twitter:title" content="SalmonVision" />
-<meta name="twitter:description" content="Hugo &amp; Tailwindcss Starter" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  let indexURL = "//localhost:1313/searchindex.json";
-  let includeSectionsInSearch = ["blog"];
-  let search_no_results = "No results for";
-  let search_initial_message = "Type something to search..";
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
-<meta http-equiv="x-dns-prefetch-control" content="on" />
-<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
-<link rel="preconnect" href="//cdnjs.cloudflare.com" />
-<link rel="preconnect" href="//www.googletagmanager.com" />
-<link rel="preconnect" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="https://use.fontawesome.com" />
-<link rel="dns-prefetch" href="//ajax.googleapis.com" />
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
-<link rel="dns-prefetch" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="dns-prefetch" href="//connect.facebook.net" />
-<link rel="dns-prefetch" href="//platform.linkedin.com" />
-<link rel="dns-prefetch" href="//platform.twitter.com" />
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script>
-  (function () {
-    const googleFont = document.createElement("link");
-    googleFont.href = "https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Signika:wght@500;700&display=swap";
-    googleFont.type = "text/css";
-    googleFont.rel = "stylesheet";
-    document.head.appendChild(googleFont);
-  })();
-</script>
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-<link
-  href="/css/style.css"
-  integrity=""
-  rel="stylesheet" />
-
-
-<link
-  defer
-  async
-  rel="stylesheet"
-  href="/css/style-lazy.css"
-  integrity=""
-  media="print"
-  onload="this.media='all'; this.onload=null;" />
-
-
-  </head>
-
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     
-      
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:54594/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
 
 
+<div class="menu-overlay" id="menuOverlay"></div>
 
 
-
-      
-      <div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
 </div>
 
     
-
-
     
     
-
-
-
-
-
-    
-    <header
-  class="header sticky top-0 z-30">
-  <nav class="navbar container">
-    
-    <div class="order-0">
-      
-      <a class="navbar-brand block" href="/">
+    <section class="hero" id="home">
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-  
-  
-
-
-  
-  
-    
-    
-  
-  
-
-  
-  
-    
-    
-      
-      
-
-
-      
-      
-        
-        
-      
-      
-    
-  
-  
-
-  
-    <img
-      fetchpriority="high"
-      decoding="async"
-      class="img logo-light"
-      width="240"
-      height="80"
-      src="/images/salmon-vision-logo.svg"
-      alt="Hugoplate"
-      onerror="this.onerror=null;this.src='';" />
-
-    <img
-      fetchpriority="high"
-      decoding="async"
-      class="img logo-dark"
-      width="240"
-      height="80"
-      src="/images/salmon-vision-logo.svg"
-      alt="Hugoplate"
-      onerror="this.onerror=null;this.src='';" />
-  
-  
-
-
-      </a>
-    </div>
-    
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
-        <title>Menu Open</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-      </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
-        <title>Menu Close</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
-      </svg>
-    </label>
-    
-
-    
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
-      
-      
-        
-        
-        
-        
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              
-              href="/"
-              >Home</a
-            >
-          </li>
-        
-      
-        
-        
-        
-        
-          <li class="nav-item">
-            <a
-              class="nav-link "
-              
-              href="/about/"
-              >About</a
-            >
-          </li>
-        
-      
-        
-        
-        
-        
-          <li class="nav-item">
-            <a
-              class="nav-link "
-              
-              href="/contact/"
-              >Contact</a
-            >
-          </li>
-        
-      
-      
-        <li class="mt-4 inline-block lg:hidden">
-          <a
-            class="btn btn-outline-primary btn-sm"
-            href="https://app.salmonvision.org">
-            login
-          </a>
-        </li>
-      
-    </ul>
-
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-      
-        
-      
-
-      
-
-
-
-
-
-
-
-
-
-
-      
-      
-        <a
-          href="https://app.salmonvision.org"
-          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          login
-        </a>
-      
-    </div>
-  </nav>
-</header>
-
-    
-
-
-
-
-  
-
-
-
-
-    <main>
-      
-  
-  
-    <section class="section pt-0 pb-0">
-      <div class="w-full h-[700px] py-36 relative" style="background-image: url('images/landing-cover.jpg'); background-position: center ; background-size: cover">
-        <div class="w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
-        <div class="absolute z-10 md:left-1/2 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2">
-          <div class="container">
-            <h1 class="mb-4 text-h3 lg:text-h1 text-white">
-              Welcome to SalmonVision
-            </h1>
-            <p class="mb-8 text-white text-xl">
-              In this collaborative project we&rsquo;re working on hardware and software to monitor salmon populations. Our cutting-edge solution combines data from underwater camera&rsquo;s, sonar and drones with innovative AI technology, enabling precise and automated salmon counting in rivers like never before.
-            </p>
-            
-            
-            <a
-                class="btn btn-primary bg-white text-black border-white"
-                href="https://app.salmonvision.org"
-                
-                target="_blank" rel="noopener"
-                >
-              Launch Application
-              <i class="fa fa-arrow-right pl-2"></i>
-            </a>
-            
-            
-          </div>
+        <video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+            <source src="/images/hero-banner.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Empowering Salmon Conservation Through AI</h1>
+                <p class="subtitle">Revolutionary computer vision technology enabling precise, automated salmon population monitoring. From underwater cameras to aerial drones, we&#39;re transforming how communities protect wild salmon populations.</p>
+                <div class="hero-cta">
+                    <a href="https://app.salmonvision.org" class="btn-primary">Launch Application</a>
+                    <a href="#technology" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="stat-grid">
+                        
+                        <div class="stat-item">
+                            <span class="stat-number">500K&#43;</span>
+                            <span class="stat-label">Frames Analyzed</span>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Accuracy Rate</span>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Species Tracked</span>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row justify-center">
-
-
-
-        </div>
-      </div>
     </section>
-  
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-  
-
-    </main>
 
     
-    <footer class="bg-white">
-  <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-6 text-center m-auto lg:mb-0">
-        <ul>
-          
-            <li class="m-3 inline-block">
-              <a
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Comprehensive Monitoring Solutions</h2>
+            <p>Our integrated platform combines multiple data sources and cutting-edge AI to provide unparalleled insights into salmon populations and migration patterns.</p>
+        </div>
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <h3>Underwater Video Analysis</h3>
+                <p>Advanced computer vision models process underwater camera footage in real-time, automatically detecting, counting, and identifying salmon species as they migrate.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Sonar Integration</h3>
+                <p>Our multi-frame detection solution processes sonar data to track salmon through acoustic signatures, overcoming challenges like shadowing, reverberation, and background noise for reliable population estimates.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Aerial Drone Surveys</h3>
+                <p>Computer vision analysis of aerial footage provides comprehensive watershed-level monitoring, capturing migration patterns and spawning activity across vast territories with unprecedented efficiency.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Deep Learning Models</h3>
+                <p>Trained on over 5 million annotated frames, our models achieve 90%&#43; accuracy for salmon species detection, with continuous improvement through community feedback.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Real-Time Analytics</h3>
+                <p>Access live population counts, species distribution data, and migration timing through intuitive dashboards designed for fisheries managers, First Nations stewards, and conservation practitioners.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Cloud-Based Platform</h3>
+                <p>Upload, process, and analyze data from anywhere. Our cloud infrastructure handles the computational heavy lifting while providing secure access to your monitoring data and insights.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section class="technology" id="technology">
+        <div class="tech-container">
+            <div class="tech-content">
+                <h2>Advanced Technology Stack</h2>
+                <p class="tech-description">Salmon Vision represents a collaborative effort between non-profits, leading research institutions, technology experts, and Indigenous communities to develop state-of-the-art computer vision tools specifically designed for the unique challenges of salmon monitoring.</p>
+                <div class="tech-metrics">
+                    
+                    <div class="metric">
+                        <div class="metric-value">80.2%</div>
+                        <div class="metric-label">Mean Average Precision</div>
+                    </div>
+                    
+                    <div class="metric">
+                        <div class="metric-value">6</div>
+                        <div class="metric-label">Salmon Species Detected</div>
+                    </div>
+                    
+                    <div class="metric">
+                        <div class="metric-value">17</div>
+                        <div class="metric-label">Total Species Detected</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tech-visual">
+                <ul class="tech-list">
+                    
+                    <li>Multi-object detection and tracking algorithms</li>
+                    
+                    <li>Species identification neural networks</li>
+                    
+                    <li>Edge computing for remote deployment</li>
+                    
+                    <li>Automated data quality validation</li>
+                    
+                    <li>Real-time processing pipelines</li>
+                    
+                    <li>Open-source model architecture</li>
+                    
+                    <li>Continuous model retraining</li>
+                    
+                    <li>Integration with existing monitoring systems</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="how-it-works">
+        <div class="works-container">
+            <div class="section-header">
+                <h2>How SalmonVision Works</h2>
+                <p>From data collection in remote watersheds to actionable insights for fisheries management, our end-to-end workflow makes salmon monitoring accessible and efficient.</p>
+            </div>
+            <div class="steps-grid">
                 
-                href="
-                  /about/
-                "
-                >About</a
-              >
-            </li>
-          
-        </ul>
-      </div>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Data Collection</h3>
+                    <p>Deploy underwater cameras, sonar systems, or aerial drones in your watersheds. Our systems work in remote locations with solar power and satellite connectivity.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Processing</h3>
+                    <p>Upload your data to the Salmon Vision platform. Our computer vision models automatically detect, count, and identify salmon species in your footage.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Actionable Insights</h3>
+                    <p>Access comprehensive population reports, migration timing analysis, and species distribution data to inform real-time fisheries management decisions.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="impact" id="impact">
+        <div class="impact-content">
+            <h2>Transforming Salmon Conservation</h2>
+            <p class="impact-subtitle">Working with First Nations and resource management agencies across the Pacific Rim, Salmon Vision is empowering communities and decision makers with timely, reliable data for sustainable salmon fisheries.</p>
+            <div class="impact-grid">
+                
+                <div class="impact-item">
+                    <span class="impact-number">20</span>
+                    <p class="impact-text">Monitoring Projects</p>
+                </div>
+                
+                <div class="impact-item">
+                    <span class="impact-number">1000s</span>
+                    <p class="impact-text">Hours of Staff Time Saved</p>
+                </div>
+                
+                <div class="impact-item">
+                    <span class="impact-number">24/7</span>
+                    <p class="impact-text">Continuous Monitoring</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="about-us" id="about">
+        <div class="tech-container">
+            <div class="tech-content">
+                <h2>About Salmon Vision</h2>
+                
+                <p>Salmon Vision was founded with a mission to <span class='highlight'>democratize advanced monitoring technology</span> for salmon conservation across the Pacific Northwest. What began as a research collaboration has evolved into a comprehensive platform serving Indigenous Nations, conservation organizations, and fisheries management agencies.</p>
+                
+                <p>Recognizing that traditional salmon monitoring methods were labor-intensive, expensive, and often inaccessible to communities who needed them most, we set out to build a set of trusted AI tools for automated video and sonar review. By combining cutting-edge AI with deep ecological knowledge from Indigenous and local partners, we're creating tools that work for everyone.</p>
+                
+                <p>Today, Salmon Vision analyzes thousands of hours of underwater footage, sonar data, and aerial surveys, helping partners make informed decisions about salmon management and restoration. We're proud to support <span class='highlight'>over 20 monitoring projects</span> and conservation initiatives across British Columbia and Alaska, with new partnerships emerging in Washington and Oregon for 2026.</p>
+                
+                <p>Our work is guided by principles of collaboration, accessibility, and respect for Indigenous and local knowledge. Salmon are foundational to our regions ecology and culture, and we believe that the best conservation outcomes happen when communities have access to the right tools and data at the right time.</p>
+                
+                
+                <div class="tech-cta">
+                    <a href="/about/" class="btn-primary">Meet Our Team</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="partners" id="partners">
+        <div class="partners-content">
+            <h2>Our Collaborative Network</h2>
+            <p style="max-width: 800px; margin: 0 auto 3rem; color: var(--ocean-mid); font-size: 1.1rem;">Salmon Vision is built through partnerships with Indigenous Nations, research institutions, conservation organizations, and fisheries management agencies across the Pacific Northwest.</p>
+            <div class="partner-carousel">
+                <div class="partner-track">
+                    
+                    
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Pacific&#43;Salmon&#43;Foundation" alt="Pacific Salmon Foundation"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Wild&#43;Salmon&#43;Center" alt="Wild Salmon Center"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Simon&#43;Fraser&#43;University" alt="Simon Fraser University"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Aeria" alt="Lumax Ecological Analytics"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Gitanyow&#43;Fisheries" alt="Gitanyow Fisheries Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Skeena&#43;Fisheries" alt="Skeena Fisheries Commission"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Heiltsuk Integrated Resource Management Department"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Kitasoo Xai&#39;xais Stewardship Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Nuxalk Fish and Wildlife"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Haida Fishery Program"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Wuikinuxv Fishery Program"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Sitka Tribe of Alaska"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Gitxsan Watershed Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Gitga&#39;at Oceans and Lands Department"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Lax Kw&#39;alaams First Nation"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Secwépemc Fisheries Commission"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Chignik Intertribal Coalition"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Fisheries and Oceans Canada"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Alaska Department of Fish and Game"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="OceanAID"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Whooshh Innovations"></div>
+                    
+                    
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Pacific&#43;Salmon&#43;Foundation" alt="Pacific Salmon Foundation"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Wild&#43;Salmon&#43;Center" alt="Wild Salmon Center"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Simon&#43;Fraser&#43;University" alt="Simon Fraser University"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Aeria" alt="Lumax Ecological Analytics"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Gitanyow&#43;Fisheries" alt="Gitanyow Fisheries Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=Skeena&#43;Fisheries" alt="Skeena Fisheries Commission"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Heiltsuk Integrated Resource Management Department"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Kitasoo Xai&#39;xais Stewardship Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Nuxalk Fish and Wildlife"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Haida Fishery Program"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Wuikinuxv Fishery Program"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Sitka Tribe of Alaska"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Gitxsan Watershed Authority"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Gitga&#39;at Oceans and Lands Department"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Lax Kw&#39;alaams First Nation"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Secwépemc Fisheries Commission"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Chignik Intertribal Coalition"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Fisheries and Oceans Canada"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Alaska Department of Fish and Game"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="OceanAID"></div>
+                    
+                    <div class="partner-item"><img src="https://via.placeholder.com/200x80/008c8d/FFFFFF?text=First&#43;Nations" alt="Whooshh Innovations"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Monitoring Program?</h2>
+            <p>Join communities across the Pacific Northwest in leveraging AI for salmon conservation. Access our computer vision tools and start analyzing your data today.</p>
+            <div class="cta-buttons">
+                <a href="https://app.salmonvision.org" class="btn-secondary">Launch Application</a>
+                <a href="mailto:contact@salmonvision.org" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/user-guide">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div class="text-light dark:text-darkmode-light container text-center">
-      <p>
-        
-      </p>
+    <div class="footer-bottom">
+        <p>&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
     </div>
-  </div>
 </footer>
 
-
-
     
     
-
-
-
-  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-      
     
-  
-
-  
     
-      
     
-  
-
-  
+        <script src="/js/main.js"></script>
     
-      
     
-  
-
-  
     
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<script
-  crossorigin="anonymous"
-  integrity=""
-  src="/js/script.js"></script>
-
-
-<script
-  defer
-  async
-  crossorigin="anonymous"
-  integrity=""
-  src="/js/script-lazy.js"></script>
-
-
-
-<script>
-  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
-</script>
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  </body>
+</body>
 </html>

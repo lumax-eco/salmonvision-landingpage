@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Reference - User Guide - SalmonVision</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="#features">Features</a></li>
+            
+                <li><a href="#technology">Technology</a></li>
+            
+                <li><a href="#impact">Impact</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#technology">Technology</a></li>
+        
+            <li><a href="#impact">Impact</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
+</div>
+
+    
+    
+<section class="docs-section">
+  <div class="container">
+    <div class="docs-layout">
+      
+      <aside class="docs-sidebar" id="docsSidebar">
+        <div class="docs-sidebar-toggle" id="docsSidebarToggle">
+          <i class="fas fa-bars"></i> Navigation
+        </div>
+        <div class="docs-nav" id="docsNav">
+          
+          
+          
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Workflow Salmon Vision</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/workflow/" class="docs-nav-link">
+                    General workflow
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">User guide</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/webapp/" class="docs-nav-link">
+                    Webapp
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/login/" class="docs-nav-link">
+                    Login
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/project-page/" class="docs-nav-link">
+                    Project page
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-tasks-panel/" class="docs-nav-link">
+                    Label tasks panel
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-review-interface/" class="docs-nav-link">
+                    Label review interface
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/example-annotation-session/" class="docs-nav-link">
+                    Example annotation session
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/review-session-outlined/" class="docs-nav-link docs-nav-sublink">
+                      Review session outlined
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-detection/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/no-detection/" class="docs-nav-link docs-nav-sublink">
+                      No detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/accurate-identification/" class="docs-nav-link docs-nav-sublink">
+                      Accurate identification
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-species-identification/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect species identification
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/extra-annotations/" class="docs-nav-link docs-nav-sublink">
+                      Extra annotations
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/video-of-review-session/" class="docs-nav-link docs-nav-sublink">
+                      Video of review session
+                    </a>
+                  </li>
+                  
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/results-in-progress/" class="docs-nav-link">
+                    Results IN PROGRESS
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/sonar/" class="docs-nav-link">
+                    Sonar
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/in-review-mode/" class="docs-nav-link">
+                    In review mode
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/in-annotation-mode/" class="docs-nav-link">
+                    In annotation mode
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/size-estimation-and-length-bins/" class="docs-nav-link">
+                    Size estimation and length bins
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Advanced</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/api-reference/" class="docs-nav-link active">
+                    API Reference
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/custom-models/" class="docs-nav-link">
+                    Custom Models
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Support</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/faq/" class="docs-nav-link">
+                    FAQ
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/troubleshooting/" class="docs-nav-link">
+                    Troubleshooting
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+          
+        </div>
+      </aside>
+
+      
+      <div class="docs-content">
+        
+        <div class="docs-breadcrumb">
+          <a href="/user-guide/">User Guide</a>
+          <span class="docs-breadcrumb-sep">/</span>
+          <span>API Reference</span>
+        </div>
+
+        <div class="docs-content-inner">
+          <h1 id="api-reference">API Reference</h1>
+<p>The SalmonVision API provides programmatic access to all platform features.</p>
+<h2 id="base-url">Base URL</h2>
+<pre tabindex="0"><code>https://api.salmonvision.org/v1
+</code></pre><h2 id="authentication">Authentication</h2>
+<p>All requests require a Bearer token:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -H <span style="color:#e6db74">&#34;Authorization: Bearer YOUR_API_KEY&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.salmonvision.org/v1/projects
+</span></span></code></pre></div><p>Generate API keys under <strong>Settings → API Keys</strong> in the dashboard.</p>
+<h2 id="endpoints">Endpoints</h2>
+<h3 id="projects">Projects</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/projects</code></td>
+          <td>List all projects</td>
+      </tr>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/projects/{id}</code></td>
+          <td>Get project details</td>
+      </tr>
+      <tr>
+          <td><code>POST</code></td>
+          <td><code>/projects</code></td>
+          <td>Create a new project</td>
+      </tr>
+      <tr>
+          <td><code>PUT</code></td>
+          <td><code>/projects/{id}</code></td>
+          <td>Update a project</td>
+      </tr>
+      <tr>
+          <td><code>DELETE</code></td>
+          <td><code>/projects/{id}</code></td>
+          <td>Delete a project</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="detections">Detections</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/projects/{id}/detections</code></td>
+          <td>List detections</td>
+      </tr>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/detections/{id}</code></td>
+          <td>Get detection detail</td>
+      </tr>
+      <tr>
+          <td><code>PATCH</code></td>
+          <td><code>/detections/{id}</code></td>
+          <td>Update detection (review)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="cameras">Cameras</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/projects/{id}/cameras</code></td>
+          <td>List cameras</td>
+      </tr>
+      <tr>
+          <td><code>POST</code></td>
+          <td><code>/projects/{id}/cameras</code></td>
+          <td>Add a camera</td>
+      </tr>
+      <tr>
+          <td><code>DELETE</code></td>
+          <td><code>/cameras/{id}</code></td>
+          <td>Remove a camera</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="export">Export</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>POST</code></td>
+          <td><code>/projects/{id}/export</code></td>
+          <td>Trigger data export</td>
+      </tr>
+      <tr>
+          <td><code>GET</code></td>
+          <td><code>/exports/{id}</code></td>
+          <td>Check export status / download</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="pagination">Pagination</h2>
+<p>List endpoints support pagination:</p>
+<pre tabindex="0"><code>GET /projects/{id}/detections?page=1&amp;per_page=50
+</code></pre><p>Response includes pagination metadata:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data&#34;</span>: [<span style="color:#960050;background-color:#1e0010">...</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;meta&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;page&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;per_page&#34;</span>: <span style="color:#ae81ff">50</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;total&#34;</span>: <span style="color:#ae81ff">1234</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;total_pages&#34;</span>: <span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="rate-limits">Rate Limits</h2>
+<ul>
+<li><strong>Free tier</strong>: 100 requests/minute</li>
+<li><strong>Pro tier</strong>: 1,000 requests/minute</li>
+<li><strong>Enterprise</strong>: Unlimited</li>
+</ul>
+<hr>
+<p>Previous: <a href="../data-export/"
+
+
+
+ 
+
+
+>Data Export</a> | Next: <a href="../custom-models/"
+
+
+
+ 
+
+
+>Custom Models</a></p>
+
+        </div>
+
+        
+        <div class="docs-page-nav">
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/data-export/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Data Export</span>
+            </a>
+            
+          
+            
+            <a href="/user-guide/login/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Login</span>
+            </a>
+            
+          
+            
+            <a href="/user-guide/project-page/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Project page</span>
+            </a>
+            
+          
+            
+            <a href="/user-guide/webapp/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Webapp</span>
+            </a>
+            
+          
+            
+            <a href="/user-guide/workflow/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">Workflow</span>
+            </a>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/custom-models/" class="docs-page-nav-next">
+              <span class="docs-page-nav-label">Next &rarr;</span>
+              <span class="docs-page-nav-title">Custom Models</span>
+            </a>
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('docsSidebarToggle');
+  const nav = document.getElementById('docsNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('docs-nav-open');
+      toggle.classList.toggle('active');
+    });
+  }
+});
+</script>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/docs">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+                <li><a href="/api">API Access</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+                <li><a href="/research">Research Papers</a></li>
+                <li><a href="/data">Training Data</a></li>
+                <li><a href="/models">Model Library</a></li>
+                <li><a href="/case-studies">Case Studies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+                <li><a href="/support">Support</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    
+    
+        <script src="/js/main.js"></script>
+    
+    
+    
+</body>
+</html>

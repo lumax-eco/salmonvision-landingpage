@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54594&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalmonVision</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:54594/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
+</div>
+
+    
+    
+  
+  <section class="hero-small">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1>Building Together for Salmon</h1>
+        <p class="subtitle">Partnership is foundational to our approach. We work alongside Indigenous Nations, research institutions, government agencies, and conservation organizations to co-develop AI solutions that serve communities and protect wild salmon.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  
+  <section class="partners-section section-sm ">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Indigenous Partners</h2>
+        <p>Indigenous Nations across the Northeast Pacific are leaders in developing and applying computer-vision tools for salmon stewardship within their territories.</p>
+      </div>
+      
+      <div class="partners-grid">
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">H</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Heiltsuk Integrated Resource Management Department</h3>
+            <p class="partner-description">Leading stewardship and monitoring programs for wild salmon in Heiltsuk Territory.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">F</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">First Nations Fisheries Council</h3>
+            <p class="partner-description">Supporting First Nations in the co-management of fisheries resources across BC.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">G</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Gitanyow Fishery Authority</h3>
+            <p class="partner-description">Co-developing computer vision tools for salmon monitoring in the Nass watershed.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">S</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Skeena Fisheries Commission</h3>
+            <p class="partner-description">Watershed-scale salmon monitoring and assessment in Skeena River systems.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">H</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Haida Fishery Program</h3>
+            <p class="partner-description">Protecting and monitoring salmon populations in Haida Gwaii watersheds.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">K</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Kitasoo Xai&#39;xais Stewardship Authority</h3>
+            <p class="partner-description">Integrated resource management and salmon conservation in traditional territories.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">T</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Taku River Tlingit</h3>
+            <p class="partner-description">Salmon stewardship in the Taku River watershed.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">N</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Nuxalk Stewardship</h3>
+            <p class="partner-description">Conservation and monitoring of salmon in Nuxalk Nation territory.</p>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">W</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Wuikinuxv Fishery Program</h3>
+            <p class="partner-description">Community-based salmon monitoring and management programs.</p>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="partners-section section-sm bg-light">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Government &amp; Agencies</h2>
+        <p>Collaborating with fisheries management and conservation agencies to support evidence-based decision making.</p>
+      </div>
+      
+      <div class="partners-grid">
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">F</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Fisheries and Oceans Canada</h3>
+            <p class="partner-description">DFO Stock Assessment Division partners in co-developing AI tools for salmon monitoring.</p>
+            
+            <a href="https://www.dfo-mpo.gc.ca" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">B</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">BC Salmon Restoration and Innovation Fund</h3>
+            <p class="partner-description">Supporting innovative approaches to salmon restoration and conservation.</p>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="partners-section section-sm ">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Research &amp; Academic</h2>
+        <p>Working with leading researchers to advance the science of automated salmon monitoring.</p>
+      </div>
+      
+      <div class="partners-grid">
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">S</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Simon Fraser University</h3>
+            <p class="partner-description">Computing science expertise in computer vision and machine learning research.</p>
+            
+            <a href="https://www.sfu.ca" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">P</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Pacific Salmon Foundation</h3>
+            <p class="partner-description">Leading research and conservation initiatives for wild Pacific salmon.</p>
+            
+            <a href="https://psf.ca" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">W</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Wild Salmon Center</h3>
+            <p class="partner-description">Science-based conservation of wild salmon ecosystems across the Pacific Rim.</p>
+            
+            <a href="https://wildsalmoncenter.org" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="partners-section section-sm bg-light">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Funding Partners</h2>
+        <p>Generous support from funding organizations makes our work possible.</p>
+      </div>
+      
+      <div class="partners-grid">
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">N</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">NSERC</h3>
+            <p class="partner-description">Natural Sciences and Engineering Research Council of Canada supports research innovation.</p>
+            
+            <a href="https://www.nserc-crsng.gc.ca" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">M</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Mitacs</h3>
+            <p class="partner-description">Accelerating innovation through research partnerships and collaboration.</p>
+            
+            <a href="https://www.mitacs.ca" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <div class="partner-logo partner-logo-placeholder">
+            <span class="partner-initial">R</span>
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">RBC Foundation</h3>
+            <p class="partner-description">Supporting community-focused environmental initiatives across Canada.</p>
+            
+            <a href="https://www.rbc.com/community-social-impact/" target="_blank" rel="noopener" class="partner-link">
+              Visit Website
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+  
+  <section class="partnership-cta-section section-sm">
+    <div class="container">
+      <div class="partnership-cta-box">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-center text-lg-start">
+            <h2 class="h3 mb-3">Interested in Partnering?</h2>
+            <p class="mb-4 mb-lg-0">We&#39;re always looking for new collaborators who share our commitment to salmon conservation. Whether you&#39;re an Indigenous Nation, research institution, conservation organization, or fisheries management agency, we&#39;d love to explore how we can work together.</p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <a href="/contact/" class="btn btn-primary btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="section-sm bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="impact-statement">
+            <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor" opacity="0.2"/>
+              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor" opacity="0.2"/>
+            </svg>
+            <blockquote>
+              <p>"Partnership is foundational in our approach to developing and applying computer-vision solutions for salmon monitoring and stewardship. First Nations across the North and Central Coast of BC have contributed data and time to the development and training of computer-vision models, and are leaders on the ground in applying these tools for stewardship of wild salmon within their territories."</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-sm">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Why Partner With Us?</h2>
+        <p>SalmonVision partnerships are built on mutual respect, shared goals, and collaborative innovation.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="h5">Co-Development</h3>
+            <p class="text-muted">Work directly with our team to develop solutions tailored to your needs.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="h5">Real Impact</h3>
+            <p class="text-muted">Deploy proven AI tools that make a measurable difference for salmon conservation.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="h5">Open Science</h3>
+            <p class="text-muted">Access open-source models and data to advance your research and conservation goals.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card text-center">
+            <div class="feature-icon-circle mb-3 mx-auto">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="h5">Community Support</h3>
+            <p class="text-muted">Join a network of partners committed to protecting wild salmon populations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/user-guide">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    
+    
+        <script src="/js/main.js"></script>
+    
+    
+    
+</body>
+</html>

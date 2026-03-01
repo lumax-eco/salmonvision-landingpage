@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Salmon Vision on SalmonVision</title>
-    <link>//localhost:1313/about/</link>
+    <link>//localhost:54594/about/</link>
     <description>Recent content in Salmon Vision on SalmonVision</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:54594/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

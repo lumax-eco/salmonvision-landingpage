@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54594&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Setup RGB - User Guide - SalmonVision</title>
+    <meta name="description" content="AI-Powered Salmon Monitoring">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    
+    
+        <link rel="stylesheet" href="/css/salmonvision.css">
+    
+    
+    
+    
+        <link rel="icon" href="//localhost:54594/images/favicon_salmon.png">
+    
+    
+    
+</head>
+<body>
+    <div class="water-effect"></div>
+    
+    
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            
+                <img src="/images/salmon-vision-logo.svg" alt="SalmonVision" class="img-fluid" style="height: 60px;">
+            
+        </div>
+        <ul class="nav-links">
+            
+                <li><a href="/">Home</a></li>
+            
+                <li><a href="/about/">About Us</a></li>
+            
+                <li><a href="/partners/">Partners</a></li>
+            
+                <li><a href="/user-guide/">User Guide</a></li>
+            
+                <li><a href="/contact/">Contact</a></li>
+            
+            <li><a href="https://app.salmonvision.org" class="btn-primary">Launch App</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <h6>Menu</h6>
+    <hr class="menu-border">
+    <ul>
+        
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="/about/">About Us</a></li>
+        
+            <li><a href="/partners/">Partners</a></li>
+        
+            <li><a href="/user-guide/">User Guide</a></li>
+        
+            <li><a href="/contact/">Contact</a></li>
+        
+        <li><a href="https://app.salmonvision.org" class="btn-primary" style="display: inline-block; text-align: center;">Launch App</a></li>
+    </ul>
+</div>
+
+    
+    
+<section class="docs-section">
+  <div class="container">
+    <div class="docs-layout">
+      
+      <aside class="docs-sidebar" id="docsSidebar">
+        <div class="docs-sidebar-toggle" id="docsSidebarToggle">
+          <i class="fas fa-bars"></i> Navigation
+        </div>
+        <div class="docs-nav" id="docsNav">
+          
+          
+          
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Workflow Salmon Vision</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/workflow/" class="docs-nav-link">
+                    General workflow
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">User Guide</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/webapp/" class="docs-nav-link">
+                    Webapp
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/login/" class="docs-nav-link">
+                    Login
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/project-page/" class="docs-nav-link">
+                    Project page
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-tasks-panel/" class="docs-nav-link">
+                    Label tasks panel
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/label-review-interface/" class="docs-nav-link">
+                    Label review interface
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/example-annotation-session/" class="docs-nav-link">
+                    Example annotation session
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/review-session-outlined/" class="docs-nav-link docs-nav-sublink">
+                      Review session outlined
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-detection/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/no-detection/" class="docs-nav-link docs-nav-sublink">
+                      No detection
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/accurate-identification/" class="docs-nav-link docs-nav-sublink">
+                      Accurate identification
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/incorrect-species-identification/" class="docs-nav-link docs-nav-sublink">
+                      Incorrect species ID
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/extra-annotations/" class="docs-nav-link docs-nav-sublink">
+                      Extra annotations
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/video-of-review-session/" class="docs-nav-link docs-nav-sublink">
+                      Video of review session
+                    </a>
+                  </li>
+                  
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/results/" class="docs-nav-link">
+                    Results
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/sonar/" class="docs-nav-link">
+                    Sonar
+                  </a>
+                </li>
+                
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-review-mode/" class="docs-nav-link docs-nav-sublink">
+                      In review mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/in-annotation-mode/" class="docs-nav-link docs-nav-sublink">
+                      In annotation mode
+                    </a>
+                  </li>
+                  
+                    
+                  <li>
+                    <a href="/user-guide/size-estimation-and-length-bins/" class="docs-nav-link docs-nav-sublink">
+                      Size estimation &amp; length bins
+                    </a>
+                  </li>
+                  
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Field Setup</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/field-setup/" class="docs-nav-link active">
+                    Field Setup RGB
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/batch-upload/" class="docs-nav-link">
+                    Batch Upload
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/remote-access/" class="docs-nav-link">
+                    Remote Access
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+            <div class="docs-nav-group">
+              <h4 class="docs-nav-title">Support</h4>
+              <ul class="docs-nav-list">
+                
+                  
+                <li>
+                  <a href="/user-guide/faq/" class="docs-nav-link">
+                    FAQ
+                  </a>
+                </li>
+                
+                
+                  
+                <li>
+                  <a href="/user-guide/troubleshooting/" class="docs-nav-link">
+                    Troubleshooting
+                  </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            
+          
+        </div>
+      </aside>
+
+      
+      <div class="docs-content">
+        
+        <div class="docs-breadcrumb">
+          <a href="/user-guide/">User Guide</a>
+          <span class="docs-breadcrumb-sep">/</span>
+          <span>Field Setup RGB</span>
+        </div>
+
+        <div class="docs-content-inner">
+          <h1 id="field-setup-rgb">Field Setup RGB</h1>
+<blockquote>
+<p><strong>Apps to pre-install on your phones before heading to the site:</strong></p>
+<ul>
+<li><a href="https://play.google.com/store"
+
+
+
+
+ target="_blank"
+ 
+
+
+>Starlink app</a> (Play Store / App Store)</li>
+<li><a href="https://play.google.com/store"
+
+
+
+
+ target="_blank"
+ 
+
+
+>Veezoompro app</a> (Play Store / App Store)</li>
+</ul>
+<p>You may also want to bring a Windows laptop with Microsoft Edge (that can switch to Internet Explorer mode) to access the BARLUS camera settings on the browser.</p>
+</blockquote>
+<h2 id="hardware-list">Hardware List</h2>
+<p>Below is a list of hardware components that are used to set up an edge computing system. We have partnered with OceanAID and Whooshh Innovations to build field-ready hardware systems. If you are interested in building your own, the components list is a useful resource.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Qty</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Barlus E3G5MPCX10 cameras</td>
+          <td>4</td>
+          <td>$480/ea</td>
+      </tr>
+      <tr>
+          <td>Starlink system</td>
+          <td>2</td>
+          <td>$599/ea + $110/mo</td>
+      </tr>
+      <tr>
+          <td>Ethernet to wifi adapter for Starlink</td>
+          <td>1</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Raspberry Pi 2GB ExtremeKit</td>
+          <td>2</td>
+          <td>$154.95/ea</td>
+      </tr>
+      <tr>
+          <td>Jetson Nano</td>
+          <td>4</td>
+          <td>$149/ea</td>
+      </tr>
+      <tr>
+          <td>Power Barrel Jacks 5V 10W</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>LaCie Rugged Mini 5TB external HDD (USB 3.0)</td>
+          <td>4</td>
+          <td>$169.99/ea</td>
+      </tr>
+      <tr>
+          <td>Micro B to USB 3.0 cables</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>IP home security camera</td>
+          <td>2</td>
+          <td>$65.99/ea</td>
+      </tr>
+      <tr>
+          <td>POE injector adapter</td>
+          <td>2</td>
+          <td>$18.98/ea</td>
+      </tr>
+      <tr>
+          <td>Network switch w/8 ports</td>
+          <td>4</td>
+          <td>$26.99/ea</td>
+      </tr>
+      <tr>
+          <td>LED submersible light bars</td>
+          <td>8</td>
+          <td>$161.99/ea</td>
+      </tr>
+      <tr>
+          <td>Heavy Duty LED Light Strips (Boogey Lights)</td>
+          <td>8</td>
+          <td>$24.99/ea</td>
+      </tr>
+      <tr>
+          <td>Power Lead Extension Kit (Boogey Lights)</td>
+          <td>8</td>
+          <td>$5.49/ea</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>We also recommend having spare SD cards or using a SSD rather than SD, since SD cards can degrade quickly during continuous field deployments, resulting in system slowdowns or complete failure.</p>
+</blockquote>
+<h3 id="components-requiring-external-power">Components Requiring External Power</h3>
+<ul>
+<li>Raspberry Pi</li>
+<li>Jetson Nanos</li>
+<li>Starlink dish</li>
+<li>BARLUS cameras</li>
+<li>IP security camera — through a Power-over-Ethernet (POE) injector adapter</li>
+<li>Network switch</li>
+</ul>
+<h3 id="additional-components-for-oceanaid-edge-computing-devices">Additional Components for OceanAID Edge-Computing Devices</h3>
+<ul>
+<li>A small portable screen, preferably powered by 12V or DC (<a href="https://www.amazon.ca/dp/B0DYV5YRW2?ref=fed_asin_title&amp;th=1"
+
+
+
+
+ target="_blank"
+ 
+
+
+>example</a>)</li>
+<li>Keyboard</li>
+<li>Mouse</li>
+<li>Extra Ethernet cables</li>
+<li>Extra switch splitter</li>
+<li>Personal laptop</li>
+</ul>
+<hr>
+<h2 id="setup-for-a-salmonvision-system">Setup for a SalmonVision System</h2>
+<blockquote>
+<p>New systems include a second Raspberry Pi — one for each camera to spread the load of motion detection per camera.</p>
+</blockquote>
+<p><img src="/images/user-guide/image074.png" alt="System setup diagram"></p>
+<h3 id="starlink-dish">Starlink Dish</h3>
+<ol>
+<li>Download the Starlink app before arriving on site</li>
+<li>Follow the visual instructions on the app to set up the Starlink dish
+<ul>
+<li>You can check for obstructions in the Starlink app, but previous knowledge suggests that the <strong>Northern direction</strong> should be the most clear from obstructions whereas the south can have more obstructions</li>
+<li>Ideal distances: North 75m, East/West 45m, South 15m (see <a href="#starlink-obstructions-reference"
+
+
+
+ 
+
+
+>Starlink obstructions reference</a> below)</li>
+<li>It may be possible to get decent connectivity without those specific distances, although network drops may happen more frequently with more obstructions</li>
+<li>Ideally, create a strong password for the WiFi with multiple random words and save it in a password manager (e.g. <code>proveTOGETHERuntil</code>)</li>
+</ul>
+</li>
+<li>Go into the Starlink App while connected to the WiFi → <strong>Settings</strong> → note the <strong>Sleep Schedule</strong> option
+<ul>
+<li>This may be a better alternative to shutting down the Starlink, since it allows the router to continue to provide WiFi in the Local Area Network (LAN)</li>
+<li>Sleep mode uses <strong>25–26 watts</strong> — slightly more than half as much power as an idling Starlink (~50 watts)</li>
+</ul>
+</li>
+<li>Connect the Starlink Ethernet Plugin to the router</li>
+<li>Connect the network switch to power</li>
+<li>Connect an ethernet cable from the Starlink router to the network switch</li>
+<li>Connect the BARLUS camera to the network switch through an ethernet cable</li>
+<li>Connect the BARLUS camera to power</li>
+<li>Connect a laptop to the Starlink WiFi</li>
+<li>Open up a browser and navigate to the camera IP address to preview the video feed</li>
+<li>While previewing the camera feed, place BARLUS cameras one at a time in the salmon trap, keeping the camera upright</li>
+</ol>
+<h3 id="microcontrollers">Microcontrollers</h3>
+<ol start="12">
+<li>Connect the Raspberry Pis to the network switch through an ethernet cable</li>
+<li>Connect the rugged hard drive to the first Raspberry Pi&rsquo;s <strong>blue</strong> USB ports
+<ul>
+<li>For OceanAID&rsquo;s Marlin Box, make sure the cable is tightly screwed in and not cross-threaded; the cable may work better in one orientation as opposed to the other (a technician can remote in to check if the speed matches)</li>
+<li>It might be best to use the direct USB-A port if the Marlin Box is fully contained within a waterproof casing</li>
+</ul>
+</li>
+<li>Connect the Raspberry Pis to power
+<ul>
+<li>You can tell it is running if the Raspberry Pi&rsquo;s fans are on or the metal parts are warm, and you can feel the hard drive rumbling slightly</li>
+<li>When swapping hard drives, please unplug the USB-A port connected to the Raspberry Pi, <strong>not</strong> the one connected to the hard drive</li>
+</ul>
+</li>
+<li>Connect the two Jetson Nanos (e.g. jetson quay hi, jetson quay fu) to the network switch through an ethernet cable each</li>
+<li>Connect the two Jetson Nanos to power</li>
+<li>The devices for one river must be in the same place (e.g. pi quay hi, jetson quay hi, jetson quay fu)</li>
+<li>Once the devices are set up, turn off your phone&rsquo;s WiFi for a minute to allow the cameras and microcontrollers to get their static IPs before reconnecting</li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> When testing the software, please wait around 10–15 minutes before turning off the Raspberry Pi or unplugging the hard drive as it may need some time to write the motion detected clips to the disk — otherwise it may get corrupted.</p>
+</blockquote>
+<blockquote>
+<p>Logfiles are written to an internal folder in <code>/media/local_hdd</code>, but will be copied to the external hard drive every 2 hours.</p>
+</blockquote>
+<hr>
+<h2 id="starlink-obstructions-reference">Starlink Obstructions Reference</h2>
+<p>This is the most ideal setup, but it likely won&rsquo;t be possible. Starlink will still work with some obstructions — outages will just become more frequent with more obstructions.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Direction</th>
+          <th>Clear Distance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>North</td>
+          <td>30m × 2.5 = <strong>75m</strong></td>
+      </tr>
+      <tr>
+          <td>East/West</td>
+          <td>30m × 1.5 = <strong>45m</strong></td>
+      </tr>
+      <tr>
+          <td>South</td>
+          <td>30m × 0.5 = <strong>15m</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/user-guide/image076.png" alt="Starlink obstructions reference"></p>
+<h3 id="starlink-power-consumption">Starlink Power Consumption</h3>
+<p>Sleep mode uses <strong>25–26 watts</strong> which is slightly more than half as much power as an idling Starlink dish (~50 watts). The spikes describe points where the Starlink is out of sleep mode — likely it needs to warm up and search for satellites, but it will probably connect faster than starting up from shutdown.</p>
+<p><img src="/images/user-guide/image078.png" alt="Starlink power consumption"></p>
+<hr>
+<h2 id="barlus-camera-connection-with-windows-pc">BARLUS Camera Connection with Windows PC</h2>
+<ol>
+<li>Connect your Windows laptop to the Starlink WiFi</li>
+<li>Open up a browser (the old cameras only work with Internet Explorer or Edge)</li>
+<li>Navigate to the camera IP address:
+<ul>
+<li>First camera: <strong>192.168.1.120</strong></li>
+<li>Second camera: <strong>192.168.1.121</strong></li>
+</ul>
+</li>
+<li>You should see a username and password login page</li>
+<li><em>(OLD BARLUS)</em> Look at the top right for an Internet Explorer symbol and click on it</li>
+<li><em>(OLD BARLUS)</em> You may need to install ActiveX from the site and refresh the page</li>
+<li>Use the default credentials:
+<ul>
+<li><strong>Username:</strong> <code>admin</code></li>
+<li><strong>Password:</strong> <code>admin123456</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="turn-off-lighting">Turn Off Lighting</h3>
+<ul>
+<li>Click on the <strong>Lighting</strong> button one at a time until the display says <strong>&ldquo;Manual&rdquo;</strong> and <strong>&ldquo;W: OFF&rdquo;</strong></li>
+<li>Go to <strong>Preset</strong>, enter the number <strong>250</strong> and press <strong>Call</strong> to save the configuration</li>
+</ul>
+<h3 id="turn-on-lighting">Turn On Lighting</h3>
+<ul>
+<li>To have lights turn on automatically: go to Presets → click on <strong>Preset 152</strong> → click <strong>Call</strong></li>
+<li>To turn on lights manually: click on the lightbulb button</li>
+</ul>
+<h3 id="barlus-camera-ips">BARLUS Camera IPs</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Camera</th>
+          <th>IP Address</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Camera 1</td>
+          <td>192.168.1.120</td>
+      </tr>
+      <tr>
+          <td>Camera 2</td>
+          <td>192.168.1.121</td>
+      </tr>
+  </tbody>
+</table>
+<p>The easiest way to check the cameras (for newer BARLUS cameras) is to connect your phone or laptop to the Starlink and enter the IP address in your web browser. The IP address for each Barlus camera is printed on a sticker on the side of the camera.</p>
+<p>Default credentials for newer cameras:</p>
+<ul>
+<li><strong>User:</strong> <code>admin</code></li>
+<li><strong>Pass:</strong> <code>admin1234567</code></li>
+</ul>
+<p><strong>Access through RTSP using VLC or any other video player:</strong></p>
+<ul>
+<li><code>rtsp://&lt;ip&gt;:554/av0_0</code></li>
+<li><code>rtsp://&lt;ip&gt;/0</code></li>
+</ul>
+
+        </div>
+
+        
+        <div class="docs-page-nav">
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/faq/" class="docs-page-nav-prev">
+              <span class="docs-page-nav-label">&larr; Previous</span>
+              <span class="docs-page-nav-title">FAQ</span>
+            </a>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/batch-upload/" class="docs-page-nav-next">
+              <span class="docs-page-nav-label">Next &rarr;</span>
+              <span class="docs-page-nav-title">Batch Upload</span>
+            </a>
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('docsSidebarToggle');
+  const nav = document.getElementById('docsNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('docs-nav-open');
+      toggle.classList.toggle('active');
+    });
+  }
+});
+</script>
+
+    
+    
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">SalmonVision</div>
+            <p class="footer-desc">Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="https://app.salmonvision.org">Launch App</a></li>
+                <li><a href="/user-guide">Documentation</a></li>
+                <li><a href="https://github.com/Salmon-Computer-Vision">GitHub</a></li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    
+    
+        <script src="/js/main.js"></script>
+    
+    
+    
+</body>
+</html>

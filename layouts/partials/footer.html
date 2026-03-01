@@ -1,0 +1,29 @@
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="footer-brand">{{ .Site.Title }}</div>
+            <p class="footer-desc">{{ .Site.Params.footer_description | default "Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim." }}</p>
+        </div>
+        <div class="footer-section">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+                <li><a href="{{ .Site.Params.app_url | default "https://app.salmonvision.org" }}">Launch App</a></li>
+                <li><a href="/user-guide">Documentation</a></li>
+                <li><a href="{{ .Site.Params.github_url | default "https://github.com/Salmon-Computer-Vision" }}">GitHub</a></li>
+            </ul>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/partners">Partners</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>{{ .Site.Params.copyright | default "&copy; 2024 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0." | safeHTML }}</p>
+    </div>
+</footer>

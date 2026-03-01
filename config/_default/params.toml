@@ -11,12 +11,12 @@ logo_height = "80px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Hugoplate"
+logo_text = "SalmonVision"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+theme_switcher = false
+theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
@@ -27,7 +27,15 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = ""
+copyright = "&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0."
+
+# SalmonVision specific parameters
+description = "AI-Powered Salmon Monitoring"
+app_url = "https://app.salmonvision.org"
+contact_email = "contact@salmonvision.org"
+github_url = "https://github.com/Salmon-Computer-Vision"
+nav_button_text = "Launch App"
+footer_description = "Empowering wild salmon conservation through collaborative AI-powered monitoring solutions. Working with Indigenous communities and conservation practitioners across the Pacific Rim."
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
