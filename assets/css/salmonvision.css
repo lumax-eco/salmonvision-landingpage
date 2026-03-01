@@ -250,8 +250,8 @@ nav.scrolled .hamburger span {
 }
 
 .btn-primary:hover {
-    background: transparent;
-    color: var(--ocean-deep);
+    background: var(--salmon-pink);
+    color: var(--ocean-deep) !important;
     transform: translateY(-2px);
 }
 
@@ -511,6 +511,8 @@ nav.scrolled .hamburger span {
     margin: 0 auto;
     gap: 5rem;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
 }
 
 .tech-visual {
@@ -556,10 +558,11 @@ nav.scrolled .hamburger span {
 
 .tech-metrics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
+
 
 .metric {
     background: var(--foam);
@@ -613,7 +616,7 @@ nav.scrolled .hamburger span {
 
 .impact-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin-top: 4rem;
 }
@@ -861,7 +864,7 @@ nav.scrolled .hamburger span {
 
 .btn-secondary:hover {
     background: transparent;
-    color: white;
+    color: var(--salmon-pink);
     transform: translateY(-2px);
 }
 
@@ -1179,7 +1182,7 @@ footer {
 
 .partnership-cta-box .btn-primary {
     background: white;
-    color: var(--ocean-deep);
+    color: var(--ocean-deep) !important;
     border-color: white;
 }
 

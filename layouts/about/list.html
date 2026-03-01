@@ -94,22 +94,6 @@
   </section>
   {{ end }}
 
-  <!-- Partners Section -->
-  {{ if .Params.partners }}
-  <section class="about-partners section-md">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2>{{ .Params.partners_title | default "Our Partners" }}</h2>
-      </div>
-      <div class="partners-logo-grid">
-        {{ range .Params.partners }}
-        <div class="partner-logo-item {{ .class }}">
-          <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  {{ end }}
+
 
 {{ end }}

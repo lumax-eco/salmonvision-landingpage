@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Guide on SalmonVision</title>
-    <link>//localhost:1313/user-guide/</link>
+    <link>//localhost:54594/user-guide/</link>
     <description>Recent content in User Guide on SalmonVision</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:54594/user-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>//localhost:1313/user-guide/introduction/</link>
+      <link>//localhost:54594/user-guide/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/introduction/</guid>
+      <guid>//localhost:54594/user-guide/introduction/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;SalmonVision is a collaborative, open-source platform that leverages cutting-edge computer vision and machine learning to monitor wild salmon populations. Developed in partnership with Indigenous communities and conservation organizations, the platform provides real-time insights into salmon abundance, species composition, and migration timing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-capabilities&#34;&gt;Key Capabilities&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Real-Time Detection&lt;/strong&gt; — Identify and count salmon from underwater cameras, weirs, and aerial drones&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Species Classification&lt;/strong&gt; — Distinguish between species (Chinook, Sockeye, Coho, Pink, Chum) with high accuracy&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-Source Data Integration&lt;/strong&gt; — Combine video feeds, environmental sensors, and historical data&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community-First Design&lt;/strong&gt; — Built to serve the needs of remote and Indigenous communities&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;architecture-overview&#34;&gt;Architecture Overview&lt;/h2&gt;&#xA;&lt;p&gt;SalmonVision consists of three main components:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Workflow</title>
-      <link>//localhost:1313/user-guide/workflow/</link>
+      <link>//localhost:54594/user-guide/workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/workflow/</guid>
+      <guid>//localhost:54594/user-guide/workflow/</guid>
       <description>&lt;h1 id=&#34;workflow&#34;&gt;Workflow&lt;/h1&gt;&#xA;&lt;p&gt;Below is the general workflow of Salmonvision explained&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-acquisition&#34;&gt;Data acquisition&lt;/h2&gt;&#xA;&lt;p&gt;The hardware for the RGB video system is provided by our partners Ocean Aid (&lt;a href=&#34;https://oceanaid.ca/&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;https://oceanaid.ca/&lt;/a&gt;) in Canada and Whooshh Innovations (&lt;a href=&#34;https://www.whooshh.com/&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;https://www.whooshh.com/&lt;/a&gt;)&#xA;in the USA. For acoustic imaging we currently support Sound Metric ARIS but are currently evaluating opportunities to use lower cost side scan sonar units for some monitoring applications.&lt;/p&gt;&#xA;&lt;p&gt;Data is transferred from the camera to a Raspberry Pi which performs motion detection and file management, cutting continuous video generated at the site into a set of more easily reviewable clips where motion was detected by the camera. Subsequently these motion clips can either be a) transferred to the Cloud for analysis or b) processed on the edge with a NVIDIA Jetson GPU microcomputer. Video clips and associated AI counting results including file metadata and detections are then uploaded to our secure cloud storage, typically over an onsite internet connection (either satellite or broad band) for review in the Salmon Vision web app. In cases where internet is not available on the site,  data can be uploaded in batches using an upload script provided by the SV team whenever the hard drives are collected and transfer is possible.&#xA;Since onsite internet access allows our team to monitor device uptime and performance, and check data uploads throughout the season, we strongly recommend onsite internet connectivity to ensure optimal performance of SV tools running on the edge.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Webapp</title>
-      <link>//localhost:1313/user-guide/webapp/</link>
+      <link>//localhost:54594/user-guide/webapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/webapp/</guid>
-      <description>&lt;h1 id=&#34;webapp&#34;&gt;Webapp&lt;/h1&gt;&#xA;&lt;p&gt;In this part of the user guide we focus on the functionalities that are shared between the RGB&#xA;and sonar web app module for the user. Note that the sonar data only contains the intensity of&#xA;the return signal and consequently a lot less can be extracted from it, e.g. no fish identification&#xA;on colour. The examples below are&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/general_settings.png&#34; alt=&#34;General Settings&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To set up a new project click the blue “create” button at the top right of your screen. Name the project and description of the project.&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/webapp/</guid>
+      <description>&lt;h1 id=&#34;webapp&#34;&gt;Webapp&lt;/h1&gt;&#xA;&lt;p&gt;In this part of the user guide we focus on the functionalities that are shared between the RGB&#xA;and sonar web app module for the user. Note that the sonar data only contains the intensity of&#xA;the return signal and consequently a lot less can be extracted from it, e.g. no fish identification&#xA;on colour. The examples below are&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/general_settings.png&#34; alt=&#34;General Settings&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To set up a new project click the blue “create” button at the top right of your screen. Name the project and description of the project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Login</title>
-      <link>//localhost:1313/user-guide/login/</link>
+      <link>//localhost:54594/user-guide/login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/login/</guid>
+      <guid>//localhost:54594/user-guide/login/</guid>
       <description>&lt;h1 id=&#34;login&#34;&gt;Login&lt;/h1&gt;&#xA;&lt;p&gt;Obtain a username and password from your organization’s Salmon Vision admin.&lt;/p&gt;&#xA;&lt;p&gt;Go to &lt;a href=&#34;https://salmonvision.org/&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;https://salmonvision.org/&lt;/a&gt; or and click on Launch App and enter your username and password&lt;/p&gt;</description>
     </item>
     <item>
       <title>Project Page</title>
-      <link>//localhost:1313/user-guide/project-page/</link>
+      <link>//localhost:54594/user-guide/project-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/project-page/</guid>
-      <description>&lt;h1 id=&#34;project-page&#34;&gt;Project Page&lt;/h1&gt;&#xA;&lt;p&gt;The landing page shows an overview of the different projects under your organization. Let&amp;rsquo;s focus on the project titled &lt;strong&gt;Copper weir 2025&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/project_page.png&#34; alt=&#34;Project page&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1/2440&lt;/strong&gt; indicates that 1 out of the 2440 tasks (RGB videos in this case) have been reviewed.&lt;/p&gt;&#xA;&lt;p&gt;The number behind the &lt;strong&gt;green tick mark&lt;/strong&gt; indicates the total number of reviews (e.g. if a video has been reviewed twice), and the number associated with the &lt;strong&gt;light bulb icon&lt;/strong&gt; is the total number of videos that includes at least one detection of some object class.&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/project-page/</guid>
+      <description>&lt;h1 id=&#34;project-page&#34;&gt;Project Page&lt;/h1&gt;&#xA;&lt;p&gt;The landing page shows an overview of the different projects under your organization. Let&amp;rsquo;s focus on the project titled &lt;strong&gt;Copper weir 2025&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/project_page.png&#34; alt=&#34;Project page&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1/2440&lt;/strong&gt; indicates that 1 out of the 2440 tasks (RGB videos in this case) have been reviewed.&lt;/p&gt;&#xA;&lt;p&gt;The number behind the &lt;strong&gt;green tick mark&lt;/strong&gt; indicates the total number of reviews (e.g. if a video has been reviewed twice), and the number associated with the &lt;strong&gt;light bulb icon&lt;/strong&gt; is the total number of videos that includes at least one detection of some object class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Label Tasks Panel</title>
-      <link>//localhost:1313/user-guide/label-tasks-panel/</link>
+      <link>//localhost:54594/user-guide/label-tasks-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/label-tasks-panel/</guid>
+      <guid>//localhost:54594/user-guide/label-tasks-panel/</guid>
       <description>&lt;h1 id=&#34;label-tasks-panel&#34;&gt;Label Tasks Panel&lt;/h1&gt;&#xA;&lt;p&gt;Once entered in the project, the label tasks panel appears with four sections. When your project is first created, numerical fields such as species counts (e.g. sockeye, video duration, random number etc.) will be displayed as strings. By clicking on the column header the user can convert these to filterable numerical (num) values. Once a field has been changed to a numerical value it will remain numeric, so this is a one-time action required at the start of your project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Export</title>
-      <link>//localhost:1313/user-guide/data-export/</link>
+      <link>//localhost:54594/user-guide/data-export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/data-export/</guid>
+      <guid>//localhost:54594/user-guide/data-export/</guid>
       <description>&lt;h1 id=&#34;data-export&#34;&gt;Data Export&lt;/h1&gt;&#xA;&lt;p&gt;SalmonVision makes it easy to export your monitoring data for analysis, reporting, or integration with other tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;export-formats&#34;&gt;Export Formats&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Format&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;CSV&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Comma-separated values, compatible with Excel and R&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;JSON&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Structured data for programmatic use&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;GeoJSON&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Spatial data with detection locations&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;COCO&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Annotated image dataset format for model retraining&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;exporting-from-the-dashboard&#34;&gt;Exporting from the Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Navigate to your project dashboard&lt;/li&gt;&#xA;&lt;li&gt;Set your desired &lt;strong&gt;date range&lt;/strong&gt; and &lt;strong&gt;filters&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Export&lt;/strong&gt; button in the toolbar&lt;/li&gt;&#xA;&lt;li&gt;Choose your format and click &lt;strong&gt;Download&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;export-fields&#34;&gt;Export Fields&lt;/h2&gt;&#xA;&lt;p&gt;Each export includes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Label Review Interface</title>
-      <link>//localhost:1313/user-guide/label-review-interface/</link>
+      <link>//localhost:54594/user-guide/label-review-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/label-review-interface/</guid>
+      <guid>//localhost:54594/user-guide/label-review-interface/</guid>
       <description>&lt;h1 id=&#34;label-review-interface&#34;&gt;Label Review Interface&lt;/h1&gt;&#xA;&lt;p&gt;There are two ways to start the label review process:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Label All Tasks&lt;/strong&gt; — Click on the blue &lt;em&gt;Label All Tasks&lt;/em&gt; button and you will go through the tasks assigned to you one at a time. Click &lt;strong&gt;Submit&lt;/strong&gt; to proceed and save, and &lt;strong&gt;Skip&lt;/strong&gt; to not review it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Individual video&lt;/strong&gt; — Hover your mouse over the video (row) you like to review which will light up blue. Click and it will bring you to the same review window as option 1. &lt;strong&gt;NOTE:&lt;/strong&gt; clicking on the blue &amp;ldquo;play&amp;rdquo; button will only show a thumbnail preview of the video.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;the-seven-panels&#34;&gt;The Seven Panels&lt;/h2&gt;&#xA;&lt;p&gt;The label review interface has seven sections (when started through clicking an individual video). We will briefly discuss each and dive deeper into the reviewing process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Example Annotation Session</title>
-      <link>//localhost:1313/user-guide/example-annotation-session/</link>
+      <link>//localhost:54594/user-guide/example-annotation-session/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/example-annotation-session/</guid>
+      <guid>//localhost:54594/user-guide/example-annotation-session/</guid>
       <description>&lt;h1 id=&#34;example-annotation-session&#34;&gt;Example Annotation Session&lt;/h1&gt;&#xA;&lt;p&gt;This section provides two examples of a reviewing workflow:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../review-session-outlined/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Review session outlined&lt;/a&gt;&lt;/strong&gt; — A step-by-step visual guide on how to conduct the different steps&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../video-of-review-session/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Video of review session&lt;/a&gt;&lt;/strong&gt; — A link to a video of a review session conducted by Will Atlas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-scenarios&#34;&gt;Common Scenarios&lt;/h2&gt;&#xA;&lt;p&gt;Once starting the review process of a clip annotated by the AI algorithm, there are five different likely (though not exclusively) scenarios:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Review Session Outlined</title>
-      <link>//localhost:1313/user-guide/review-session-outlined/</link>
+      <link>//localhost:54594/user-guide/review-session-outlined/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/review-session-outlined/</guid>
-      <description>&lt;h1 id=&#34;review-session-outlined&#34;&gt;Review Session Outlined&lt;/h1&gt;&#xA;&lt;p&gt;This is a step-by-step visual guide on how to conduct a review session.&lt;/p&gt;&#xA;&lt;h2 id=&#34;login&#34;&gt;Login&lt;/h2&gt;&#xA;&lt;p&gt;A unique login is required for each organization. When switching between organizations, you must log out prior to signing in with the unique login. Under email address, create a username (a real email is not required).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image058.gif&#34; alt=&#34;Login page&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;choose-project&#34;&gt;Choose Project&lt;/h2&gt;&#xA;&lt;p&gt;Select one of the available projects. In this case the &lt;strong&gt;Koeye Jetson-1 2025&lt;/strong&gt; with 63,860 video clips.&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/review-session-outlined/</guid>
+      <description>&lt;h1 id=&#34;review-session-outlined&#34;&gt;Review Session Outlined&lt;/h1&gt;&#xA;&lt;p&gt;This is a step-by-step visual guide on how to conduct a review session.&lt;/p&gt;&#xA;&lt;h2 id=&#34;login&#34;&gt;Login&lt;/h2&gt;&#xA;&lt;p&gt;A unique login is required for each organization. When switching between organizations, you must log out prior to signing in with the unique login. Under email address, create a username (a real email is not required).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/image058.gif&#34; alt=&#34;Login page&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;choose-project&#34;&gt;Choose Project&lt;/h2&gt;&#xA;&lt;p&gt;Select one of the available projects. In this case the &lt;strong&gt;Koeye Jetson-1 2025&lt;/strong&gt; with 63,860 video clips.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Incorrect Detection</title>
-      <link>//localhost:1313/user-guide/incorrect-detection/</link>
+      <link>//localhost:54594/user-guide/incorrect-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/incorrect-detection/</guid>
-      <description>&lt;h1 id=&#34;1-incorrect-detection&#34;&gt;1. Incorrect Detection&lt;/h1&gt;&#xA;&lt;p&gt;Any of the following are considered an incorrect detection:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bounding box disappears and reappears&lt;/li&gt;&#xA;&lt;li&gt;Detection only occurs after the fish has crossed the midline&lt;/li&gt;&#xA;&lt;li&gt;The bounding box is not tracking the fish accurately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Delete detection and manually annotate the video.&lt;/p&gt;&#xA;&lt;p&gt;In this example, the bounding box disappears and reappears multiple times.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image063.jpg&#34; alt=&#34;Incorrect detection example&#34;&gt;&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/incorrect-detection/</guid>
+      <description>&lt;h1 id=&#34;1-incorrect-detection&#34;&gt;1. Incorrect Detection&lt;/h1&gt;&#xA;&lt;p&gt;Any of the following are considered an incorrect detection:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bounding box disappears and reappears&lt;/li&gt;&#xA;&lt;li&gt;Detection only occurs after the fish has crossed the midline&lt;/li&gt;&#xA;&lt;li&gt;The bounding box is not tracking the fish accurately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Delete detection and manually annotate the video.&lt;/p&gt;&#xA;&lt;p&gt;In this example, the bounding box disappears and reappears multiple times.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/image063.jpg&#34; alt=&#34;Incorrect detection example&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>No Detection</title>
-      <link>//localhost:1313/user-guide/no-detection/</link>
+      <link>//localhost:54594/user-guide/no-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/no-detection/</guid>
+      <guid>//localhost:54594/user-guide/no-detection/</guid>
       <description>&lt;h1 id=&#34;2-no-detection&#34;&gt;2. No Detection&lt;/h1&gt;&#xA;&lt;p&gt;When one or multiple fish are not detected, or some labels did appear but they were not accurate in detecting or tracking the fish.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Delete labels if present and manually annotate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accurate Identification</title>
-      <link>//localhost:1313/user-guide/accurate-identification/</link>
+      <link>//localhost:54594/user-guide/accurate-identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/accurate-identification/</guid>
+      <guid>//localhost:54594/user-guide/accurate-identification/</guid>
       <description>&lt;h1 id=&#34;3-accurate-identification&#34;&gt;3. Accurate Identification&lt;/h1&gt;&#xA;&lt;p&gt;Sit back and relax (for a second or two).&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; While the annotation might appear correct at first glance, it is important to be confident that the count equals the number of individuals passing the midline.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Incorrect Species Identification</title>
-      <link>//localhost:1313/user-guide/incorrect-species-identification/</link>
+      <link>//localhost:54594/user-guide/incorrect-species-identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/incorrect-species-identification/</guid>
-      <description>&lt;h1 id=&#34;4-incorrect-species-identification&#34;&gt;4. Incorrect Species Identification&lt;/h1&gt;&#xA;&lt;p&gt;The annotation tracked the fish accurately, however the species ID was incorrect. For example, a wrongly identified sockeye which is in fact a pink salmon.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image064.png&#34; alt=&#34;Wrongly identified fish&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; This can be adjusted by:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locating the annotation in &lt;strong&gt;Panel 7&lt;/strong&gt; (Annotations)&lt;/li&gt;&#xA;&lt;li&gt;Once that individual is selected, locate and select the correct species ID in &lt;strong&gt;Panel 3&lt;/strong&gt; (Class Overview)&lt;/li&gt;&#xA;&lt;li&gt;This should change the detection to the correct species (e.g. pink salmon)&lt;/li&gt;&#xA;&lt;li&gt;Once the video has been reviewed and submitted, the correct count for each species should be updated&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <guid>//localhost:54594/user-guide/incorrect-species-identification/</guid>
+      <description>&lt;h1 id=&#34;4-incorrect-species-identification&#34;&gt;4. Incorrect Species Identification&lt;/h1&gt;&#xA;&lt;p&gt;The annotation tracked the fish accurately, however the species ID was incorrect. For example, a wrongly identified sockeye which is in fact a pink salmon.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/image064.png&#34; alt=&#34;Wrongly identified fish&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; This can be adjusted by:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locating the annotation in &lt;strong&gt;Panel 7&lt;/strong&gt; (Annotations)&lt;/li&gt;&#xA;&lt;li&gt;Once that individual is selected, locate and select the correct species ID in &lt;strong&gt;Panel 3&lt;/strong&gt; (Class Overview)&lt;/li&gt;&#xA;&lt;li&gt;This should change the detection to the correct species (e.g. pink salmon)&lt;/li&gt;&#xA;&lt;li&gt;Once the video has been reviewed and submitted, the correct count for each species should be updated&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Extra Annotations</title>
-      <link>//localhost:1313/user-guide/extra-annotations/</link>
+      <link>//localhost:54594/user-guide/extra-annotations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/extra-annotations/</guid>
+      <guid>//localhost:54594/user-guide/extra-annotations/</guid>
       <description>&lt;h1 id=&#34;5-extra-annotations&#34;&gt;5. Extra Annotations&lt;/h1&gt;&#xA;&lt;p&gt;At times multiple fish are detected when only one fish is present (&amp;ldquo;double annotation&amp;rdquo;). A common error by the AI model is detecting an additional fish — often this occurs in the last few frames, usually capturing the tail.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Select the extra annotation (be sure you are not selecting the annotation that accurately tracks the individual) and delete it.&lt;/p&gt;&#xA;&lt;!-- The video below shows an instance of an extra annotation of the tail and how to rectify this error.&#xD;&#xA;&#xD;&#xA;![Extra annotation example](/images/user-guide/image030.gif) --&gt;</description>
     </item>
     <item>
       <title>Video of Review Session</title>
-      <link>//localhost:1313/user-guide/video-of-review-session/</link>
+      <link>//localhost:54594/user-guide/video-of-review-session/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/video-of-review-session/</guid>
+      <guid>//localhost:54594/user-guide/video-of-review-session/</guid>
       <description>&lt;h1 id=&#34;video-of-review-session&#34;&gt;Video of Review Session&lt;/h1&gt;&#xA;&lt;p&gt;The video below provides an overview of a typical reviewing session with common (and not so common) challenges.&lt;/p&gt;&#xA;&lt;!-- ![Review session video](/images/user-guide/image031.gif) --&gt;</description>
     </item>
     <item>
       <title>Results</title>
-      <link>//localhost:1313/user-guide/results/</link>
+      <link>//localhost:54594/user-guide/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/results/</guid>
+      <guid>//localhost:54594/user-guide/results/</guid>
       <description>&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;This section is under development.&lt;/strong&gt; The results dashboard and reporting features are being built as part of the new front end. Documentation will be updated once the new interface is complete.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Sonar</title>
-      <link>//localhost:1313/user-guide/sonar/</link>
+      <link>//localhost:54594/user-guide/sonar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/sonar/</guid>
+      <guid>//localhost:54594/user-guide/sonar/</guid>
       <description>&lt;h1 id=&#34;sonar&#34;&gt;Sonar&lt;/h1&gt;&#xA;&lt;p&gt;This manual is complementary to the general SalmonVision user guide which we recommend you read before this document.&lt;/p&gt;&#xA;&lt;p&gt;Sonar review and annotation presents unique challenges to the data reviewer, and differs from RGB video review in several key ways:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Many simultaneous fish&lt;/strong&gt; — When reviewing a sonar video, there are many cases where many fish will be visible simultaneously. To ensure that each individual fish is tracked accurately throughout their passage through the sonar beam, focus your attention on an individual fish, and review or label that fish throughout its passage event (through the sonar beam).&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Review Mode</title>
-      <link>//localhost:1313/user-guide/in-review-mode/</link>
+      <link>//localhost:54594/user-guide/in-review-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/in-review-mode/</guid>
+      <guid>//localhost:54594/user-guide/in-review-mode/</guid>
       <description>&lt;h1 id=&#34;sonar--in-review-mode&#34;&gt;Sonar — In Review Mode&lt;/h1&gt;&#xA;&lt;p&gt;Watch the sonar video from the beginning, making sure that all fish are detected with a bounding box and tracked throughout their movements in the field of view.&lt;/p&gt;&#xA;&lt;p&gt;If a track ends before the fish is done moving, you can easily continue the track by turning on the interpolation on the last frame that the fish was detected. This allows you to move the box with the fish throughout the rest of the video and ensure the accuracy of counts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>In Annotation Mode</title>
-      <link>//localhost:1313/user-guide/in-annotation-mode/</link>
+      <link>//localhost:54594/user-guide/in-annotation-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/in-annotation-mode/</guid>
+      <guid>//localhost:54594/user-guide/in-annotation-mode/</guid>
       <description>&lt;h1 id=&#34;sonar--in-annotation-mode&#34;&gt;Sonar — In Annotation Mode&lt;/h1&gt;&#xA;&lt;p&gt;Start with the initial frame where the fish becomes visible, and confirm that the fish was detected (with a bounding box) at the moment it appears.&lt;/p&gt;&#xA;&lt;p&gt;If it wasn&amp;rsquo;t initially detected, draw your own bounding box around it, turning on interpolation to enable easy movement and reshaping of the bounding box as it moves.&lt;/p&gt;&#xA;&lt;h2 id=&#34;handling-flickering&#34;&gt;Handling Flickering&lt;/h2&gt;&#xA;&lt;p&gt;If object flickering occurs (e.g. the fish becomes momentarily invisible due to obstruction or other data quality issues):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Size Estimation &amp; Length Bins</title>
-      <link>//localhost:1313/user-guide/size-estimation-and-length-bins/</link>
+      <link>//localhost:54594/user-guide/size-estimation-and-length-bins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/size-estimation-and-length-bins/</guid>
+      <guid>//localhost:54594/user-guide/size-estimation-and-length-bins/</guid>
       <description>&lt;h1 id=&#34;size-estimation--length-bins&#34;&gt;Size Estimation &amp;amp; Length Bins&lt;/h1&gt;&#xA;&lt;p&gt;For projects using &lt;strong&gt;SoundMetrics ARIS&lt;/strong&gt; sonar devices, fish sizes are automatically estimated using a pre-programmed length calibration equation that is built into the ARIS fish software.&lt;/p&gt;&#xA;&lt;p&gt;However, each project may be interested in unique length bins for reporting purposes, since different species have unique length distributions. Accordingly, length bins for sonar projects can be configured into the backend of the Salmon Vision web app prior to syncing your data from cloud storage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>//localhost:1313/user-guide/faq/</link>
+      <link>//localhost:54594/user-guide/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/faq/</guid>
+      <guid>//localhost:54594/user-guide/faq/</guid>
       <description>&lt;h1 id=&#34;frequently-asked-questions&#34;&gt;Frequently Asked Questions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;at-what-point-in-the-video-detection-should-i-beginend-the-annotation-of-a-fish&#34;&gt;At what point in the video detection should I begin/end the annotation of a fish?&lt;/h2&gt;&#xA;&lt;p&gt;The annotation should begin when enough of the fish&amp;rsquo;s head is present to receive a confident ID. The annotation should end once the tail is all that is left in the box.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-the-protocol-when-two-or-more-fish-are-overlapping-in-the-same-frame&#34;&gt;What is the protocol when two or more fish are overlapping in the same frame?&lt;/h2&gt;&#xA;&lt;p&gt;When multiple fish are overlapping it is important to capture the visible part of the individual and not infer where the rest of the fish might be if it is blocked.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Field Setup RGB</title>
-      <link>//localhost:1313/user-guide/field-setup/</link>
+      <link>//localhost:54594/user-guide/field-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/field-setup/</guid>
+      <guid>//localhost:54594/user-guide/field-setup/</guid>
       <description>&lt;h1 id=&#34;field-setup-rgb&#34;&gt;Field Setup RGB&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Apps to pre-install on your phones before heading to the site:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://play.google.com/store&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Starlink app&lt;/a&gt; (Play Store / App Store)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://play.google.com/store&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Veezoompro app&lt;/a&gt; (Play Store / App Store)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You may also want to bring a Windows laptop with Microsoft Edge (that can switch to Internet Explorer mode) to access the BARLUS camera settings on the browser.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;hardware-list&#34;&gt;Hardware List&lt;/h2&gt;&#xA;&lt;p&gt;Below is a list of hardware components that are used to set up an edge computing system. We have partnered with OceanAID and Whooshh Innovations to build field-ready hardware systems. If you are interested in building your own, the components list is a useful resource.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Batch Upload</title>
-      <link>//localhost:1313/user-guide/batch-upload/</link>
+      <link>//localhost:54594/user-guide/batch-upload/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/batch-upload/</guid>
-      <description>&lt;h1 id=&#34;batch-upload-software&#34;&gt;Batch Upload Software&lt;/h1&gt;&#xA;&lt;p&gt;The batch upload software is used for offline sites to upload data from a detached hard drive to our cloud for analysis.&lt;/p&gt;&#xA;&lt;p&gt;The software uses &lt;strong&gt;rclone&lt;/strong&gt; under the hood, which will check the cloud before uploading — so it will only upload new or updated data to the cloud.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you plan to use the batch upload software, please contact the Salmon Vision team for support.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image080.png&#34; alt=&#34;Batch upload interface&#34;&gt;&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/batch-upload/</guid>
+      <description>&lt;h1 id=&#34;batch-upload-software&#34;&gt;Batch Upload Software&lt;/h1&gt;&#xA;&lt;p&gt;The batch upload software is used for offline sites to upload data from a detached hard drive to our cloud for analysis.&lt;/p&gt;&#xA;&lt;p&gt;The software uses &lt;strong&gt;rclone&lt;/strong&gt; under the hood, which will check the cloud before uploading — so it will only upload new or updated data to the cloud.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you plan to use the batch upload software, please contact the Salmon Vision team for support.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/image080.png&#34; alt=&#34;Batch upload interface&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Remote Access</title>
-      <link>//localhost:1313/user-guide/remote-access/</link>
+      <link>//localhost:54594/user-guide/remote-access/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/remote-access/</guid>
-      <description>&lt;h1 id=&#34;remote-access&#34;&gt;Remote Access&lt;/h1&gt;&#xA;&lt;h2 id=&#34;change-network&#34;&gt;Change Network&lt;/h2&gt;&#xA;&lt;p&gt;The microcontroller devices may be set to use static IPs to facilitate communications between them. If it is required for that device to communicate with the Internet on a router that is not the Starlink router, you can change the network settings to use DHCP:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log into the microcontroller device after connecting a monitor and keyboard + mouse&lt;/li&gt;&#xA;&lt;li&gt;Click on the top right network icon and click either the gear icon or &lt;strong&gt;Settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Navigate to &lt;strong&gt;Network settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;strong&gt;IPv4&lt;/strong&gt; and check the &lt;strong&gt;Automatic (DHCP)&lt;/strong&gt; box&lt;/li&gt;&#xA;&lt;li&gt;Restart the device&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image082.png&#34; alt=&#34;Network settings&#34;&gt;&lt;/p&gt;</description>
+      <guid>//localhost:54594/user-guide/remote-access/</guid>
+      <description>&lt;h1 id=&#34;remote-access&#34;&gt;Remote Access&lt;/h1&gt;&#xA;&lt;h2 id=&#34;change-network&#34;&gt;Change Network&lt;/h2&gt;&#xA;&lt;p&gt;The microcontroller devices may be set to use static IPs to facilitate communications between them. If it is required for that device to communicate with the Internet on a router that is not the Starlink router, you can change the network settings to use DHCP:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log into the microcontroller device after connecting a monitor and keyboard + mouse&lt;/li&gt;&#xA;&lt;li&gt;Click on the top right network icon and click either the gear icon or &lt;strong&gt;Settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Navigate to &lt;strong&gt;Network settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;strong&gt;IPv4&lt;/strong&gt; and check the &lt;strong&gt;Automatic (DHCP)&lt;/strong&gt; box&lt;/li&gt;&#xA;&lt;li&gt;Restart the device&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:54594/images/user-guide/image082.png&#34; alt=&#34;Network settings&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>//localhost:1313/user-guide/troubleshooting/</link>
+      <link>//localhost:54594/user-guide/troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/troubleshooting/</guid>
+      <guid>//localhost:54594/user-guide/troubleshooting/</guid>
       <description>&lt;h1 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h1&gt;&#xA;&lt;h2 id=&#34;data-is-saved-to-internal-disk&#34;&gt;Data is Saved to Internal Disk&lt;/h2&gt;&#xA;&lt;p&gt;It is possible due to some error the external hard drive is dismounted and the data starts being written to the internal disk. This can be problematic as the folder is not changed — plugging back in the external disk can have it shadow over that internal folder.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quick fix:&lt;/strong&gt; Simply move or copy the files from that internal folder elsewhere before plugging in the hard drive. Then, after plugging in the hard drive, copy the files to it.&lt;/p&gt;</description>
     </item>
   </channel>

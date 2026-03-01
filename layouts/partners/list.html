@@ -23,15 +23,9 @@
       <div class="partners-grid">
         {{ range .partners }}
         <div class="partner-card">
-          {{ if .image }}
-          <div class="partner-logo">
-            <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
-          </div>
-          {{ else }}
           <div class="partner-logo partner-logo-placeholder">
             <span class="partner-initial">{{ substr .name 0 1 }}</span>
           </div>
-          {{ end }}
           <div class="partner-info">
             <h3 class="partner-name">{{ .name }}</h3>
             <p class="partner-description">{{ .description }}</p>

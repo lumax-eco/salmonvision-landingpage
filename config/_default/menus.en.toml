@@ -6,40 +6,26 @@ name = "Home"
 pageRef = "/"
 weight = 1
 
-[[main]]
-name = "Features"
-url = "#features"
-weight = 2
-
-[[main]]
-name = "Technology"
-url = "#technology"
-weight = 3
-
-[[main]]
-name = "Impact"
-url = "#impact"
-weight = 4
 
 [[main]]
 name = "About Us"
 pageRef = "/about"
-weight = 5
+weight = 2
 
 [[main]]
 name = "Partners"
 pageRef = "/partners"
-weight = 6
+weight = 3
 
 [[main]]
 name = "User Guide"
 pageRef = "/user-guide"
-weight = 7
+weight = 4
 
 [[main]]
 name = "Contact"
 pageRef = "/contact"
-weight = 8
+weight = 5
 
 # footer menu
 [[footer]]
