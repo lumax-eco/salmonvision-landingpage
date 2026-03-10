@@ -4,7 +4,7 @@ meta_title: "Incorrect Detection - SalmonVision User Guide"
 description: "How to handle incorrect detections during video review"
 draft: false
 type: "user-guide"
-weight: 10
+weight: 11
 ---
 
 # 1. Incorrect Detection
@@ -19,4 +19,4 @@ Any of the following are considered an incorrect detection:
 
 In this example, the bounding box disappears and reappears multiple times.
 
-![Incorrect detection example](/images/user-guide/image063.jpg)
+![Incorrect detection example](/images/user-guide/image062.jpg)

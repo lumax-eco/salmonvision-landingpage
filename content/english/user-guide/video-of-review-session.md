@@ -4,7 +4,7 @@ meta_title: "Video of Review Session - SalmonVision User Guide"
 description: "Video walkthrough of a typical review session"
 draft: false
 type: "user-guide"
-weight: 15
+weight: 16
 ---
 
 # Video of Review Session

@@ -57,19 +57,18 @@ The Viewer panel is where you can view the video and the annotations. The counte
 
 | Symbol | Name | Action |
 |--------|------|--------|
-| ➕ | Toggle keypoint | Creates or deletes a keypoint (see below for explanation) |
-| 🔗 | Toggle interpolation | Starts or stops interpolation between a selected frame and the preceding sequence |
-| ▶️ / ⏸️ | Play / Pause | Play or pause the video |
-| ◀ / ▶ | Move one frame | One step back or forward |
-| ⏮ / ⏭ | Move to keyframe | Go to previous or next keyframe |
-| 📊 | Toggle timeline | Expands or collapses the timelines |
+| <img src="/images/user-guide/image023.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image025.png" class="interface-image" alt="Pause" width="24"> | Toggle keypoint | Creates or deletes a keypoint (see below for explanation) |
+| <img src="/images/user-guide/image027.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image029.png" class="interface-image" alt="Pause" width="24"> | Toggle interpolation | Starts or stops interpolation between a selected frame and the preceding sequence |
+| <img src="/images/user-guide/image031.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image033.png" class="interface-image" alt="Pause" width="24"> | Play / Pause | Play or pause the video || ◀ / ▶ | Move one frame | One step back or forward |
+| <img src="/images/user-guide/image035.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image037.png" class="interface-image" alt="Pause" width="24">| Move to keyframe | Go to previous or next keyframe |
+| <img src="/images/user-guide/image043.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image045.png" class="interface-image" alt="Pause" width="24"> | Toggle timeline | Expands or collapses the timelines |
 
 ### When Pressing Shift
 
 | Symbol | Name | Action |
 |--------|------|--------|
-| ⏮ / ⏭ | Go to first / last frame | Goes to the first or last frame of the entire video sequence |
-| ⏪ / ⏩ | Hop backwards / forwards | Moves 10 frames backward or forwards |
+| <img src="/images/user-guide/image047.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image049.png" class="interface-image" alt="Pause" width="24">| Go to first / last frame | Goes to the first or last frame of the entire video sequence |
+| <img src="/images/user-guide/image051.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image053.png" class="interface-image" alt="Pause" width="24"> | Hop backwards / forwards | Moves 10 frames backward or forwards |
 
 ### Keypoints
 
@@ -129,26 +128,11 @@ The Annotations panel provides an overview of all of the detections made in the 
 
 The order can be changed by clicking **Manually** and selecting **Group by Tool** or **Label**. Note that bounding boxes drawn by the reviewer will appear at the bottom of the annotations panel, regardless of where they appear in the video.
 
+![Annotations panel](/images/user-guide/image055.png)
+
 > **Tip:** When deleting multiple annotations, hold **Ctrl** and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.
 
 To the right the user can sort **By time** (default) or **Order by Score** (if available). The eye symbol allows for switching to hide/make visible all the annotations — very useful if you want to focus on one annotation among many. The **Relations** tab can be ignored for now.
 
 ---
 
-## Important: Labeling vs. Reviewing
-
-There are two main types of data annotation work which we term **labeling** and **reviewing**.
-
-### Labeling
-
-Labeling involves removing AI-generated bounding boxes and drawing your own bounding box, making sure the boxes are of the correct class, starts when the object first appears and ends when it leaves the frame, and the bounding box is tightly fitted around the object. This typically involves manual adjustments for bounding box size at keypoints throughout the observation of a fish. This is **high quality data** that will be used as new training data.
-
-### Reviewing
-
-Reviewing is a much faster process where class assignment is checked and the bounding box should loosely follow and fit the object. The goal of a review is to produce a **correct count**, with less emphasis on the precise location and size of bounding boxes. If an AI annotation is far off there are several options:
-
-1. Adjust the existing bounding box to fit better
-2. Delete the bounding box if it is way off and redraw it
-3. Delete erroneous extra bounding boxes or draw around fish which have been missed
-
-> The difference between labelled and reviewed data is not clear-cut necessarily (i.e. AI-generated data in a reviewing session can be of "labeled" grade). It is important to remember that when starting a **labeling** session it is of utmost importance to be very precise.

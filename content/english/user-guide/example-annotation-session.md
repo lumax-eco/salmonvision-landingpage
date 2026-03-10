@@ -4,7 +4,7 @@ meta_title: "Example Annotation Session - SalmonVision User Guide"
 description: "Overview of example annotation sessions and common review scenarios"
 draft: false
 type: "user-guide"
-weight: 8
+weight: 9
 ---
 
 # Example Annotation Session

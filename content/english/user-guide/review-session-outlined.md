@@ -4,7 +4,7 @@ meta_title: "Review Session Outlined - SalmonVision User Guide"
 description: "Step-by-step visual guide for conducting a review session"
 draft: false
 type: "user-guide"
-weight: 9
+weight: 10
 ---
 
 # Review Session Outlined

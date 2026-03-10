@@ -4,7 +4,7 @@ meta_title: "No Detection - SalmonVision User Guide"
 description: "How to handle missing detections during video review"
 draft: false
 type: "user-guide"
-weight: 11
+weight: 12
 ---
 
 # 2. No Detection

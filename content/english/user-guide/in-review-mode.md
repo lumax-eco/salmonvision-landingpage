@@ -4,7 +4,7 @@ meta_title: "Sonar Review Mode - SalmonVision User Guide"
 description: "Guide to sonar review mode in SalmonVision"
 draft: false
 type: "user-guide"
-weight: 18
+weight: 19
 ---
 
 # Sonar — In Review Mode

@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Label Review Interface - User Guide - SalmonVision</title>
+    <title>Labeling vs. Reviewing - User Guide - SalmonVision</title>
     <meta name="description" content="AI-Powered Salmon Monitoring">
     
     
@@ -156,7 +156,7 @@
                 
                   
                 <li>
-                  <a href="/user-guide/label-review-interface/" class="docs-nav-link active">
+                  <a href="/user-guide/label-review-interface/" class="docs-nav-link">
                     Label review interface
                   </a>
                 </li>
@@ -164,7 +164,7 @@
                 
                   
                 <li>
-                  <a href="/user-guide/labeling-reviewing/" class="docs-nav-link">
+                  <a href="/user-guide/labeling-reviewing/" class="docs-nav-link active">
                     Label &amp; reviewing
                   </a>
                 </li>
@@ -335,182 +335,23 @@
         <div class="docs-breadcrumb">
           <a href="/user-guide/">User Guide</a>
           <span class="docs-breadcrumb-sep">/</span>
-          <span>Label Review Interface</span>
+          <span>Labeling vs. Reviewing</span>
         </div>
 
         <div class="docs-content-inner">
-          <h1 id="label-review-interface">Label Review Interface</h1>
-<p>There are two ways to start the label review process:</p>
+          <h1 id="labeling-vs-reviewing">Labeling vs. Reviewing</h1>
+<p>There are two main types of data annotation work which we term <strong>labeling</strong> and <strong>reviewing</strong>.</p>
+<h3 id="labeling">Labeling</h3>
+<p>Labeling involves removing AI-generated bounding boxes and drawing your own bounding box, making sure the boxes are of the correct class, starts when the object first appears and ends when it leaves the frame, and the bounding box is tightly fitted around the object. This typically involves manual adjustments for bounding box size at keypoints throughout the observation of a fish. This is <strong>high quality data</strong> that will be used as new training data.</p>
+<h3 id="reviewing">Reviewing</h3>
+<p>Reviewing is a much faster process where class assignment is checked and the bounding box should loosely follow and fit the object. The goal of a review is to produce a <strong>correct count</strong>, with less emphasis on the precise location and size of bounding boxes. If an AI annotation is far off there are several options:</p>
 <ol>
-<li><strong>Label All Tasks</strong> — Click on the blue <em>Label All Tasks</em> button and you will go through the tasks assigned to you one at a time. Click <strong>Submit</strong> to proceed and save, and <strong>Skip</strong> to not review it.</li>
-<li><strong>Individual video</strong> — Hover your mouse over the video (row) you like to review which will light up blue. Click and it will bring you to the same review window as option 1. <strong>NOTE:</strong> clicking on the blue &ldquo;play&rdquo; button will only show a thumbnail preview of the video.</li>
+<li>Adjust the existing bounding box to fit better</li>
+<li>Delete the bounding box if it is way off and redraw it</li>
+<li>Delete erroneous extra bounding boxes or draw around fish which have been missed</li>
 </ol>
-<h2 id="the-seven-panels">The Seven Panels</h2>
-<p>The label review interface has seven sections (when started through clicking an individual video). We will briefly discuss each and dive deeper into the reviewing process.</p>
-<p><img src="/images/user-guide/image020.gif" alt="Label review interface"></p>
-<table>
-  <thead>
-      <tr>
-          <th>Panel</th>
-          <th>Name</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td><strong>Files</strong></td>
-          <td>The individual videos with the current video highlighted in light blue</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td><strong>Users</strong></td>
-          <td>The different users working on the project</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td><strong>Class overview</strong></td>
-          <td>Overview of all the classes</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td><strong>Viewer</strong></td>
-          <td>The review panel with controls</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td><strong>Timeline</strong></td>
-          <td>The tracks panels, showing in which frame each unique detection is visible</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td><strong>Details</strong></td>
-          <td>Shows details of selected detection (e.g. detection 2 of class Sockeye)</td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td><strong>Annotations</strong></td>
-          <td>Overview of the annotations</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="panel-3--class-overview">Panel 3 — Class Overview</h2>
-<p>In the Class overview panel you see all the different classes which can be detected within a given project.</p>
-<p>When you have selected a specific detection (e.g. a fish) a set of <strong>data subclasses</strong> will become visible below the species labels bar, and available to be included in your annotations. For example, the reviewer can:</p>
-<ul>
-<li>Select the <strong>sex</strong> of the fish (once this selection is made, you can no longer unselect a sex for the individual without deleting the annotation — sex should only be determined if the reviewer is very confident in their assessment)</li>
-<li>Indicate whether the fish is <strong>adipose clipped</strong> using the &ldquo;clipped&rdquo; subclass</li>
-<li>Indicate whether they have a visually identifiable <strong>tag</strong> (e.g. a FLOY tag) using the &ldquo;tagged&rdquo; subclass</li>
-<li>Note whether the fish has visible <strong>net scarring</strong>, is <strong>diseased</strong> or visibly <strong>injured</strong> (e.g. an open wound)</li>
-</ul>
 <blockquote>
-<p>If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.</p></blockquote>
-<p><img src="/images/user-guide/image021.png" alt="Class overview with subclasses"></p>
-<hr>
-<h2 id="panel-4--viewer">Panel 4 — Viewer</h2>
-<p>The Viewer panel is where you can view the video and the annotations. The counter in the left bottom (e.g. <strong>15 of 96</strong>) indicates which frame is selected out of the total number of frames. In the right bottom the play time (e.g. <strong>00:01:04</strong>) relative to the total length of the file (e.g. <strong>00:09:05</strong>) is depicted. The format is <code>mm:ss:dsds</code>.</p>
-<h3 id="playback-controls">Playback Controls</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Symbol</th>
-          <th>Name</th>
-          <th>Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><img src="/images/user-guide/image023.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image025.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Toggle keypoint</td>
-          <td>Creates or deletes a keypoint (see below for explanation)</td>
-      </tr>
-      <tr>
-          <td><img src="/images/user-guide/image027.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image029.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Toggle interpolation</td>
-          <td>Starts or stops interpolation between a selected frame and the preceding sequence</td>
-      </tr>
-      <tr>
-          <td><img src="/images/user-guide/image031.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image033.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Play / Pause</td>
-          <td>Play or pause the video</td>
-      </tr>
-      <tr>
-          <td><img src="/images/user-guide/image035.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image037.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Move to keyframe</td>
-          <td>Go to previous or next keyframe</td>
-      </tr>
-      <tr>
-          <td><img src="/images/user-guide/image043.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image045.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Toggle timeline</td>
-          <td>Expands or collapses the timelines</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="when-pressing-shift">When Pressing Shift</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Symbol</th>
-          <th>Name</th>
-          <th>Action</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><img src="/images/user-guide/image047.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image049.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Go to first / last frame</td>
-          <td>Goes to the first or last frame of the entire video sequence</td>
-      </tr>
-      <tr>
-          <td><img src="/images/user-guide/image051.png" alt="Play" class="interface-image"> / <img src="/images/user-guide/image053.png" class="interface-image" alt="Pause" width="24"></td>
-          <td>Hop backwards / forwards</td>
-          <td>Moves 10 frames backward or forwards</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="keypoints">Keypoints</h3>
-<p>A <strong>keypoint</strong> in a video is an annotation of a specific object in a frame, represented by a <strong>diamond shape</strong> on the timeline panel. In the example above, frame 15 contains a keypoint of the Sockeye detection. A frame can have keypoints for different detections if they occur simultaneously.</p>
-<p>When a video has been prelabelled by a detection model, each frame of the detection sequence is also a keyframe. When manually labelling, the reviewer has to manually draw a box, or when interpolation is on, reposition and/or adjust box size.</p>
-<blockquote>
-<p><strong>Best practice:</strong> Have at least one keypoint every 10 frames for a stationary fish and, depending on the speed and change of direction of movement, every 1–5 frames for faster or more erratic movements.</p></blockquote>
-<hr>
-<h2 id="panel-5--timeline">Panel 5 — Timeline</h2>
-<p>The Timeline panel provides an overview of each detection (rows) and where in the sequence of the video (frame) it was detected. The detections are numbered chronologically and have the name and colour of the assigned class (see Panel 3).</p>
-<p>When prelabelled by the detection model, each frame in which a specific individual was detected is a keyframe (continuous sequences of keypoints). Note that if a fish disappears out of sight (e.g. from frame 51–55), it is important that frames with no fish are left empty and keypoints restarted when the same individual reappears.</p>
-<h3 id="manual-annotation">Manual Annotation</h3>
-<p>To manually annotate, the user can draw a bounding box with the mouse cursor capturing the fish on the first frame it appears:</p>
-<ul>
-<li>If <strong>no class is selected</strong>, the bounding box will have the &ldquo;blank&rdquo; label which is used for fish of unknown identity</li>
-<li>If the species is known, the right class can be selected <strong>before</strong> drawing the box (most efficient) or the &ldquo;blank&rdquo; can be changed after selecting the correct species class</li>
-</ul>
-<p>When advancing frames for individual detections, click on <strong>Toggle keypoint (+)</strong> to create new keypoints.</p>
-<h3 id="interpolation">Interpolation</h3>
-<p>When interpolation is on, the keypoints are automatically connected, but new keypoints are only produced when the bounding box is moved or reshaped. Label Studio uses <strong>linear interpolation</strong> to move the position of the bounding box in the intermediate frames.</p>
-<p>It is important to find the last frame in the sequence in which the individual is visible and <strong>switch off the interpolation</strong> (Toggle interpolation button). If the individual reappears, make a new keypoint and switch interpolation back on.</p>
-<p>The timeline panel also includes access to the <strong>settings</strong> in the left bottom and provides a <strong>Submit</strong> option (right bottom) which will save all the changes you have made.</p>
-<blockquote>
-<p><strong>Remember:</strong> You have to submit changes to save them.</p></blockquote>
-<h3 id="post-submission-verification">Post-Submission Verification</h3>
-<p>After having submitted the video, it is important to use the scroll bar on the bottom of Panel 1, and confirm that the correct value appears under the column(s). For example, if 3 sockeye swam through the box and the AI was accurate in detecting them, once submitted, scroll to the right and confirm that 3 sockeye appear under the column &ldquo;sockeye&rdquo;.</p>
-<hr>
-<h2 id="panel-6--details">Panel 6 — Details</h2>
-<p>The Details panel provides information on the selected detection:</p>
-<ul>
-<li><strong>Info tab</strong> — Provides information regarding the type of label (a bounding box in this case), the class type and where it is in the order of appearance (e.g. Sockeye and 2)</li>
-<li><strong>Plus symbol (+)</strong> — Allows the user to enter additional metadata associated with the detection</li>
-<li><strong>Eye icon (👁️)</strong> — Toggles between switching the bounding box on/off (very handy when there are many detections)</li>
-<li><strong>Red garbage bin (🗑️)</strong> — Deletes the annotation</li>
-</ul>
-<hr>
-<h2 id="panel-7--annotations">Panel 7 — Annotations</h2>
-<p>The Annotations panel provides an overview of all of the detections made in the file in order of appearance (default is <strong>Manual</strong>). The sequence is the same as in the Timeline panel (Panel 5).</p>
-<p>The order can be changed by clicking <strong>Manually</strong> and selecting <strong>Group by Tool</strong> or <strong>Label</strong>. Note that bounding boxes drawn by the reviewer will appear at the bottom of the annotations panel, regardless of where they appear in the video.</p>
-<p><img src="/images/user-guide/image055.png" alt="Annotations panel"></p>
-<blockquote>
-<p><strong>Tip:</strong> When deleting multiple annotations, hold <strong>Ctrl</strong> and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.</p></blockquote>
-<p>To the right the user can sort <strong>By time</strong> (default) or <strong>Order by Score</strong> (if available). The eye symbol allows for switching to hide/make visible all the annotations — very useful if you want to focus on one annotation among many. The <strong>Relations</strong> tab can be ignored for now.</p>
-<hr>
+<p>The difference between labelled and reviewed data is not clear-cut necessarily (i.e. AI-generated data in a reviewing session can be of &ldquo;labeled&rdquo; grade). It is important to remember that when starting a <strong>labeling</strong> session it is of utmost importance to be very precise.</p></blockquote>
 
         </div>
 
@@ -530,9 +371,11 @@
             
           
             
-            <a href="/user-guide/label-tasks-panel/" class="docs-page-nav-prev">
+          
+            
+            <a href="/user-guide/label-review-interface/" class="docs-page-nav-prev">
               <span class="docs-page-nav-label">&larr; Previous</span>
-              <span class="docs-page-nav-title">Label Tasks Panel</span>
+              <span class="docs-page-nav-title">Label Review Interface</span>
             </a>
             
           
@@ -574,8 +417,6 @@
           
             
           
-            
-          
           
             
           
@@ -592,12 +433,12 @@
             
           
             
-            <a href="/user-guide/labeling-reviewing/" class="docs-page-nav-next">
+          
+            
+            <a href="/user-guide/example-annotation-session/" class="docs-page-nav-next">
               <span class="docs-page-nav-label">Next &rarr;</span>
-              <span class="docs-page-nav-title">Labeling vs. Reviewing</span>
+              <span class="docs-page-nav-title">Example Annotation Session</span>
             </a>
-            
-          
             
           
             

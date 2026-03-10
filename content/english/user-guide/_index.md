@@ -23,6 +23,8 @@ sidebar:
         slug: "label-tasks-panel"
       - label: "Label review interface"
         slug: "label-review-interface"
+      - label: "Label & reviewing"
+        slug: "labeling-reviewing"
       - label: "Example annotation session"
         slug: "example-annotation-session"
         subpages:

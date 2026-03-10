@@ -4,7 +4,7 @@ meta_title: "Size Estimation and Length Bins - SalmonVision User Guide"
 description: "Configuring size estimation and length bins for sonar projects"
 draft: false
 type: "user-guide"
-weight: 20
+weight: 21
 ---
 
 # Size Estimation & Length Bins
