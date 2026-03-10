@@ -4,7 +4,7 @@ meta_title: "Results - SalmonVision User Guide"
 description: "Overview of results and reporting in SalmonVision"
 draft: false
 type: "user-guide"
-weight: 16
+weight: 17
 ---
 
 # Results

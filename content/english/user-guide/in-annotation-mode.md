@@ -4,7 +4,7 @@ meta_title: "Sonar Annotation Mode - SalmonVision User Guide"
 description: "Guide to sonar annotation mode in SalmonVision"
 draft: false
 type: "user-guide"
-weight: 19
+weight: 20
 ---
 
 # Sonar — In Annotation Mode

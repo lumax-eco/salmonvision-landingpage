@@ -4,7 +4,7 @@ meta_title: "Sonar - SalmonVision User Guide"
 description: "Guide to sonar video review and annotation in SalmonVision"
 draft: false
 type: "user-guide"
-weight: 17
+weight: 18
 ---
 
 # Sonar

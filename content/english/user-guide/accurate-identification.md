@@ -4,7 +4,7 @@ meta_title: "Accurate Identification - SalmonVision User Guide"
 description: "When AI detection and tracking are accurate"
 draft: false
 type: "user-guide"
-weight: 12
+weight: 13
 ---
 
 # 3. Accurate Identification

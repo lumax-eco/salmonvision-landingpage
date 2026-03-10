@@ -4,7 +4,7 @@ meta_title: "Extra Annotations - SalmonVision User Guide"
 description: "How to handle extra or duplicate annotations during review"
 draft: false
 type: "user-guide"
-weight: 14
+weight: 15
 ---
 
 # 5. Extra Annotations

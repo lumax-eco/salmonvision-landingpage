@@ -4,7 +4,7 @@ meta_title: "Incorrect Species Identification - SalmonVision User Guide"
 description: "How to correct species misidentification during review"
 draft: false
 type: "user-guide"
-weight: 13
+weight: 14
 ---
 
 # 4. Incorrect Species Identification

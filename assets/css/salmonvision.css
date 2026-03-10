@@ -1842,6 +1842,11 @@ footer {
 }
 .docs-content-inner img {
     width: 100%;
+
+}
+
+.interface-image {
+    width: 21px !important;
 }
 /* Docs Typography */
 .docs-content-inner h1 {
