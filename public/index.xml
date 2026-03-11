@@ -51,13 +51,6 @@
       <description>&lt;h1 id=&#34;label-tasks-panel&#34;&gt;Label Tasks Panel&lt;/h1&gt;&#xA;&lt;p&gt;Once entered in the project, the label tasks panel appears with four sections. When your project is first created, numerical fields such as species counts (e.g. sockeye, video duration, random number etc.) will be displayed as strings. By clicking on the column header the user can convert these to filterable numerical (num) values. Once a field has been changed to a numerical value it will remain numeric, so this is a one-time action required at the start of your project.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Data Export</title>
-      <link>//localhost:1313/user-guide/data-export/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/data-export/</guid>
-      <description>&lt;h1 id=&#34;data-export&#34;&gt;Data Export&lt;/h1&gt;&#xA;&lt;p&gt;SalmonVision makes it easy to export your monitoring data for analysis, reporting, or integration with other tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;export-formats&#34;&gt;Export Formats&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Format&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;CSV&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Comma-separated values, compatible with Excel and R&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;JSON&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Structured data for programmatic use&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;GeoJSON&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Spatial data with detection locations&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;COCO&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Annotated image dataset format for model retraining&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;exporting-from-the-dashboard&#34;&gt;Exporting from the Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Navigate to your project dashboard&lt;/li&gt;&#xA;&lt;li&gt;Set your desired &lt;strong&gt;date range&lt;/strong&gt; and &lt;strong&gt;filters&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Export&lt;/strong&gt; button in the toolbar&lt;/li&gt;&#xA;&lt;li&gt;Choose your format and click &lt;strong&gt;Download&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;export-fields&#34;&gt;Export Fields&lt;/h2&gt;&#xA;&lt;p&gt;Each export includes:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Label Review Interface</title>
       <link>//localhost:1313/user-guide/label-review-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -65,18 +58,18 @@
       <description>&lt;h1 id=&#34;label-review-interface&#34;&gt;Label Review Interface&lt;/h1&gt;&#xA;&lt;p&gt;There are two ways to start the label review process:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Label All Tasks&lt;/strong&gt; — Click on the blue &lt;em&gt;Label All Tasks&lt;/em&gt; button and you will go through the tasks assigned to you one at a time. Click &lt;strong&gt;Submit&lt;/strong&gt; to proceed and save, and &lt;strong&gt;Skip&lt;/strong&gt; to not review it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Individual video&lt;/strong&gt; — Hover your mouse over the video (row) you like to review which will light up blue. Click and it will bring you to the same review window as option 1. &lt;strong&gt;NOTE:&lt;/strong&gt; clicking on the blue &amp;ldquo;play&amp;rdquo; button will only show a thumbnail preview of the video.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;the-seven-panels&#34;&gt;The Seven Panels&lt;/h2&gt;&#xA;&lt;p&gt;The label review interface has seven sections (when started through clicking an individual video). We will briefly discuss each and dive deeper into the reviewing process.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Example Annotation Session</title>
-      <link>//localhost:1313/user-guide/example-annotation-session/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/example-annotation-session/</guid>
-      <description>&lt;h1 id=&#34;example-annotation-session&#34;&gt;Example Annotation Session&lt;/h1&gt;&#xA;&lt;p&gt;This section provides two examples of a reviewing workflow:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../review-session-outlined/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Review session outlined&lt;/a&gt;&lt;/strong&gt; — A step-by-step visual guide on how to conduct the different steps&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../video-of-review-session/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Video of review session&lt;/a&gt;&lt;/strong&gt; — A link to a video of a review session conducted by Will Atlas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-scenarios&#34;&gt;Common Scenarios&lt;/h2&gt;&#xA;&lt;p&gt;Once starting the review process of a clip annotated by the AI algorithm, there are five different likely (though not exclusively) scenarios:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Labeling vs. Reviewing</title>
       <link>//localhost:1313/user-guide/labeling-reviewing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/user-guide/labeling-reviewing/</guid>
       <description>&lt;h1 id=&#34;labeling-vs-reviewing&#34;&gt;Labeling vs. Reviewing&lt;/h1&gt;&#xA;&lt;p&gt;There are two main types of data annotation work which we term &lt;strong&gt;labeling&lt;/strong&gt; and &lt;strong&gt;reviewing&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;labeling&#34;&gt;Labeling&lt;/h3&gt;&#xA;&lt;p&gt;Labeling involves removing AI-generated bounding boxes and drawing your own bounding box, making sure the boxes are of the correct class, starts when the object first appears and ends when it leaves the frame, and the bounding box is tightly fitted around the object. This typically involves manual adjustments for bounding box size at keypoints throughout the observation of a fish. This is &lt;strong&gt;high quality data&lt;/strong&gt; that will be used as new training data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Annotation Session</title>
+      <link>//localhost:1313/user-guide/example-annotation-session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/user-guide/example-annotation-session/</guid>
+      <description>&lt;h1 id=&#34;example-annotation-session&#34;&gt;Example Annotation Session&lt;/h1&gt;&#xA;&lt;p&gt;This section provides two examples of a reviewing workflow:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../review-session-outlined/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Review session outlined&lt;/a&gt;&lt;/strong&gt; — A step-by-step visual guide on how to conduct the different steps&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../video-of-review-session/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Video of review session&lt;/a&gt;&lt;/strong&gt; — A link to a video of a review session conducted by Will Atlas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-scenarios&#34;&gt;Common Scenarios&lt;/h2&gt;&#xA;&lt;p&gt;Once starting the review process of a clip annotated by the AI algorithm, there are five different likely (though not exclusively) scenarios:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Review Session Outlined</title>
@@ -90,7 +83,7 @@
       <link>//localhost:1313/user-guide/incorrect-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/user-guide/incorrect-detection/</guid>
-      <description>&lt;h1 id=&#34;1-incorrect-detection&#34;&gt;1. Incorrect Detection&lt;/h1&gt;&#xA;&lt;p&gt;Any of the following are considered an incorrect detection:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bounding box disappears and reappears&lt;/li&gt;&#xA;&lt;li&gt;Detection only occurs after the fish has crossed the midline&lt;/li&gt;&#xA;&lt;li&gt;The bounding box is not tracking the fish accurately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Delete detection and manually annotate the video.&lt;/p&gt;&#xA;&lt;p&gt;In this example, the bounding box disappears and reappears multiple times.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image063.jpg&#34; alt=&#34;Incorrect detection example&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;1-incorrect-detection&#34;&gt;1. Incorrect Detection&lt;/h1&gt;&#xA;&lt;p&gt;Any of the following are considered an incorrect detection:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bounding box disappears and reappears&lt;/li&gt;&#xA;&lt;li&gt;Detection only occurs after the fish has crossed the midline&lt;/li&gt;&#xA;&lt;li&gt;The bounding box is not tracking the fish accurately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Action:&lt;/strong&gt; Delete detection and manually annotate the video.&lt;/p&gt;&#xA;&lt;p&gt;In this example, the bounding box disappears and reappears multiple times.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image062.jpg&#34; alt=&#34;Incorrect detection example&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>No Detection</title>
@@ -163,13 +156,6 @@
       <description>&lt;h1 id=&#34;size-estimation--length-bins&#34;&gt;Size Estimation &amp;amp; Length Bins&lt;/h1&gt;&#xA;&lt;p&gt;For projects using &lt;strong&gt;SoundMetrics ARIS&lt;/strong&gt; sonar devices, fish sizes are automatically estimated using a pre-programmed length calibration equation that is built into the ARIS fish software.&lt;/p&gt;&#xA;&lt;p&gt;However, each project may be interested in unique length bins for reporting purposes, since different species have unique length distributions. Accordingly, length bins for sonar projects can be configured into the backend of the Salmon Vision web app prior to syncing your data from cloud storage.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>FAQ</title>
-      <link>//localhost:1313/user-guide/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/user-guide/faq/</guid>
-      <description>&lt;h1 id=&#34;frequently-asked-questions&#34;&gt;Frequently Asked Questions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;at-what-point-in-the-video-detection-should-i-beginend-the-annotation-of-a-fish&#34;&gt;At what point in the video detection should I begin/end the annotation of a fish?&lt;/h2&gt;&#xA;&lt;p&gt;The annotation should begin when enough of the fish&amp;rsquo;s head is present to receive a confident ID. The annotation should end once the tail is all that is left in the box.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-the-protocol-when-two-or-more-fish-are-overlapping-in-the-same-frame&#34;&gt;What is the protocol when two or more fish are overlapping in the same frame?&lt;/h2&gt;&#xA;&lt;p&gt;When multiple fish are overlapping it is important to capture the visible part of the individual and not infer where the rest of the fish might be if it is blocked.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Field Setup RGB</title>
       <link>//localhost:1313/user-guide/field-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -189,6 +175,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/user-guide/remote-access/</guid>
       <description>&lt;h1 id=&#34;remote-access&#34;&gt;Remote Access&lt;/h1&gt;&#xA;&lt;h2 id=&#34;change-network&#34;&gt;Change Network&lt;/h2&gt;&#xA;&lt;p&gt;The microcontroller devices may be set to use static IPs to facilitate communications between them. If it is required for that device to communicate with the Internet on a router that is not the Starlink router, you can change the network settings to use DHCP:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log into the microcontroller device after connecting a monitor and keyboard + mouse&lt;/li&gt;&#xA;&lt;li&gt;Click on the top right network icon and click either the gear icon or &lt;strong&gt;Settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Navigate to &lt;strong&gt;Network settings&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;strong&gt;IPv4&lt;/strong&gt; and check the &lt;strong&gt;Automatic (DHCP)&lt;/strong&gt; box&lt;/li&gt;&#xA;&lt;li&gt;Restart the device&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/user-guide/image082.png&#34; alt=&#34;Network settings&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>//localhost:1313/user-guide/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/user-guide/faq/</guid>
+      <description>&lt;h1 id=&#34;frequently-asked-questions&#34;&gt;Frequently Asked Questions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;at-what-point-in-the-video-detection-should-i-beginend-the-annotation-of-a-fish&#34;&gt;At what point in the video detection should I begin/end the annotation of a fish?&lt;/h2&gt;&#xA;&lt;p&gt;The annotation should begin when enough of the fish&amp;rsquo;s head is present to receive a confident ID. The annotation should end once the tail is all that is left in the box.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-the-protocol-when-two-or-more-fish-are-overlapping-in-the-same-frame&#34;&gt;What is the protocol when two or more fish are overlapping in the same frame?&lt;/h2&gt;&#xA;&lt;p&gt;When multiple fish are overlapping it is important to capture the visible part of the individual and not infer where the rest of the fish might be if it is blocked.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Troubleshooting</title>
