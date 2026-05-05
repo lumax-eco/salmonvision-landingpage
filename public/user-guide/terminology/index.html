@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webapp - User Guide - SalmonVision</title>
+    <title>Terminology RGB - User Guide - SalmonVision</title>
     <meta name="description" content="AI-Powered Salmon Monitoring">
     
     
@@ -124,7 +124,7 @@
                 
                   
                 <li>
-                  <a href="/user-guide/webapp/" class="docs-nav-link active">
+                  <a href="/user-guide/webapp/" class="docs-nav-link">
                     Webapp
                   </a>
                 </li>
@@ -277,7 +277,7 @@
                 
                   
                 <li>
-                  <a href="/user-guide/terminology/" class="docs-nav-link">
+                  <a href="/user-guide/terminology/" class="docs-nav-link active">
                     Terminology
                   </a>
                 </li>
@@ -350,22 +350,91 @@
         <div class="docs-breadcrumb">
           <a href="/user-guide/">User Guide</a>
           <span class="docs-breadcrumb-sep">/</span>
-          <span>Webapp</span>
+          <span>Terminology RGB</span>
         </div>
 
         <div class="docs-content-inner">
-          <h1 id="webapp">Webapp</h1>
-<p>In this part of the user guide we focus on the functionalities that are shared between the RGB
-and sonar web app module for the user. Note that the sonar data only contains the intensity of
-the return signal and consequently a lot less can be extracted from it, e.g. no fish identification
-on colour. The examples below are</p>
-<p><img src="/images/user-guide/general_settings.png" alt="General Settings"></p>
-<p>To set up a new project click the blue “create” button at the top right of your screen. Name the project and description of the project.</p>
-<p><img src="/images/user-guide/cloud_storage.png" alt="Cloud Storage"></p>
-<p>Next, configure your cloud storage. For new projects click “Add Source Storage” and you will be taken to the “Edit Source Storage” window. The Salmon Vision team will provide you with the bucket name and bucket prefix for your project. In the field “File Filter Regex” enter .*json, in the “Region Name” field enter, eu-north-1. The Access Key ID, Secret Access Key, and Session token will populate automatically. If these fields fail to populate, please contact the Salmon Vision team. Once these fields are filled in correctly, click “Check Connection” to confirm the cloud storage is correctly specified. Having confirmed that cloud storage is connected, click save to complete setup of the Source Storage.</p>
-<p><img src="/images/user-guide/edit_cloud_storage.png" alt="Edit Cloud Storage"></p>
-<p>Prior to syncing storage (ingesting motion videos and AI counting results from cloud storage), you will need to specify the upstream direction (e.g. left v. right) for both sonar and video projects, and the length bins (e.g. &lt;45cm, 45-65 cm, &gt;65cm) of interest for your sonar project as well. The Salmon Vision team can help you configure these settings for your project. Once you have confirmation that they are set up correctly, a user on your team with “staff” status, can click the “Synch Storage” button to ingest available data from cloud storage for review and annotation in the web app. If a large number of files are available in cloud storage this may take some time, even hours, and the web app will often time out. Don’t press synch storage twice, just wait, and if you refresh the main project page you will see that new videos are continuing to upload.</p>
-<p><b>***Note</b> that to create new projects, an account must have “staff” status. This authorization level allows users to create and delete projects, configure storage settings, and control other aspects of projects rather than just reviewing data. Each organization will be provided with one staff user during project set up, if other accounts need staff status, please reach out to the Salmon Vision team for assistance.</p>
+          <h1 id="terminology">Terminology</h1>
+<h2 id="fish-anatomy-and-behavior">Fish Anatomy and Behavior</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Term</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Anterior</td>
+          <td>Area towards the head of the fish</td>
+      </tr>
+      <tr>
+          <td>Posterior</td>
+          <td>Area towards the tail end of the fish</td>
+      </tr>
+      <tr>
+          <td>Ventral</td>
+          <td>The bottom half of the fish</td>
+      </tr>
+      <tr>
+          <td>Dorsal</td>
+          <td>The upper half of the fish</td>
+      </tr>
+      <tr>
+          <td>Operculum</td>
+          <td>The bony plate that runs over the gills</td>
+      </tr>
+      <tr>
+          <td>Maxillary</td>
+          <td>Upper jaw bone</td>
+      </tr>
+      <tr>
+          <td>Lateral line</td>
+          <td>A sensory organ that extends from the anterior to the posterior side of the fish, often separating the ventral from the dorsal side of the fish</td>
+      </tr>
+      <tr>
+          <td>Caudal fin</td>
+          <td>Referring to the &ldquo;tail fin&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Anal fin</td>
+          <td>Referring to the fin that is adjacent to the caudal fin on the ventral side of the fish</td>
+      </tr>
+      <tr>
+          <td>Pelvic fin</td>
+          <td>The fin that is adjacent to the anal fin, between the anal and pectoral fin on the ventral side of the fish</td>
+      </tr>
+      <tr>
+          <td>Pectoral fin</td>
+          <td>The fin that is nearest to the head of the fish, just behind the operculum</td>
+      </tr>
+      <tr>
+          <td>Dorsal fin</td>
+          <td>The large fin that runs along the anterior side of the fish</td>
+      </tr>
+      <tr>
+          <td>Adipose fin</td>
+          <td>The small fin that is between the caudal and dorsal fin. This is often absent in hatchery fish, as a visible marking to distinguish hatchery from wild fish</td>
+      </tr>
+      <tr>
+          <td>Forked</td>
+          <td>Caudal fin with two distinct lobes separated by a noticeable notch</td>
+      </tr>
+      <tr>
+          <td>Emarginate</td>
+          <td>Caudal fin with a slight inward curve or indentation, between a forked and truncated shape</td>
+      </tr>
+      <tr>
+          <td>Truncate</td>
+          <td>Caudal fin with a flat end</td>
+      </tr>
+      <tr>
+          <td>Thigmotaxic</td>
+          <td>The behavior, motion, or orientation of a fish in response to physical stimuli</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/salmon-guide/salmon_guide001.jpg" alt="Mouth positions"></p>
 
         </div>
 
@@ -377,9 +446,47 @@ on colour. The examples below are</p>
             
           
             
-            <a href="/user-guide/workflow/" class="docs-page-nav-prev">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/size-estimation-and-length-bins/" class="docs-page-nav-prev">
               <span class="docs-page-nav-label">&larr; Previous</span>
-              <span class="docs-page-nav-title">Workflow</span>
+              <span class="docs-page-nav-title">Size Estimation &amp; Length Bins</span>
             </a>
             
           
@@ -395,7 +502,6 @@ on colour. The examples below are</p>
           
             
           
-            
           
             
           
@@ -431,7 +537,6 @@ on colour. The examples below are</p>
           
             
           
-          
             
           
             
@@ -439,48 +544,16 @@ on colour. The examples below are</p>
             
           
             
-            <a href="/user-guide/login/" class="docs-page-nav-next">
+          
+            
+          
+            
+          
+            
+            <a href="/user-guide/batch-upload/" class="docs-page-nav-next">
               <span class="docs-page-nav-label">Next &rarr;</span>
-              <span class="docs-page-nav-title">Login</span>
+              <span class="docs-page-nav-title">Batch Upload</span>
             </a>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
             
           
             
