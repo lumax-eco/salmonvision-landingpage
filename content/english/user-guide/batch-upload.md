@@ -4,7 +4,7 @@ meta_title: "Batch Upload - SalmonVision User Guide"
 description: "Guide to batch uploading data from offline sites"
 draft: false
 type: "user-guide"
-weight: 23
+weight: 25
 ---
 
 # Batch Upload Software

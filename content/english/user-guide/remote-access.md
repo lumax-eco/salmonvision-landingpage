@@ -4,7 +4,7 @@ meta_title: "Remote Access - SalmonVision User Guide"
 description: "Guide to remote desktop and network configuration for SalmonVision devices"
 draft: false
 type: "user-guide"
-weight: 24
+weight: 26
 ---
 
 # Remote Access

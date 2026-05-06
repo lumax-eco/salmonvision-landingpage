@@ -4,7 +4,7 @@ meta_title: "Field Setup RGB - SalmonVision User Guide"
 description: "Hardware list and field setup instructions for RGB video systems"
 draft: false
 type: "user-guide"
-weight: 22
+weight: 24
 ---
 
 # Field Setup RGB

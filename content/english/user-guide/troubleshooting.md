@@ -4,7 +4,7 @@ meta_title: "Troubleshooting - SalmonVision User Guide"
 description: "Troubleshooting common hardware and system issues"
 draft: false
 type: "user-guide"
-weight: 26
+weight: 28
 ---
 
 # Troubleshooting

@@ -1,0 +1,25 @@
+{{- $data := site.Data.salmon_guide -}}
+{{- $base := "/images/salmon-guide/" -}}
+
+{{- if not $data -}}
+  <p><strong>Gallery data missing:</strong> expected <code>data/salmon_guide.json</code>.</p>
+{{- else -}}
+  {{- range $group := $data.groups -}}
+    <h2>{{ $group.title }}</h2>
+    <div class="sv-gallery">
+      {{- range $item := $group.items -}}
+        {{- $file := $item.file -}}
+        {{- $src := printf "%s%s" $base $file -}}
+        {{- $name := replace (replace (replace (strings.TrimSuffix (path.Ext $file) $file) "_" " ") "-" " ") "  " " " -}}
+        {{- $caption := $item.caption | default (title $name) -}}
+
+        <a class="sv-gallery-item sv-lightbox" href="{{ $src }}" data-caption="{{ $caption }}">
+          <figure>
+            <img src="{{ $src }}" alt="{{ $caption }}" loading="lazy" decoding="async" />
+            <figcaption>{{ $caption }}</figcaption>
+          </figure>
+        </a>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}

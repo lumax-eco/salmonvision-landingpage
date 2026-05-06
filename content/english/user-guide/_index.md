@@ -53,6 +53,12 @@ sidebar:
             slug: "in-annotation-mode"
           - label: "Size estimation & length bins"
             slug: "size-estimation-and-length-bins"
+  - title: "Species guide"
+    pages:
+      - label: "Terminology"
+        slug: "terminology"
+      - label: "Species visual guide"
+        slug: "species-visual-guide"
   - title: "Field Setup"
     pages:
       - label: "Field Setup RGB"
