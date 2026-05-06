@@ -32,6 +32,30 @@
         </div>
     </section>
 
+    <!-- Sponsors Strip (Fiscal Sponsors) -->
+    {{ with .Params.sponsors }}
+    <section class="partners sponsors-strip" id="sponsors">
+        <div class="partners-content">
+            <div class="sponsors-strip-inner">
+                <div class="sponsors-strip-text">
+                    <h2 class="sponsors-strip-title">{{ .title | default "Salmon Vision is brought to you by" }}</h2>
+                    {{ with .subtitle }}
+                    <p class="sponsors-strip-subtitle">{{ . }}</p>
+                    {{ end }}
+                </div>
+
+                {{ with .logos }}
+                <div class="partner-list" aria-label="Sponsors">
+                    {{ range . }}
+                    <div class="partner-item"><img src="{{ .image }}" alt="{{ .name }}"></div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="section-header">

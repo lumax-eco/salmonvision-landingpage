@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "title": "Salmon",
+      "items": [
+        { "file": "chinook_salmon001.jpg" },
+        { "file": "chinook_salmon002.jpg" },
+        { "file": "chum_salmon002.jpg" },
+        { "file": "coho_salmon001.jpg" },
+        { "file": "pink_salmon001.jpg" },
+        { "file": "sockeye_salmon001.jpg" },
+        { "file": "sockeye_salmon002.jpg" }
+      ]
+    },
+    {
+      "title": "Trout & Char",
+      "items": [
+        { "file": "bull_trout001.jpg" },
+        { "file": "cutthroat_trout001.jpg" },
+        { "file": "rainbow_trout001.jpg" },
+        { "file": "steelhead_salmon001.jpg" }
+      ]
+    },
+    {
+      "title": "Other Species",
+      "items": [
+        { "file": "whitefish_coregonus001.jpg" },
+        { "file": "northern_pikeminnow001.jpg" },
+        { "file": "sculpin001.jpg" },
+        { "file": "lamprey001.jpg" }
+      ]
+    },
+    {
+      "title": "Terminology",
+      "items": [
+        { "file": "salmon_guide001.jpg", "caption": "Mouth positions" }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ meta_title: "FAQ - SalmonVision User Guide"
 description: "Frequently asked questions about SalmonVision annotation and review"
 draft: false
 type: "user-guide"
-weight: 25
+weight: 27
 ---
 
 # Frequently Asked Questions

@@ -57,6 +57,8 @@ sidebar:
     pages:
       - label: "Terminology"
         slug: "terminology"
+      - label: "Species visual guide"
+        slug: "species-visual-guide"
   - title: "Field Setup"
     pages:
       - label: "Field Setup RGB"

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52865&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Label Review Interface - User Guide - SalmonVision</title>
@@ -27,7 +27,7 @@
     
     
     
-        <link rel="icon" href="//localhost:1313/images/favicon_salmon.png">
+        <link rel="icon" href="//localhost:52865/images/favicon_salmon.png">
     
     
     
@@ -283,6 +283,14 @@
                 </li>
                 
                 
+                  
+                <li>
+                  <a href="/user-guide/species-visual-guide/" class="docs-nav-link">
+                    Species visual guide
+                  </a>
+                </li>
+                
+                
               </ul>
             </div>
             
@@ -420,7 +428,8 @@
 <li>Note whether the fish has visible <strong>net scarring</strong>, is <strong>diseased</strong> or visibly <strong>injured</strong> (e.g. an open wound)</li>
 </ul>
 <blockquote>
-<p>If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.</p></blockquote>
+<p>If these subclasses are not useful to your team, using them is not required. Subclasses can be added relatively easily to the UI — feel free to inquire with the Salmon Vision team if your project needs additional categories.</p>
+</blockquote>
 <p><img src="/images/user-guide/image021.png" alt="Class overview with subclasses"></p>
 <hr>
 <h2 id="panel-4--viewer">Panel 4 — Viewer</h2>
@@ -488,7 +497,8 @@
 <p>A <strong>keypoint</strong> in a video is an annotation of a specific object in a frame, represented by a <strong>diamond shape</strong> on the timeline panel. In the example above, frame 15 contains a keypoint of the Sockeye detection. A frame can have keypoints for different detections if they occur simultaneously.</p>
 <p>When a video has been prelabelled by a detection model, each frame of the detection sequence is also a keyframe. When manually labelling, the reviewer has to manually draw a box, or when interpolation is on, reposition and/or adjust box size.</p>
 <blockquote>
-<p><strong>Best practice:</strong> Have at least one keypoint every 10 frames for a stationary fish and, depending on the speed and change of direction of movement, every 1–5 frames for faster or more erratic movements.</p></blockquote>
+<p><strong>Best practice:</strong> Have at least one keypoint every 10 frames for a stationary fish and, depending on the speed and change of direction of movement, every 1–5 frames for faster or more erratic movements.</p>
+</blockquote>
 <hr>
 <h2 id="panel-5--timeline">Panel 5 — Timeline</h2>
 <p>The Timeline panel provides an overview of each detection (rows) and where in the sequence of the video (frame) it was detected. The detections are numbered chronologically and have the name and colour of the assigned class (see Panel 3).</p>
@@ -505,7 +515,8 @@
 <p>It is important to find the last frame in the sequence in which the individual is visible and <strong>switch off the interpolation</strong> (Toggle interpolation button). If the individual reappears, make a new keypoint and switch interpolation back on.</p>
 <p>The timeline panel also includes access to the <strong>settings</strong> in the left bottom and provides a <strong>Submit</strong> option (right bottom) which will save all the changes you have made.</p>
 <blockquote>
-<p><strong>Remember:</strong> You have to submit changes to save them.</p></blockquote>
+<p><strong>Remember:</strong> You have to submit changes to save them.</p>
+</blockquote>
 <h3 id="post-submission-verification">Post-Submission Verification</h3>
 <p>After having submitted the video, it is important to use the scroll bar on the bottom of Panel 1, and confirm that the correct value appears under the column(s). For example, if 3 sockeye swam through the box and the AI was accurate in detecting them, once submitted, scroll to the right and confirm that 3 sockeye appear under the column &ldquo;sockeye&rdquo;.</p>
 <hr>
@@ -523,7 +534,8 @@
 <p>The order can be changed by clicking <strong>Manually</strong> and selecting <strong>Group by Tool</strong> or <strong>Label</strong>. Note that bounding boxes drawn by the reviewer will appear at the bottom of the annotations panel, regardless of where they appear in the video.</p>
 <p><img src="/images/user-guide/image055.png" alt="Annotations panel"></p>
 <blockquote>
-<p><strong>Tip:</strong> When deleting multiple annotations, hold <strong>Ctrl</strong> and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.</p></blockquote>
+<p><strong>Tip:</strong> When deleting multiple annotations, hold <strong>Ctrl</strong> and click on several annotations to select multiple, then scroll to the trashcan in Panel 6 and delete them.</p>
+</blockquote>
 <p>To the right the user can sort <strong>By time</strong> (default) or <strong>Order by Score</strong> (if available). The eye symbol allows for switching to hide/make visible all the annotations — very useful if you want to focus on one annotation among many. The <strong>Relations</strong> tab can be ignored for now.</p>
 <hr>
 
@@ -549,6 +561,8 @@
               <span class="docs-page-nav-label">&larr; Previous</span>
               <span class="docs-page-nav-title">Label Tasks Panel</span>
             </a>
+            
+          
             
           
             
@@ -653,6 +667,8 @@
           
             
           
+            
+          
         </div>
       </div>
     </div>
@@ -700,6 +716,8 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="footer-bottom">
         <p>&copy; 2026 SalmonVision Collaborative. Open-source models under MIT license. Training data under CC BY-NC-SA 4.0.</p>
+
+        <p>Powered by <a href="https://stoelsolutions.nl/" target="_blank" rel="noopener noreferrer" class="powered-by">Stoel Solutions</a></p>
     </div>
 </footer>
 

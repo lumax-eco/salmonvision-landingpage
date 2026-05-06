@@ -100,19 +100,24 @@ about:
   cta_text: "Meet Our Team"
   cta_link: "/about/"
 
-# Partners Section
-partners:
-  title: "Our Collaborative Network"
-  subtitle: "Salmon Vision is built through partnerships with Indigenous Nations, research institutions, conservation organizations, and fisheries management agencies across the Pacific Northwest."
+# Sponsors Strip (Fiscal Sponsors)
+sponsors:
+  title: "Salmon Vision is brought to you by Pacific Salmon Foundation, Wild Salmon Center and Lumax"
   logos:
     - name: "Pacific Salmon Foundation"
       image: "https://psf.ca/wp-content/uploads/2022/04/PSF-Logo-2022-min.png"
     - name: "Wild Salmon Center"
       image: "/images/partners/WSC.png"
-    - name: "Simon Fraser University"
-      image: "/images/partners/SFU.png"
     - name: "Lumax Ecological Analytics"
       image: "/images/partners/LUMAX.png"
+
+# Partners Section
+partners:
+  title: "Our Collaborative Network"
+  subtitle: "Salmon Vision is built through partnerships with Indigenous Nations, research institutions, conservation organizations, and fisheries management agencies across the Pacific Northwest."
+  logos:
+    - name: "Simon Fraser University"
+      image: "/images/partners/SFU.png"
     - name: "Gitanyow Fisheries Authority"
       image: "/images/partners/GITANYOW.png"
     - name: "Skeena Fisheries Commission"
@@ -124,7 +129,7 @@ partners:
     - name: "Nuxalk Fish and Wildlife"
       image: "/images/partners/NFW.png"
     - name: "Haida Fishery Program"
-      image: "/images/partners/HFP.png"
+      image: "/images/partners/HFP.jpg"
     - name: "Wuikinuxv Fishery Program"
       image: "/images/partners/WFP.png"
     - name: "Sitka Tribe of Alaska"

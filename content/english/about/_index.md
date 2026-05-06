@@ -14,6 +14,16 @@ team:
   title: "Meet Our Team"
   description: "The dedicated people behind Salmon Vision, working to revolutionize salmon monitoring and conservation"
   members:
+    - name: "Katrina Connors"
+      role: "Co-Founder"
+      bio: "As Senior Director of Salmon Programs at the Pacific Salmon Foundation, Katrina Connors leads initiatives advancing Pacific salmon conservation, recovery, and ecosystem resilience across British Columbia and the Yukon. With more than two decades working at the science–policy interface, she has spearheaded the development of widely used tools such as the Pacific Salmon Explorer and State of Salmon, democratizing access to data and strengthening evidence-based decisions. Through Salmon Vision, she is helping to advance AI-driven approaches to salmon monitoring that are scalable, sustainable, and grounded in the needs of communities and partners."
+      image: "/images/employees/katrina.jpg"
+
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/katrina-connors-32295794/"
+
     - name: "Dr. William Atlas"
       role: "Chief Scientist & Co-Founder"
       bio: "Leading our research efforts in computer vision and machine learning for salmon conservation. With over 20 years of experience in salmon conservation and stock assessment, Will bridges the gap between technology and the realities of salmon conservation practitioners."
@@ -49,6 +59,59 @@ team:
         - name: "linkedin"
           icon: "fa-brands fa-linkedin"
           link: "https://www.linkedin.com/in/acaillau/"
+
+    - name: "Sami Ma"
+      role: "Working on the technical side of machine learning model training and edge device deployment"
+      image: "/images/employees/image2.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/sami-ma/"
+
+    - name: "Charles Chi Xu"
+      role: "Senior AI & Systems Researcher"
+      bio: "Exploring scalable AI solutions for ecological monitoring, with a focus on robust multimodal sensing and analytics. Connecting AI systems with real-world ecosystem management."
+      image: "/images/employees/image4.jpg"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "www.linkedin.com/in/charles-chi-xu"
+
+    - name: "Rongsheng (David) Qian"
+      role: "AI & Systems Researcher"
+      bio: "Working on: Self-Supervised Learning; Imaging Sonar Compression & Denoising; (Wild) 3D Reconstruction"
+      image: "/images/employees/image5.jpg"
+
+    - name: "Hao (Henry) Fang"
+      role: "AI & Systems Researcher"
+      bio: "AI and systems researcher working at the intersection of machine learning, satellite communications and multimedia systems. Focused on designing intelligent, scalable solutions for environmental sustainability and multimodal ecological monitoring in complex natural ecosystems."
+      image: "/images/employees/image1.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/henryfang23/"
+
+    - name: "Tim Glaser"
+      role: "Software Engineer & Project Manager"
+      bio: "With roots in the tech industry and ecological systems development, Tim guides product design, system architecture, and project planning. He also contributes as a full-stack engineer, translating environmental data challenges into reliable, scalable software solutions."
+      image: "/images/employees/image7.jpg"
+
+    - name: "Guido Rahr"
+      role: "Fisheries Biologist"
+      bio: "With a background in Fisheries Biology, Guido leads the data review process, providing high quality training data for model re-training."
+      image: "/images/employees/image6.jpg"
+
+    - name: "Jiangchuan Liu"
+      role: "Tech Leader for AI/Systems & Co-Founder"
+      bio: "30 years of experience in multimedia data computing and distribution; expert on distributed sensing and AI systems, working at the intersection of machine learning, satellite communications and multimedia systems. Interested in the design of intelligent, scalable solutions for environmental sustainability and multimodal ecological monitoring in complex natural ecosystems."
+      image: "/images/employees/image3.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/jiangchuan-liu-62355b5/"
+        - name: "website"
+          icon: "fa-solid fa-globe"
+          link: "https://www.cs.sfu.ca/~jcliu/"
 
 # Partners Title
 partners_title: "Our Funders"

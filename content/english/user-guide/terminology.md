@@ -1,6 +1,6 @@
 ---
-title: "Terminology RGB"
-meta_title: "Terminology RGB - SalmonVision User Guide"
+title: "Terminology"
+meta_title: "Terminology - SalmonVision User Guide"
 description: "Terminology of the species guide"
 draft: false
 type: "user-guide"
