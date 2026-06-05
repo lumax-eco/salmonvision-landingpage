@@ -23,4 +23,3 @@ Once starting the review process of a clip annotated by the AI algorithm, there 
 3. **[Accurate identification](../accurate-identification/)** — Detection and tracking are correct
 4. **[Incorrect species identification](../incorrect-species-identification/)** — Fish tracked accurately but species ID is wrong
 5. **[Extra annotations](../extra-annotations/)** — Multiple detections where only one fish is present
-

@@ -32,25 +32,7 @@ team:
         - name: "linkedin"
           icon: "fa-brands fa-linkedin"
           link: "https://www.linkedin.com/in/william-atlas-0883bba3/"
-    
-    - name: "Eelke Folmer"
-      role: "Ecologist & machine learning expert"
-      bio: "Expertise in ecology, statistics, data science, geospatial analytics, drones, photogrammetry, and machine learning."
-      image: "/images/eelke.png"
-      social:
-        - name: "linkedin"
-          icon: "fa-brands fa-linkedin"
-          link: "https://www.linkedin.com/in/eelkefolmer/"
-    
-    - name: "Thor Veen"
-      role: "Ecologial Analytic"
-      bio: "Expertise in evolution, biodiversity monitoring, drones, photogrammetry, statistics, computer vision, and machine learning."
-      image: "/images/thor.jpg"
-      social:
-        - name: "linkedin"
-          icon: "fa-brands fa-linkedin"
-          link: "https://www.linkedin.com/in/thorveen/"
-    
+
     - name: "Arthur Caillau"
       role: "MLops & machine learning expert"
       bio: "Expertise in computer vision, machine learning, and cloud infrastructure."
@@ -59,28 +41,6 @@ team:
         - name: "linkedin"
           icon: "fa-brands fa-linkedin"
           link: "https://www.linkedin.com/in/acaillau/"
-
-    - name: "Sami Ma"
-      role: "Working on the technical side of machine learning model training and edge device deployment"
-      image: "/images/employees/image2.png"
-      social:
-        - name: "linkedin"
-          icon: "fa-brands fa-linkedin"
-          link: "https://www.linkedin.com/in/sami-ma/"
-
-    - name: "Charles Chi Xu"
-      role: "Senior AI & Systems Researcher"
-      bio: "Exploring scalable AI solutions for ecological monitoring, with a focus on robust multimodal sensing and analytics. Connecting AI systems with real-world ecosystem management."
-      image: "/images/employees/image4.jpg"
-      social:
-        - name: "linkedin"
-          icon: "fa-brands fa-linkedin"
-          link: "www.linkedin.com/in/charles-chi-xu"
-
-    - name: "Rongsheng (David) Qian"
-      role: "AI & Systems Researcher"
-      bio: "Working on: Self-Supervised Learning; Imaging Sonar Compression & Denoising; (Wild) 3D Reconstruction"
-      image: "/images/employees/image5.jpg"
 
     - name: "Hao (Henry) Fang"
       role: "AI & Systems Researcher"
@@ -91,15 +51,19 @@ team:
           icon: "fa-brands fa-linkedin"
           link: "https://www.linkedin.com/in/henryfang23/"
 
+    - name: "Eelke Folmer"
+      role: "Ecologist & machine learning expert"
+      bio: "Expertise in ecology, statistics, data science, geospatial analytics, drones, photogrammetry, and machine learning."
+      image: "/images/eelke.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/eelkefolmer/"
+
     - name: "Tim Glaser"
       role: "Software Engineer & Project Manager"
       bio: "With roots in the tech industry and ecological systems development, Tim guides product design, system architecture, and project planning. He also contributes as a full-stack engineer, translating environmental data challenges into reliable, scalable software solutions."
       image: "/images/employees/image7.jpg"
-
-    - name: "Guido Rahr"
-      role: "Fisheries Biologist"
-      bio: "With a background in Fisheries Biology, Guido leads the data review process, providing high quality training data for model re-training."
-      image: "/images/employees/image6.jpg"
 
     - name: "Jiangchuan Liu"
       role: "Tech Leader for AI/Systems & Co-Founder"
@@ -112,6 +76,42 @@ team:
         - name: "website"
           icon: "fa-solid fa-globe"
           link: "https://www.cs.sfu.ca/~jcliu/"
+
+    - name: "Sami Ma"
+      role: "Working on the technical side of machine learning model training and edge device deployment"
+      image: "/images/employees/image2.png"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/sami-ma/"
+
+    - name: "Rongsheng (David) Qian"
+      role: "AI & Systems Researcher"
+      bio: "Working on: Self-Supervised Learning; Imaging Sonar Compression & Denoising; (Wild) 3D Reconstruction"
+      image: "/images/employees/image5.jpg"
+
+    - name: "Guido Rahr"
+      role: "Fisheries Biologist"
+      bio: "With a background in Fisheries Biology, Guido leads the data review process, providing high quality training data for model re-training."
+      image: "/images/employees/image6.jpg"
+
+    - name: "Thor Veen"
+      role: "Ecologial Analytic"
+      bio: "Expertise in evolution, biodiversity monitoring, drones, photogrammetry, statistics, computer vision, and machine learning."
+      image: "/images/thor.jpg"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/thorveen/"
+
+    - name: "Charles Chi Xu"
+      role: "Senior AI & Systems Researcher"
+      bio: "Exploring scalable AI solutions for ecological monitoring, with a focus on robust multimodal sensing and analytics. Connecting AI systems with real-world ecosystem management."
+      image: "/images/employees/image4.jpg"
+      social:
+        - name: "linkedin"
+          icon: "fa-brands fa-linkedin"
+          link: "https://www.linkedin.com/in/charles-chi-xu/"
 
 # Partners Title
 partners_title: "Our Funders"
