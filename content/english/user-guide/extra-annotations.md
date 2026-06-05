@@ -13,6 +13,8 @@ At times multiple fish are detected when only one fish is present ("double annot
 
 **Action:** Select the extra annotation (be sure you are not selecting the annotation that accurately tracks the individual) and delete it.
 
-<!-- The video below shows an instance of an extra annotation of the tail and how to rectify this error.
 
-![Extra annotation example](/images/user-guide/image030.gif) -->
+<video controls width="100%">
+  <source src="/images/user-guide/videos/Extra Detection new.mp4" type="video/mp4">
+</video>
+

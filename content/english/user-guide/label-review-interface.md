@@ -136,3 +136,19 @@ To the right the user can sort **By time** (default) or **Order by Score** (if a
 
 ---
 
+## Keyboard Shortcuts
+
+| Hotkey | Function |
+|--------|----------|
+| `ctrl + space` | Play/pause (NA for Windows users) |
+| `alt + r` | Create relation between regions |
+| `alt + m` | Edit selected region meta |
+| `alt + l` | Lock selected region |
+| `shift + ctrl + alt + ←` | Go to first frame |
+| `shift + ctrl + alt + →` | Go to last frame |
+| `shift + alt + ←` | Hop backward 10 frames |
+| `shift + alt + →` | Hop forward 10 frames |
+| `ctrl + alt + ←` | Go to previous keyframe |
+| `ctrl + alt + →` | Go to next keyframe |
+| `alt + ←` | Go one step back |
+| `alt + →` | Go one step forward |

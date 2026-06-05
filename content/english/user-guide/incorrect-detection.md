@@ -19,4 +19,7 @@ Any of the following are considered an incorrect detection:
 
 In this example, the bounding box disappears and reappears multiple times.
 
-![Incorrect detection example](/images/user-guide/image062.jpg)
+<video controls width="100%">
+  <source src="/images/user-guide/videos/SV tracking vid.mp4" type="video/mp4">
+</video>
+
